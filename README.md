@@ -14,7 +14,7 @@ giảng viên** (vị trí cụ thể sửa bằng khóa `noi_lay_pin` trong `co
 ## Cấu trúc thư mục
 
 ```
-index.html            Trang chủ: Gọi IT, tìm nhanh triệu chứng, lưới thẻ, link hãng, checklist 60 giây
+index.html            Trang chủ: tìm nhanh triệu chứng, lưới thẻ, link hãng, checklist 60 giây, khi nào gọi IT, hộp liên hệ IT (cuối trang)
 su-co.html            9 sự cố theo triệu chứng (accordion): dấu hiệu → các bước → KHÔNG NÊN → khi nào gọi IT
 hitachi.html          Hướng dẫn theo hãng: nút remote, chọn HDMI, đèn báo, tắt máy đúng cách
 sony.html

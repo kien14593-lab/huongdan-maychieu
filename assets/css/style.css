@@ -455,6 +455,10 @@ main {
   box-shadow: var(--shadow);
 }
 
+.section.call-box {
+  margin-top: 2rem;
+}
+
 .call-box__title {
   margin: 0 0 8px;
   font-size: 1.1rem;
