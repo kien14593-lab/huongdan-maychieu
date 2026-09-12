@@ -20,18 +20,19 @@ giảng viên** (vị trí cụ thể sửa bằng khóa `noi_lay_pin` trong `co
 index.html            Trang chủ: quy trình 4 bước (đến phòng → bật máy → cắm HDMI → gặp sự cố), ô gõ số phòng → biết hãng máy,
                       thẻ chọn hãng theo remote (đen = Hitachi, trắng mỏng dẹp = Sony, trắng dày = Infoto, + hãng khác)
                       → chuyển sang trang sự cố; hộp liên hệ IT (cuối trang)
-su-co.html            9 sự cố (accordion) gom theo 3 giai đoạn: bật máy → cắm HDMI → hình chiếu sai. Mỗi sự cố: dấu hiệu → các bước
+su-co.html            8 sự cố (accordion) xếp thành 1 danh sách duy nhất theo 4 thời điểm trong lớp: lúc bật máy → lúc cắm HDMI
+                      → hình đã lên nhưng chưa đúng → đang dạy bỗng mất hình / máy tắt. Mỗi sự cố: dấu hiệu → các bước
                       → KHÔNG NÊN → khi nào gọi IT. Nhận tham số `?may=hitachi|sony|infoto|khac` và/hoặc `?phong=203E7`
                       để hiện banner hãng đã chọn
-hitachi.html          Hướng dẫn theo hãng: nút remote, chọn HDMI, đèn báo, tắt máy đúng cách, danh sách phòng dùng hãng đó
-sony.html
+hitachi.html          Hướng dẫn theo hãng: ảnh remote thật + sơ đồ nút tô màu, chọn HDMI, đèn báo, tắt máy đúng cách,
+sony.html             danh sách phòng dùng hãng đó (Hitachi R017H · Sony RM-PJ8 · Infoto – remote bố cục Sanyo MXBT)
 infoto.html
 ket-noi-laptop.html   Windows 10/11 (Win + P, Presenter View), macOS (adapter, Mirror), sai tỉ lệ hình
 lien-he.html          Khi nào gọi IT ngay, thông tin liên hệ, mẫu báo sự cố có nút "Sao chép mẫu" (gõ phòng → tự chọn hãng)
 assets/css/style.css  Toàn bộ giao diện (mobile-first, chữ to, nút ≥ 48px, có CSS in ấn)
 assets/js/config.js   ★ NƠI DUY NHẤT CẦN SỬA khi có thông tin thật (số IT, danh sách phòng → hãng máy…)
 assets/js/main.js     Chèn cấu hình, danh sách phòng, accordion, chọn hãng (?may=), sao chép mẫu, nút in
-assets/img/*.svg      Ảnh minh họa tự vẽ (remote, sơ đồ) – thay bằng ảnh thật khi có
+assets/img/           Ảnh remote thật (remote-*.jpg), sơ đồ remote vẽ theo bố cục thật (remote-*.svg), sơ đồ minh họa khác
 .nojekyll             Để GitHub Pages phục vụ file tĩnh nguyên trạng
 ```
 
@@ -66,18 +67,21 @@ số phòng và danh sách phòng trên thẻ hãng, banner ở trang Sự cố,
 Danh sách phòng ghi sẵn trong HTML (chữ dự phòng khi không có JS) nên sau khi sửa `config.js` nhiều, nên cập nhật lại
 các đoạn `data-phong-list` trong `index.html`, `su-co.html` và 3 trang hãng cho khớp (không bắt buộc).
 
-### Thay ảnh minh họa bằng ảnh thật
+### Ảnh remote và sơ đồ nút
 
-Chụp ảnh remote, ổ cắm HDMI trên bàn giảng viên hoặc tường của từng phòng rồi lưu vào `assets/img/` và sửa thuộc tính `src`
-của thẻ `<img>` tương ứng trong trang hãng (`hitachi.html`, `sony.html`, `infoto.html`). Các file hiện có:
+Ảnh remote thật của 3 hãng nằm trong `assets/img/` và dùng chung cho thẻ chọn hãng (trang chủ), banner trang Sự cố và
+trang hãng. Muốn thay bằng ảnh chụp của trường: chụp remote trên nền sáng, cắt sát thân remote, lưu đè cùng tên file
+(giữ tỉ lệ dọc) hoặc sửa `src` của các thẻ `<img>` tương ứng. Các file hiện có:
 
-- `remote-hitachi.svg`, `remote-sony.svg`, `remote-infoto.svg` – sơ đồ remote (kèm hình nhìn nghiêng để thấy độ dày)
-- `remote-mini-hitachi.svg`, `remote-mini-sony.svg`, `remote-mini-infoto.svg`, `remote-mini-khac.svg` – biểu tượng remote nhỏ
-  trên thẻ chọn hãng (trang chủ, banner trang Sự cố). Cách nhận biết hãng theo remote (đen / trắng mỏng / trắng dày)
-  ghi trong `index.html` và `su-co.html` – sửa lại nếu trường đổi remote.
-- `placeholder-photo.svg` – khung "chỗ chèn ảnh thật"
-- `ket-noi.svg`, `win-p.svg`, `logo.svg` – sơ đồ minh họa khác
+- `remote-hitachi.jpg` (Hitachi R017H, đen), `remote-sony.jpg` (Sony RM-PJ8, trắng mỏng), `remote-infoto.jpg`
+  (remote đi kèm máy Infoto, trắng dày, bố cục giống Sanyo MXBT) – ảnh chụp thật, đã cắt.
+- `remote-hitachi.svg`, `remote-sony.svg`, `remote-infoto.svg` – sơ đồ vẽ theo đúng bố cục các remote trên, tô màu 3 nhóm
+  nút cần nhớ (đỏ/xanh lá: bật tắt · xanh đậm: chọn HDMI · vàng: dễ bấm nhầm). Nếu trường đổi remote, sửa lại tên nút
+  trong 3 trang hãng, banner `su-co.html` và vẽ lại sơ đồ (hoặc bỏ hình sơ đồ, chỉ giữ ảnh chụp).
+- `remote-mini-khac.svg` – biểu tượng remote chung cho nhóm "Hãng khác".
+- `ket-noi.svg`, `win-p.svg`, `logo.svg` – sơ đồ minh họa khác.
 
+Cách nhận biết hãng theo remote (đen / trắng mỏng / trắng dày) ghi trong `index.html` và `su-co.html`.
 Nên dùng ảnh JPG/PNG đã nén (≤ 300 KB) để tải nhanh trên điện thoại. Nhớ cập nhật `alt` mô tả ảnh.
 
 ### Sửa nội dung hướng dẫn
@@ -86,9 +90,9 @@ Nội dung nằm trực tiếp trong các file `.html`. Mỗi sự cố trong `s
 với 4 phần cố định. Khi thêm sự cố mới:
 
 1. Sao chép một khối `<article class="acc">`, đổi `id` (dùng chữ không dấu, nối bằng `-`) và các `id` con (`-btn`, `-panel`),
-   đặt vào đúng giai đoạn (dưới tiêu đề `<h2 class="stage">` tương ứng) và đánh lại số thứ tự trong tiêu đề nếu cần.
-2. Thêm thẻ vào "Danh sách sự cố" đầu trang `su-co.html` (đúng nhóm giai đoạn) và tùy chọn vào danh sách
-   "Triệu chứng" trong `lien-he.html`.
+   đặt vào đúng khối thời điểm (`<section class="stage-block">` tương ứng) và đánh lại số thứ tự trong tiêu đề nếu cần.
+   Dòng `acc__sub` là mô tả ngắn hiện ngay dưới tiêu đề khi accordion đang đóng – viết 1 câu, dễ nhận ra.
+2. Tùy chọn: thêm mục tương ứng vào danh sách "Triệu chứng" trong `lien-he.html`.
 
 ## Chạy thử trên máy
 
@@ -119,7 +123,7 @@ cũng chạy được khi đặt trong thư mục con hoặc trên máy chủ n�
   `.../su-co.html?may=hitachi`, hoặc một sự cố cụ thể `.../su-co.html#no-signal`) bằng công cụ tạo QR
   bất kỳ; in cỡ tối thiểu 5 × 5 cm kèm dòng chữ *"Máy chiếu gặp sự cố? Quét mã để xem hướng dẫn – IT: [số]"*.
 - Dán gần bàn giảng viên / cạnh ổ cắm HDMI, ép plastic để bền.
-- Có thể in luôn trang `su-co.html` (nút **In trang này**, hoặc Ctrl + P): CSS in ấn đã ẩn điều hướng và mở toàn bộ
+- Có thể in luôn trang `su-co.html` (nút **🖨️ In**, hoặc Ctrl + P): CSS in ấn đã ẩn điều hướng và mở toàn bộ
   các mục, phù hợp để dán tại phòng.
 
 ## Kỹ thuật

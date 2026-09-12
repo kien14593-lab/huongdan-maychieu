@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Danh sách sự cố máy chiếu – tự kiểm tra trước khi gọi IT</title>
-  <meta name="description" content="Danh sách 9 sự cố máy chiếu thường gặp theo từng bước vào lớp (bật máy, cắm HDMI, hình đã lên nhưng chưa đúng) và cách giảng viên tự kiểm tra tạm thời trước khi gọi IT; chọn hãng Hitachi, Sony, Infoto theo màu remote.">
+  <meta name="description" content="8 sự cố máy chiếu thường gặp xếp theo thời điểm trong lớp (bật máy, cắm HDMI, hình chưa đúng, đang dạy) và cách giảng viên tự kiểm tra tạm thời trước khi gọi IT; chọn hãng Hitachi, Sony, Infoto theo màu remote.">
   <meta name="theme-color" content="#0b3d91">
   <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/css/style.css">
@@ -39,7 +39,7 @@
 
   <main id="main" class="container">
     <h1 class="page-title">Danh sách sự cố – tự kiểm tra trước khi gọi IT</h1>
-    <p class="lead">Chạm vào sự cố đang gặp để xem các bước. Làm <strong>theo thứ tự từ dễ đến khó</strong>, sau mỗi bước đợi vài giây rồi kiểm tra lại. Máy chiếu treo trên cao – chỉ thao tác trên <strong>remote</strong>, <strong>đầu cáp HDMI ở bàn giảng viên</strong>, <strong>công tắc điện của phòng</strong> và <strong>laptop</strong>; không trèo lên bàn ghế để với máy.</p>
+    <p class="lead">Tìm sự cố theo <strong>thời điểm gặp trong lớp</strong>, chạm vào để xem các bước; làm lần lượt từ trên xuống, sau mỗi bước đợi vài giây rồi kiểm tra lại. Máy chiếu treo trên cao – chỉ thao tác trên <strong>remote</strong>, <strong>đầu cáp HDMI ở bàn giảng viên</strong>, <strong>công tắc điện của phòng</strong> và <strong>laptop</strong>.</p>
 
     <section class="hang" aria-labelledby="hang-title">
       <h2 class="visually-hidden" id="hang-title">Loại máy chiếu đang dùng</h2>
@@ -50,538 +50,418 @@
         <a class="chip" href="su-co.html?may=infoto" data-may="infoto"><span class="swatch swatch--thick" aria-hidden="true"></span>Infoto</a>
         <a class="chip" href="su-co.html?may=khac" data-may="khac">Khác</a>
       </div>
-      <p class="hang-banner hang-banner--trong" hidden>Chưa chọn hãng – <a href="index.html#tra-phong">gõ số phòng ở trang chủ</a> hoặc nhìn màu remote để chọn (đen: Hitachi · trắng mỏng dẹp: Sony · trắng dày: Infoto). Không chọn vẫn xem được toàn bộ hướng dẫn.</p>
+      <p class="hang-banner hang-banner--trong" hidden>Chưa chọn hãng – <a href="index.html#tra-phong">gõ số phòng ở trang chủ</a> hoặc nhìn màu remote (đen: Hitachi · trắng mỏng dẹp: Sony · trắng dày: Infoto). Không chọn vẫn xem được toàn bộ hướng dẫn.</p>
       <div class="hang-banner" data-may="hitachi" hidden>
-        <img src="assets/img/remote-mini-hitachi.svg" alt="" width="120" height="200">
+        <img src="assets/img/remote-hitachi.jpg" alt="Remote Hitachi R017H màu đen" width="255" height="440">
         <div>
-          <p><strong>Máy chiếu Hitachi</strong> · Remote màu đen · <span data-phong-count="hitachi">9</span> phòng.</p>
-          <p data-phong-info hidden></p>
-          <p>Nút cần nhớ: <strong>STANDBY/ON</strong> (bật, tắt), <strong>INPUT</strong> hoặc <strong>SEARCH</strong> (chọn HDMI), <strong>BLANK</strong> / <strong>FREEZE</strong> (dễ bấm nhầm → màn đen, đứng hình).</p>
-          <p><a href="hitachi.html">Sơ đồ remote và đèn báo Hitachi →</a></p>
+          <p><strong>Hitachi</strong> · remote màu đen (R017H) · <span data-phong-count="hitachi">9</span> phòng. <strong class="hang-banner__phong" data-phong-info hidden></strong></p>
+          <p class="hang-banner__keys">Nút cần nhớ: <strong>⏻ đỏ</strong> (góc trên phải) bật, tắt · <strong>VIDEO</strong> nhấn vài lần đến khi hiện HDMI, hoặc <strong>SEARCH</strong> tự dò · <strong>BLANK</strong>, <strong>FREEZE</strong> dễ bấm nhầm → màn đen, đứng hình. <a href="hitachi.html">Sơ đồ remote →</a></p>
         </div>
       </div>
       <div class="hang-banner" data-may="sony" hidden>
-        <img src="assets/img/remote-mini-sony.svg" alt="" width="120" height="200">
+        <img src="assets/img/remote-sony.jpg" alt="Remote Sony RM-PJ8 màu trắng, mỏng" width="340" height="447">
         <div>
-          <p><strong>Máy chiếu Sony</strong> · Remote màu trắng, mỏng dẹp · <span data-phong-count="sony">16</span> phòng.</p>
-          <p data-phong-info hidden></p>
-          <p>Nút cần nhớ: <strong>POWER</strong> (bật, tắt), <strong>INPUT</strong> rồi chọn <strong>INPUT B / C</strong> (HDMI) bằng mũi tên + ENTER, <strong>PIC MUTE</strong> / <strong>FREEZE</strong> (dễ bấm nhầm → màn đen, đứng hình).</p>
-          <p><a href="sony.html">Sơ đồ remote và đèn báo Sony →</a></p>
+          <p><strong>Sony</strong> · remote màu trắng, mỏng dẹp (RM-PJ8) · <span data-phong-count="sony">16</span> phòng. <strong class="hang-banner__phong" data-phong-info hidden></strong></p>
+          <p class="hang-banner__keys">Nút cần nhớ: <strong>I/⏻ xanh lá</strong> (góc trên phải) bật, tắt · <strong>INPUT</strong> rồi chọn <strong>INPUT B / C</strong> (HDMI) bằng mũi tên + ENTER · <strong>BLANK</strong>, <strong>FREEZE</strong> dễ bấm nhầm → màn đen, đứng hình. <a href="sony.html">Sơ đồ remote →</a></p>
         </div>
       </div>
       <div class="hang-banner" data-may="infoto" hidden>
-        <img src="assets/img/remote-mini-infoto.svg" alt="" width="120" height="200">
+        <img src="assets/img/remote-infoto.jpg" alt="Remote máy Infoto màu trắng, dày (bố cục giống Sanyo)" width="238" height="450">
         <div>
-          <p><strong>Máy chiếu Infoto</strong> · Remote màu trắng, dày · <span data-phong-count="infoto">24</span> phòng.</p>
-          <p data-phong-info hidden></p>
-          <p>Nút cần nhớ: <strong>POWER</strong> (bật, tắt), <strong>SOURCE</strong> hoặc <strong>HDMI</strong> (chọn HDMI 1 / 2), <strong>BLANK</strong> / <strong>FREEZE</strong> (dễ bấm nhầm → màn đen, đứng hình).</p>
-          <p><a href="infoto.html">Sơ đồ remote và đèn báo Infoto →</a></p>
+          <p><strong>Infoto</strong> · remote màu trắng, dày (có thể in nhãn SANYO) · <span data-phong-count="infoto">24</span> phòng. <strong class="hang-banner__phong" data-phong-info hidden></strong></p>
+          <p class="hang-banner__keys">Nút cần nhớ: <strong>ON/STAND-BY</strong> đỏ (góc trên phải) bật, tắt · nhấn thẳng nút <strong>HDMI</strong> để chọn HDMI · <strong>NO SHOW</strong>, <strong>FREEZE</strong> dễ bấm nhầm → màn đen, đứng hình. <a href="infoto.html">Sơ đồ remote →</a></p>
         </div>
       </div>
       <div class="hang-banner" data-may="khac" hidden>
         <img src="assets/img/remote-mini-khac.svg" alt="" width="120" height="200">
         <div>
-          <p><strong>Máy chiếu hãng khác</strong> (NEC, Epson, ViewSonic, Eiki) · <span data-phong-count="khac">9</span> phòng: <span data-phong-list="khac">101C2, 104C2, 503C2, P2E3, P1E4, P3E5, 303ĐN, 503ĐN, P3E9</span>.</p>
-          <p data-phong-info hidden></p>
-          <p>Các bước bên dưới vẫn áp dụng. Nút cần nhớ (tên có thể hơi khác): <strong>POWER</strong> (bật, tắt), <strong>SOURCE</strong> / <strong>INPUT</strong> (chọn HDMI), <strong>AV MUTE</strong> / <strong>BLANK</strong> và <strong>FREEZE</strong> (dễ bấm nhầm → màn đen, đứng hình).</p>
+          <p><strong>Hãng khác</strong> (NEC, Epson, ViewSonic, Eiki) · <span data-phong-count="khac">9</span> phòng: <span data-phong-list="khac">101C2, 104C2, 503C2, P2E3, P1E4, P3E5, 303ĐN, 503ĐN, P3E9</span>. <strong class="hang-banner__phong" data-phong-info hidden></strong></p>
+          <p class="hang-banner__keys">Các bước bên dưới vẫn áp dụng; tên nút có thể hơi khác: <strong>POWER</strong> bật, tắt · <strong>SOURCE</strong> / <strong>INPUT</strong> chọn HDMI · <strong>AV MUTE</strong> / <strong>BLANK</strong>, <strong>FREEZE</strong> dễ bấm nhầm → màn đen, đứng hình.</p>
         </div>
       </div>
     </section>
 
-    <nav class="section" aria-labelledby="danh-sach-title" id="danh-sach">
-      <h2 id="danh-sach-title">Chọn sự cố đang gặp</h2>
-
-      <h3 class="stage stage--sm"><span class="stage__icon" aria-hidden="true">🔴</span>Lúc bật máy chiếu</h3>
-      <ul class="cards cards--3">
-        <li>
-          <a class="card__link" href="#khong-bat-duoc">
-            <span class="card__icon" aria-hidden="true">🔌</span>
-            <span class="card__title">1. Máy chiếu không bật được</span>
-            <span class="card__desc">Đèn báo không sáng, nhấn Power không phản ứng</span>
-          </a>
-        </li>
-        <li>
-          <a class="card__link" href="#remote">
-            <span class="card__icon" aria-hidden="true">📡</span>
-            <span class="card__title">2. Remote không hoạt động</span>
-            <span class="card__desc">Bấm không ăn, phải bấm nhiều lần, có thể hết pin</span>
-          </a>
-        </li>
-        <li>
-          <a class="card__link" href="#tu-tat">
-            <span class="card__icon" aria-hidden="true">🌡️</span>
-            <span class="card__title">3. Máy tự tắt / đèn nhấp nháy đỏ-cam</span>
-            <span class="card__desc">Quá nhiệt, lọc bụi bẩn, bóng đèn sắp hỏng</span>
-          </a>
-        </li>
-      </ul>
-
-      <h3 class="stage stage--sm"><span class="stage__icon" aria-hidden="true">🔌</span>Lúc cắm HDMI vào laptop</h3>
-      <ul class="cards cards--3">
-        <li>
-          <a class="card__link" href="#no-signal">
-            <span class="card__icon" aria-hidden="true">📺</span>
-            <span class="card__title">4. Báo "No Signal" / màn xanh</span>
-            <span class="card__desc">Máy chiếu sáng nhưng không có hình từ laptop</span>
-          </a>
-        </li>
-        <li>
-          <a class="card__link" href="#laptop-khong-nhan">
-            <span class="card__icon" aria-hidden="true">💻</span>
-            <span class="card__title">5. Laptop không nhận màn hình thứ 2</span>
-            <span class="card__desc">Win + P không tác dụng, macOS không thấy máy chiếu</span>
-          </a>
-        </li>
-      </ul>
-
-      <h3 class="stage stage--sm"><span class="stage__icon" aria-hidden="true">🖼️</span>Hình đã lên nhưng chưa đúng</h3>
-      <ul class="cards cards--3">
-        <li>
-          <a class="card__link" href="#hinh-mo-lech">
-            <span class="card__icon" aria-hidden="true">🔍</span>
-            <span class="card__title">6. Hình mờ, lệch, méo, tràn khung</span>
-            <span class="card__desc">Chữ nhòe, hình thang, không vừa màn chiếu</span>
-          </a>
-        </li>
-        <li>
-          <a class="card__link" href="#sai-mau">
-            <span class="card__icon" aria-hidden="true">🎨</span>
-            <span class="card__title">7. Hình sai màu, nhiễu sọc</span>
-            <span class="card__desc">Ám xanh/vàng/hồng, sọc ngang dọc, chớp giật</span>
-          </a>
-        </li>
-        <li>
-          <a class="card__link" href="#hinh-lat-nguoc">
-            <span class="card__icon" aria-hidden="true">🔃</span>
-            <span class="card__title">8. Hình bị lật ngược / soi gương</span>
-            <span class="card__desc">Chữ ngược trái-phải hoặc lộn đầu</span>
-          </a>
-        </li>
-        <li>
-          <a class="card__link" href="#dong-bang-man-den">
-            <span class="card__icon" aria-hidden="true">⏸️</span>
-            <span class="card__title">9. Hình đứng yên / màn đen dù máy đang chạy</span>
-            <span class="card__desc">Lỡ bấm Freeze hoặc Blank/AV Mute trên remote</span>
-          </a>
-        </li>
-      </ul>
-    </nav>
-
-    <div class="toolbar">
-      <button class="btn btn--secondary btn--sm" type="button" data-action="open-all">Mở tất cả</button>
-      <button class="btn btn--secondary btn--sm" type="button" data-action="close-all">Đóng tất cả</button>
-      <button class="btn btn--secondary btn--sm" type="button" data-action="print">🖨️ In trang này</button>
+    <div class="list-head" id="danh-sach">
+      <h2 class="list-head__title">Chọn sự cố đang gặp</h2>
+      <div class="toolbar">
+        <button class="btn btn--secondary btn--sm" type="button" data-action="open-all">Mở tất cả</button>
+        <button class="btn btn--secondary btn--sm" type="button" data-action="close-all">Đóng tất cả</button>
+        <button class="btn btn--secondary btn--sm" type="button" data-action="print">🖨️ In</button>
+      </div>
     </div>
 
-    <h2 class="stage" id="gd-bat-may"><span class="stage__icon" aria-hidden="true">🔴</span>Lúc bật máy chiếu</h2>
+    <!-- ===== Thời điểm 1: lúc bật máy ===== -->
+    <section class="stage-block" id="gd-bat-may" aria-labelledby="gd-bat-may-title">
+      <h2 class="stage-block__head" id="gd-bat-may-title"><span class="stage-block__icon" aria-hidden="true">🔴</span>Lúc bật máy chiếu</h2>
 
-    <!-- 1 -->
-    <article class="acc" id="khong-bat-duoc">
-      <h2 class="acc__heading">
-        <button class="acc__btn" type="button" id="khong-bat-duoc-btn" aria-expanded="true" aria-controls="khong-bat-duoc-panel">
-          <span class="acc__icon" aria-hidden="true">🔌</span>
-          <span class="acc__title">1. Máy chiếu không bật được / đèn báo không sáng</span>
-          <span class="acc__chev" aria-hidden="true"></span>
-        </button>
-      </h2>
-      <div class="acc__panel" id="khong-bat-duoc-panel" role="region" aria-labelledby="khong-bat-duoc-btn">
-        <h3 class="lbl lbl--sign">Dấu hiệu nhận biết</h3>
-        <ul>
-          <li>Nhấn Power trên remote nhưng máy im lặng, nhìn lên không thấy đèn báo nào sáng.</li>
-          <li>Hoặc: đèn báo sáng cam/đỏ (đang chờ) nhưng nhấn Power vẫn không lên hình.</li>
-        </ul>
+      <!-- 1 -->
+      <article class="acc" id="khong-bat-duoc">
+        <h3 class="acc__heading">
+          <button class="acc__btn" type="button" id="khong-bat-duoc-btn" aria-expanded="true" aria-controls="khong-bat-duoc-panel">
+            <span class="acc__icon" aria-hidden="true">🔌</span>
+            <span class="acc__text">
+              <span class="acc__title">1. Máy chiếu không bật được</span>
+              <span class="acc__sub">Nhấn Power không phản ứng, không thấy đèn báo</span>
+            </span>
+            <span class="acc__chev" aria-hidden="true"></span>
+          </button>
+        </h3>
+        <div class="acc__panel" id="khong-bat-duoc-panel" role="region" aria-labelledby="khong-bat-duoc-btn">
+          <h4 class="lbl lbl--sign">Dấu hiệu nhận biết</h4>
+          <ul>
+            <li>Nhấn nút nguồn trên remote (<strong>⏻ đỏ</strong> Hitachi · <strong>I/⏻ xanh lá</strong> Sony · <strong>ON/STAND-BY</strong> đỏ Infoto – đều ở góc trên phải) nhưng máy im lặng: không đèn báo, không tiếng quạt.</li>
+            <li>Hoặc đèn báo cam/đỏ đang sáng nhưng nhấn Power vẫn không lên hình.</li>
+          </ul>
 
-        <h3 class="lbl lbl--steps">Các bước thử (từ dễ → khó)</h3>
-        <ol class="steps">
-          <li><strong>Kiểm tra điện của phòng.</strong> Bật công tắc / cầu dao (aptomat) của phòng; nếu máy chiếu có công tắc riêng trên tường (thường cạnh bảng hoặc gần bàn giảng viên), bật lên. Đèn, quạt của phòng cũng không chạy → phòng mất điện, báo bảo vệ / giáo vụ.</li>
-          <li><strong>Nhìn đèn báo rồi mới nhấn.</strong> Đèn cam/đỏ sáng ổn định = máy đang <em>chờ</em> (standby) → nhấn Power <strong>1 lần</strong>. Đèn đang nhấp nháy = máy đang khởi động hoặc làm mát → <strong>đợi 1–2 phút</strong> rồi thử lại.</li>
-          <li><strong>Loại trừ remote hết pin:</strong> đứng gần bên dưới máy, chĩa remote thẳng lên máy chiếu, nhấn giữ Power 1–2 giây (không nhấn liên tiếp nhiều lần). Vẫn không được → thay pin mới; pin dự phòng có sẵn ở <strong data-config="noi_lay_pin">phòng nước giảng viên</strong> (xem <a href="#remote">mục 2</a>).</li>
-          <li><strong>Nếu máy vừa được tắt:</strong> phải đợi máy làm mát xong (quạt ngừng, đèn hết nhấp nháy, thường 1–2 phút) rồi mới bật lại. Bật khi đang làm mát máy sẽ không lên.</li>
-          <li><strong>Đợi 30–60 giây sau khi bật.</strong> Đèn máy chiếu cần thời gian sáng dần; chưa có hình ngay là bình thường.</li>
-        </ol>
+          <h4 class="lbl lbl--steps">Các bước thử (từ dễ → khó)</h4>
+          <ol class="steps">
+            <li><strong>Kiểm tra điện của phòng.</strong> Bật công tắc / cầu dao (aptomat) của phòng và công tắc riêng của máy chiếu trên tường nếu có (thường cạnh bảng hoặc gần bàn giảng viên). Đèn, quạt phòng cũng không chạy → phòng mất điện, báo bảo vệ / giáo vụ.</li>
+            <li><strong>Nhìn đèn báo rồi mới nhấn.</strong> Đèn cam/đỏ sáng ổn định = máy đang <em>chờ</em> → nhấn Power <strong>1 lần</strong>, đợi 30–60 giây cho hình sáng dần. Đèn đang <em>nhấp nháy</em> = máy đang khởi động hoặc làm mát (vừa tắt) → <strong>đợi 1–2 phút</strong> rồi thử lại.</li>
+            <li><strong>Nhấn cho đúng cách.</strong> Đứng gần bên dưới máy, chĩa remote thẳng lên máy chiếu, nhấn giữ Power 1–2 giây. Vẫn không phản ứng → có thể remote hết pin → xem <a href="#remote">mục 2</a>.</li>
+          </ol>
 
-        <h3 class="lbl lbl--warn">⚠️ KHÔNG NÊN làm</h3>
-        <ul class="warn-list">
-          <li>Không tắt cầu dao / công tắc điện đột ngột khi máy đang chạy hoặc đang làm mát (dễ hỏng bóng đèn).</li>
-          <li>Không nhấn Power liên tục nhiều lần – máy sẽ khóa hoặc đợi lâu hơn.</li>
-          <li>Không trèo lên bàn ghế để với máy; không tự kiểm tra dây nguồn, công tắc hay nút trên thân máy – việc này do IT làm.</li>
-        </ul>
+          <h4 class="lbl lbl--warn">⚠️ KHÔNG NÊN làm</h4>
+          <ul class="warn-list">
+            <li>Nhấn Power dồn dập nhiều lần – máy sẽ khóa hoặc đợi lâu hơn.</li>
+            <li>Tắt cầu dao / công tắc khi máy đang chạy hoặc đang làm mát (dễ hỏng bóng đèn).</li>
+          </ul>
 
-        <h3 class="lbl lbl--stop">🛑 Dừng lại và gọi IT khi</h3>
-        <ul class="stop-list">
-          <li>Điện phòng bình thường (đèn, quạt phòng vẫn chạy) mà máy chiếu không có đèn báo nào – có thể lỏng dây nguồn trên máy, chỉ IT kiểm tra được.</li>
-          <li>Đèn báo đỏ nhấp nháy liên tục hoặc sáng đỏ mà không lên hình (xem <a href="#tu-tat">mục 3</a>).</li>
-          <li>Có mùi khét hoặc tiếng kêu lạ từ máy chiếu.</li>
-        </ul>
-        <p class="acc__foot"><a href="#danh-sach">↑ Về danh sách sự cố</a> · <a href="lien-he.html">📞 Liên hệ IT</a></p>
-      </div>
-    </article>
+          <h4 class="lbl lbl--stop">🛑 Dừng lại và gọi IT khi</h4>
+          <ul class="stop-list">
+            <li>Điện phòng bình thường (đèn, quạt vẫn chạy) mà máy chiếu không có đèn báo nào – có thể lỏng dây nguồn trên máy, chỉ IT kiểm tra được.</li>
+            <li>Đèn báo sáng đỏ hoặc nhấp nháy đỏ-cam mà không lên hình → xem <a href="#tu-tat">mục 8</a>.</li>
+            <li>Có mùi khét hoặc tiếng kêu lạ từ máy chiếu.</li>
+          </ul>
+          <p class="acc__foot"><a href="#danh-sach">↑ Về danh sách sự cố</a> · <a href="lien-he.html">📞 Liên hệ IT</a></p>
+        </div>
+      </article>
 
-    <!-- 2 -->
-    <article class="acc" id="remote">
-      <h2 class="acc__heading">
-        <button class="acc__btn" type="button" id="remote-btn" aria-expanded="true" aria-controls="remote-panel">
-          <span class="acc__icon" aria-hidden="true">📡</span>
-          <span class="acc__title">2. Remote không hoạt động</span>
-          <span class="acc__chev" aria-hidden="true"></span>
-        </button>
-      </h2>
-      <div class="acc__panel" id="remote-panel" role="region" aria-labelledby="remote-btn">
-        <h3 class="lbl lbl--sign">Dấu hiệu nhận biết</h3>
-        <ul>
-          <li>Nhấn remote máy không phản ứng; phải nhấn nhiều lần; chỉ ăn khi đứng rất gần.</li>
-        </ul>
+      <!-- 2 -->
+      <article class="acc" id="remote">
+        <h3 class="acc__heading">
+          <button class="acc__btn" type="button" id="remote-btn" aria-expanded="true" aria-controls="remote-panel">
+            <span class="acc__icon" aria-hidden="true">📡</span>
+            <span class="acc__text">
+              <span class="acc__title">2. Remote không hoạt động</span>
+              <span class="acc__sub">Bấm không ăn, phải bấm nhiều lần – thường do hết pin</span>
+            </span>
+            <span class="acc__chev" aria-hidden="true"></span>
+          </button>
+        </h3>
+        <div class="acc__panel" id="remote-panel" role="region" aria-labelledby="remote-btn">
+          <h4 class="lbl lbl--sign">Dấu hiệu nhận biết</h4>
+          <ul>
+            <li>Nhấn remote máy không phản ứng; phải nhấn nhiều lần; chỉ ăn khi đứng rất gần.</li>
+          </ul>
 
-        <h3 class="lbl lbl--steps">Các bước thử (từ dễ → khó)</h3>
-        <ol class="steps">
-          <li><strong>Hướng đúng chỗ:</strong> đứng gần bên dưới máy, giơ remote chĩa thẳng lên <strong>máy chiếu</strong> (mắt nhận tín hiệu thường ở mặt trước, gần ống kính) hoặc chĩa vào <strong>màn chiếu</strong> để tín hiệu dội lại. Nhấn dứt khoát 1 lần, đợi 1 giây.</li>
-          <li><strong>Gỡ vật cản</strong> (người đứng chắn, rèm, laptop mở nắp che). Đứng cách máy dưới 5–7 m.</li>
-          <li><strong>Kiểm tra pin:</strong> mở nắp, lắp lại pin đúng cực (+/−). <em>Mẹo:</em> soi đầu remote bằng camera điện thoại khi nhấn nút – thấy đèn nhấp nháy tím/trắng là remote còn phát tín hiệu; không thấy gì → pin đã hết.</li>
-          <li><strong>Thay pin dự phòng:</strong> pin dự phòng cho remote (AAA/AA) để sẵn tại <strong data-config="noi_lay_pin">phòng nước giảng viên</strong> – thầy cô sang lấy và tự thay, <strong>không cần chờ IT</strong>. Mang theo pin cũ để lấy đúng cỡ; thay cả 2 viên cùng lúc, bỏ pin cũ đúng nơi quy định.</li>
-          <li><strong>Ánh sáng gây nhiễu:</strong> đèn huỳnh quang hoặc nắng chiếu thẳng vào mắt nhận → kéo rèm, tắt đèn gần máy.</li>
-          <li><strong>Remote bị khóa (ít gặp):</strong> một số remote Sony/Hitachi có nút <em>ID</em> hoặc <em>Key Lock</em> – kiểm tra Menu → Security / Key lock (chỉ khi biết rõ).</li>
-          <li><strong>Không có cách thay thế remote</strong> vì nút bấm nằm trên thân máy ở trên cao. Máy <strong>đã bật và đúng nguồn HDMI</strong> → cứ dạy tiếp, điều khiển slide bằng laptop. Máy <strong>chưa bật</strong> hoặc sai nguồn → gọi IT (IT có remote dự phòng).</li>
-        </ol>
+          <h4 class="lbl lbl--steps">Các bước thử (từ dễ → khó)</h4>
+          <ol class="steps">
+            <li><strong>Hướng đúng chỗ.</strong> Đứng gần bên dưới máy, chĩa remote thẳng lên <strong>máy chiếu</strong> (hoặc vào <strong>màn chiếu</strong> để tín hiệu dội lại), nhấn dứt khoát 1 lần rồi đợi 1 giây. Gỡ vật cản (người đứng chắn, rèm, nắp laptop); đứng cách máy dưới 5–7 m.</li>
+            <li><strong>Soi pin bằng camera điện thoại.</strong> Mở camera, chĩa vào đầu remote rồi nhấn nút: thấy đèn nhấp nháy tím/trắng là còn pin (lỗi do hướng, khoảng cách); không thấy gì → pin đã hết.</li>
+            <li><strong>Thay pin dự phòng.</strong> Pin để sẵn tại <strong data-config="noi_lay_pin">phòng nước giảng viên</strong> – thầy cô sang lấy và tự thay, <strong>không cần chờ IT</strong>. Mang pin cũ theo để lấy đúng cỡ (AAA/AA); thay cả 2 viên, lắp đúng cực +/−.</li>
+            <li><strong>Giảm nhiễu sáng.</strong> Nắng hoặc đèn huỳnh quang chiếu thẳng vào mắt nhận trên máy → kéo rèm, tắt đèn gần máy.</li>
+            <li><strong>Không có remote thay thế</strong> (nút trên thân máy ở trên cao, không với được). Máy <strong>đã bật và đúng HDMI</strong> → cứ dạy tiếp, điều khiển slide bằng laptop. Máy <strong>chưa bật</strong> hoặc sai nguồn → gọi IT (IT có remote dự phòng).</li>
+          </ol>
 
-        <h3 class="lbl lbl--warn">⚠️ KHÔNG NÊN làm</h3>
-        <ul class="warn-list">
-          <li>Không đập remote, không dùng lẫn pin cũ và mới.</li>
-          <li>Không mang remote đi phòng khác hoặc đổi remote giữa các phòng.</li>
-        </ul>
+          <h4 class="lbl lbl--warn">⚠️ KHÔNG NÊN làm</h4>
+          <ul class="warn-list">
+            <li>Dùng lẫn pin cũ và pin mới; đập, gõ remote.</li>
+            <li>Mang remote đi phòng khác hoặc đổi remote giữa các phòng.</li>
+          </ul>
 
-        <h3 class="lbl lbl--stop">🛑 Dừng lại và gọi IT khi</h3>
-        <ul class="stop-list">
-          <li>Đã thay pin mới mà remote vẫn không hoạt động, hoặc remote bị mất/hỏng.</li>
-          <li>Pin dự phòng ở <span data-config="noi_lay_pin">phòng nước giảng viên</span> đã hết – báo để IT bổ sung.</li>
-          <li>Máy chưa bật hoặc chưa đúng nguồn HDMI mà không điều khiển được bằng remote.</li>
-        </ul>
-        <p class="acc__foot"><a href="#danh-sach">↑ Về danh sách sự cố</a> · <a href="lien-he.html">📞 Liên hệ IT</a></p>
-      </div>
-    </article>
+          <h4 class="lbl lbl--stop">🛑 Dừng lại và gọi IT khi</h4>
+          <ul class="stop-list">
+            <li>Đã thay pin mới mà remote vẫn không hoạt động; remote bị mất hoặc hỏng.</li>
+            <li>Pin dự phòng ở <span data-config="noi_lay_pin">phòng nước giảng viên</span> đã hết – báo để IT bổ sung.</li>
+          </ul>
+          <p class="acc__foot"><a href="#danh-sach">↑ Về danh sách sự cố</a> · <a href="lien-he.html">📞 Liên hệ IT</a></p>
+        </div>
+      </article>
+    </section>
 
-    <!-- 3 -->
-    <article class="acc" id="tu-tat">
-      <h2 class="acc__heading">
-        <button class="acc__btn" type="button" id="tu-tat-btn" aria-expanded="true" aria-controls="tu-tat-panel">
-          <span class="acc__icon" aria-hidden="true">🌡️</span>
-          <span class="acc__title">3. Máy tự tắt / đèn báo nhấp nháy đỏ-cam</span>
-          <span class="acc__chev" aria-hidden="true"></span>
-        </button>
-      </h2>
-      <div class="acc__panel" id="tu-tat-panel" role="region" aria-labelledby="tu-tat-btn">
-        <h3 class="lbl lbl--sign">Dấu hiệu nhận biết</h3>
-        <ul>
-          <li>Máy đang chạy bỗng tắt; quạt kêu to bất thường; hình tối dần.</li>
-          <li>Đèn <strong>TEMP</strong> / <strong>LAMP</strong> / <strong>STATUS</strong> sáng đỏ hoặc nhấp nháy đỏ-cam.</li>
-          <li>Màn hình hiện cảnh báo như <em>High temperature</em>, <em>Check the air flow</em>, <em>Replace lamp</em>, <em>Clean filter</em>.</li>
-        </ul>
+    <!-- ===== Thời điểm 2: lúc cắm HDMI ===== -->
+    <section class="stage-block" id="gd-cam-hdmi" aria-labelledby="gd-cam-hdmi-title">
+      <h2 class="stage-block__head" id="gd-cam-hdmi-title"><span class="stage-block__icon" aria-hidden="true">💻</span>Lúc cắm HDMI vào laptop</h2>
 
-        <h3 class="lbl lbl--steps">Các bước thử (từ dễ → khó)</h3>
-        <ol class="steps">
-          <li><strong>Dừng sử dụng và tắt máy đúng cách:</strong> nhấn Power trên remote (xác nhận nếu máy hỏi), để quạt làm mát chạy đến khi tự ngừng (1–3 phút). <strong>Không tắt cầu dao / công tắc điện ngay.</strong></li>
-          <li><strong>Để máy nguội 10 phút.</strong> Phòng quá nóng → bật điều hòa/quạt. Khe gió, lọc bụi nằm trên máy – không tự kiểm tra, để IT làm.</li>
-          <li><strong>Đối chiếu đèn báo</strong> theo hãng: <a href="hitachi.html#den-bao">Hitachi</a> · <a href="sony.html#den-bao">Sony</a> · <a href="infoto.html#den-bao">Infoto</a>. Đèn đỏ nhấp nháy thường là lỗi nhiệt độ hoặc bóng đèn → cần IT.</li>
-          <li><strong>Chỉ khi</strong> phòng đã mát và đèn báo đã trở lại bình thường (cam/đỏ sáng ổn định – đang chờ): bật lại <strong>một lần</strong> để dạy tạm. Nếu máy tắt lần nữa → dừng hẳn.</li>
-          <li><strong>Chuyển phương án dự phòng</strong> (bảng, TV, phòng khác, gửi tài liệu cho lớp) và báo IT.</li>
-        </ol>
+      <!-- 3 -->
+      <article class="acc" id="no-signal">
+        <h3 class="acc__heading">
+          <button class="acc__btn" type="button" id="no-signal-btn" aria-expanded="true" aria-controls="no-signal-panel">
+            <span class="acc__icon" aria-hidden="true">📺</span>
+            <span class="acc__text">
+              <span class="acc__title">3. Không lên hình từ laptop – "No Signal" / màn xanh</span>
+              <span class="acc__sub">Máy chiếu đã sáng nhưng chỉ hiện No Signal, màn xanh hoặc logo hãng</span>
+            </span>
+            <span class="acc__chev" aria-hidden="true"></span>
+          </button>
+        </h3>
+        <div class="acc__panel" id="no-signal-panel" role="region" aria-labelledby="no-signal-btn">
+          <h4 class="lbl lbl--sign">Dấu hiệu nhận biết</h4>
+          <ul>
+            <li>Máy chiếu đã sáng nhưng hiện <em>No Signal</em>, <em>No Input</em>, <em>Searching…</em>, <em>Không có tín hiệu</em>; hoặc màn xanh / màn đen chỉ có logo hãng.</li>
+            <li>Laptop "không biết" có máy chiếu: <kbd>Win</kbd> + <kbd>P</kbd> không tác dụng, Display settings chỉ thấy 1 màn hình.</li>
+          </ul>
 
-        <h3 class="lbl lbl--warn">⚠️ KHÔNG NÊN làm</h3>
-        <ul class="warn-list">
-          <li><strong>KHÔNG</strong> trèo lên với máy để kiểm tra, không tự vệ sinh lọc bụi hay thay bóng đèn – bóng đèn rất nóng, áp suất cao, có thể nổ.</li>
-          <li>Không bật lại nhiều lần khi máy vừa tự tắt.</li>
-        </ul>
+          <h4 class="lbl lbl--steps">Các bước thử (từ dễ → khó)</h4>
+          <ol class="steps">
+            <li><strong>Cắm lại chặt cáp HDMI ở bàn giảng viên:</strong> đầu ở laptop và đầu ở ổ HDMI trên tường / hộp nối trên bàn (nếu là đầu cắm rời). Dùng adapter (MacBook, laptop mỏng) → cắm chặt cả adapter. Đầu phía máy chiếu ở trên cao – bỏ qua.</li>
+            <li><strong>Chọn đúng nguồn trên máy chiếu:</strong> <strong>Hitachi</strong> nhấn <strong>VIDEO</strong> vài lần (mỗi lần đợi 2–3 giây) đến khi góc màn hình hiện <em>HDMI</em>, hoặc nhấn <strong>SEARCH</strong> để máy tự dò · <strong>Sony</strong> nhấn <strong>INPUT</strong> → chọn dòng <strong>INPUT B</strong> hoặc <strong>C</strong> có chữ HDMI → ENTER · <strong>Infoto</strong> nhấn thẳng nút <strong>HDMI</strong> · hãng khác: <strong>Source</strong> / <strong>Input</strong> → HDMI. Máy có 2 cổng HDMI: chưa có hình → thử cổng còn lại; ổ trên tường/bàn có ghi số cổng thì chọn theo số đó.</li>
+            <li><strong>Bảo laptop xuất hình:</strong> Windows nhấn <kbd>Win</kbd> + <kbd>P</kbd> → <strong>Duplicate</strong>. macOS: System Settings → Displays → <strong>Mirror</strong>. Đợi 5–10 giây sau mỗi thao tác – laptop và máy chiếu cần thời gian "bắt tay".</li>
+            <li><strong>Rút cáp HDMI khỏi laptop, đợi 5 giây, cắm lại.</strong> Thử cổng HDMI khác trên laptop hoặc adapter khác (nếu có).</li>
+            <li><strong>Bắt laptop dò lại màn hình.</strong> Windows: Settings (<kbd>Win</kbd> + <kbd>I</kbd>) → System → Display → Multiple displays → <strong>Detect</strong>; hoặc nhấn <kbd>Win</kbd> + <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>B</kbd> (màn hình chớp 1 giây, có tiếng bíp – bình thường). macOS: Displays → giữ <kbd>Option</kbd> → <strong>Detect Displays</strong>. Một số laptop cần <kbd>Fn</kbd> + phím có hình 2 màn hình (F4/F5/F7/F8).</li>
+            <li><strong>Thử laptop khác</strong> (mượn của sinh viên / đồng nghiệp) để khoanh vùng: laptop khác <strong>lên hình</strong> → lỗi ở laptop của bạn, dùng tạm máy khác để dạy (xem thêm <a href="ket-noi-laptop.html">trang Kết nối laptop</a>); <strong>cũng không lên</strong> → lỗi cáp hoặc máy chiếu → gọi IT.</li>
+            <li><strong>Khởi động lại laptop</strong> trong khi vẫn cắm cáp HDMI và máy chiếu đang ở nguồn HDMI.</li>
+          </ol>
 
-        <h3 class="lbl lbl--stop">🛑 Dừng lại và gọi IT khi</h3>
-        <ul class="stop-list">
-          <li><strong>Ngay lập tức</strong> nếu có mùi khét, khói, tiếng nổ nhỏ.</li>
-          <li>Máy tự tắt lần thứ 2, hoặc đèn đỏ vẫn sáng/nhấp nháy sau khi để nguội.</li>
-          <li>Có thông báo về bóng đèn (<em>Lamp</em>) hoặc lọc bụi (<em>Filter</em>) – cần bảo trì định kỳ.</li>
-        </ul>
-        <p class="acc__foot"><a href="#danh-sach">↑ Về danh sách sự cố</a> · <a href="lien-he.html">📞 Liên hệ IT</a></p>
-      </div>
-    </article>
+          <h4 class="lbl lbl--warn">⚠️ KHÔNG NÊN làm</h4>
+          <ul class="warn-list">
+            <li>Giật mạnh dây, bẻ gập đầu cáp; ép đầu HDMI khi thấy cứng – đầu cắm chỉ vào theo một chiều.</li>
+            <li>Tải và cài driver hay phần mềm lạ ngay tại lớp.</li>
+            <li>Đổi các cài đặt sâu trong Menu máy chiếu (HDMI mode, EDID, Reset…).</li>
+          </ul>
 
-    <h2 class="stage" id="gd-cam-hdmi"><span class="stage__icon" aria-hidden="true">🔌</span>Lúc cắm HDMI vào laptop</h2>
+          <h4 class="lbl lbl--stop">🛑 Dừng lại và gọi IT khi</h4>
+          <ul class="stop-list">
+            <li>Laptop khác cắm vào cũng báo No Signal (cáp hoặc máy chiếu hỏng).</li>
+            <li>Đầu cáp HDMI trên bàn bị gãy, lỏng, méo, không cắm chặt được.</li>
+            <li>Đã thử 5 phút không xong → chuyển phương án dạy tạm và báo IT.</li>
+          </ul>
+          <p class="acc__foot"><a href="#danh-sach">↑ Về danh sách sự cố</a> · <a href="lien-he.html">📞 Liên hệ IT</a></p>
+        </div>
+      </article>
+    </section>
 
-    <!-- 4 -->
-    <article class="acc" id="no-signal">
-      <h2 class="acc__heading">
-        <button class="acc__btn" type="button" id="no-signal-btn" aria-expanded="true" aria-controls="no-signal-panel">
-          <span class="acc__icon" aria-hidden="true">📺</span>
-          <span class="acc__title">4. Báo "No Signal" / "Không có tín hiệu" / màn xanh</span>
-          <span class="acc__chev" aria-hidden="true"></span>
-        </button>
-      </h2>
-      <div class="acc__panel" id="no-signal-panel" role="region" aria-labelledby="no-signal-btn">
-        <h3 class="lbl lbl--sign">Dấu hiệu nhận biết</h3>
-        <ul>
-          <li>Máy chiếu đã sáng nhưng màn hình hiện chữ <em>No Signal</em>, <em>No Input</em>, <em>Searching…</em>, <em>Không có tín hiệu</em>.</li>
-          <li>Hoặc màn xanh / màn đen chỉ có logo hãng, dù laptop đã cắm dây.</li>
-        </ul>
+    <!-- ===== Thời điểm 3: hình đã lên nhưng chưa đúng ===== -->
+    <section class="stage-block" id="gd-hinh-sai" aria-labelledby="gd-hinh-sai-title">
+      <h2 class="stage-block__head" id="gd-hinh-sai-title"><span class="stage-block__icon" aria-hidden="true">🖼️</span>Hình đã lên nhưng chưa đúng</h2>
 
-        <h3 class="lbl lbl--steps">Các bước thử (từ dễ → khó)</h3>
-        <ol class="steps">
-          <li><strong>Cắm lại cáp HDMI ở phía bàn giảng viên:</strong> đầu ở laptop, và đầu ở ổ HDMI trên tường / hộp nối trên bàn (nếu là đầu cắm rời). Rút ra, cắm lại thật chặt. Dùng adapter (MacBook, laptop mỏng) thì cắm chặt cả adapter. Đầu cáp phía máy chiếu ở trên cao – không cần kiểm tra.</li>
-          <li><strong>Chọn đúng nguồn vào trên máy chiếu:</strong> nhấn nút <strong>Input</strong> / <strong>Source</strong> / <strong>HDMI</strong> trên remote. Chọn <strong>HDMI 1</strong>, đợi 3–5 giây; chưa có hình thì thử <strong>HDMI 2</strong>. Nếu ổ HDMI trên tường/bàn có ghi số cổng thì chọn theo đó.</li>
-          <li><strong>Bảo laptop xuất hình ra ngoài:</strong> Windows nhấn <kbd>Win</kbd> + <kbd>P</kbd> → chọn <strong>Duplicate</strong> (Nhân đôi). macOS: mở System Settings → Displays (xem <a href="ket-noi-laptop.html">trang kết nối laptop</a>).</li>
-          <li><strong>Đợi 5–10 giây</strong> sau mỗi thao tác. Laptop và máy chiếu cần thời gian "bắt tay" (nhận ra nhau).</li>
-          <li><strong>Rút cáp HDMI khỏi laptop, đợi 5 giây, cắm lại.</strong> Nhiều laptop không nhận cáp nếu cắm lúc máy đang khởi động.</li>
-          <li><strong>Thử cổng HDMI khác</strong> trên laptop (nếu có) hoặc adapter khác.</li>
-          <li><strong>Khoanh vùng lỗi bằng laptop khác</strong> (mượn của sinh viên/đồng nghiệp):
-            <ul>
-              <li>Laptop khác <strong>lên hình</strong> → lỗi ở laptop của bạn → xem <a href="#laptop-khong-nhan">mục 5</a>.</li>
-              <li>Laptop khác <strong>cũng không lên</strong> → lỗi cáp hoặc máy chiếu → gọi IT.</li>
-            </ul>
-          </li>
-          <li><strong>Khởi động lại laptop</strong> trong khi vẫn cắm cáp HDMI và máy chiếu đang ở nguồn HDMI.</li>
-        </ol>
+      <!-- 4 -->
+      <article class="acc" id="hinh-mo-lech">
+        <h3 class="acc__heading">
+          <button class="acc__btn" type="button" id="hinh-mo-lech-btn" aria-expanded="true" aria-controls="hinh-mo-lech-panel">
+            <span class="acc__icon" aria-hidden="true">🔍</span>
+            <span class="acc__text">
+              <span class="acc__title">4. Hình mờ, méo hình thang, tràn hoặc thiếu khung</span>
+              <span class="acc__sub">Chữ nhòe, hình thang, không vừa màn chiếu</span>
+            </span>
+            <span class="acc__chev" aria-hidden="true"></span>
+          </button>
+        </h3>
+        <div class="acc__panel" id="hinh-mo-lech-panel" role="region" aria-labelledby="hinh-mo-lech-btn">
+          <h4 class="lbl lbl--sign">Dấu hiệu nhận biết</h4>
+          <ul>
+            <li>Chữ nhòe, khó đọc dù trên laptop rõ nét.</li>
+            <li>Hình méo dạng hình thang (trên to dưới nhỏ hoặc ngược lại).</li>
+            <li>Hình lệch khỏi màn chiếu, bị cắt mất mép hoặc có viền đen hai bên.</li>
+          </ul>
 
-        <h3 class="lbl lbl--warn">⚠️ KHÔNG NÊN làm</h3>
-        <ul class="warn-list">
-          <li>Không giật mạnh dây; cầm vào đầu cắm khi rút/cắm. Không bẻ gập đầu cáp.</li>
-          <li>Không ép đầu HDMI khi thấy cứng – đầu cắm chỉ vào được theo một chiều.</li>
-          <li>Không thay đổi các cài đặt sâu trong Menu máy chiếu (HDMI mode, EDID, Reset…) nếu không rõ.</li>
-        </ul>
+          <h4 class="lbl lbl--steps">Các bước thử (từ dễ → khó)</h4>
+          <ol class="steps">
+            <li><strong>Hình mờ → kiểm tra độ phân giải laptop trước.</strong> Chữ nhòe đều toàn màn thường do laptop xuất độ phân giải không khớp. Windows: chuột phải màn hình nền → <em>Display settings</em> → <em>Display resolution</em> → chọn mục có chữ <strong>(Recommended)</strong>; vẫn xấu → thử <strong>1920 × 1080</strong> hoặc <strong>1280 × 800</strong>. macOS: System Settings → Displays → <em>Default for display</em>.</li>
+            <li><strong>Lấy nét (Focus) – chỉ khi remote có nút FOCUS +/−</strong> (remote Hitachi có; Sony, Infoto không). Nhấn từng nấc đến khi chữ ở giữa màn rõ nhất; nhấn không thấy đổi → vòng lấy nét nằm trên ống kính ở trên cao, chỉ IT chỉnh được.</li>
+            <li><strong>Méo hình thang → KEYSTONE.</strong> Nhấn nút <strong>KEYSTONE</strong> trên remote (cả 3 hãng đều có), chỉnh bằng mũi tên ▲▼ đến khi hình vuông vắn. Một số máy có <em>Auto Keystone</em> trong Menu → Setup.</li>
+            <li><strong>Tràn / thiếu hình, viền đen → tỉ lệ khung hình.</strong> Nhấn <strong>ASPECT</strong> (Hitachi, Sony) hoặc <strong>SCREEN</strong> (Infoto) → chọn <strong>Normal</strong> / <strong>Auto</strong>; vẫn sai thử 16:9 hoặc 4:3 cho khớp màn chiếu.</li>
+            <li><strong>Lỡ bấm phóng to một vùng</strong> (<strong>MAGNIFY</strong> trên Hitachi, <strong>D ZOOM</strong> / <strong>D.ZOOM</strong> trên Sony, Infoto): nhấn <strong>MAGNIFY OFF</strong> hoặc nhấn <strong>−</strong> / <strong>▼</strong> vài lần để về bình thường.</li>
+            <li><strong>Chữ quá nhỏ:</strong> dùng <kbd>Win</kbd> + <kbd>P</kbd> → Duplicate (thay vì Extend); phóng to nội dung bằng <kbd>Ctrl</kbd> + lăn chuột (Word, PowerPoint) hoặc <kbd>Ctrl</kbd> + <kbd>+</kbd> (trình duyệt).</li>
+          </ol>
 
-        <h3 class="lbl lbl--stop">🛑 Dừng lại và gọi IT khi</h3>
-        <ul class="stop-list">
-          <li>Laptop khác cắm vào cũng báo No Signal (cáp hoặc máy chiếu hỏng).</li>
-          <li>Đầu cáp HDMI trên bàn bị gãy, lỏng, méo, không cắm chặt được.</li>
-          <li>Đã thử 5 phút không xong – chuyển phương án dạy tạm và báo IT.</li>
-        </ul>
-        <p class="acc__foot"><a href="#danh-sach">↑ Về danh sách sự cố</a> · <a href="lien-he.html">📞 Liên hệ IT</a></p>
-      </div>
-    </article>
+          <h4 class="lbl lbl--warn">⚠️ KHÔNG NÊN làm</h4>
+          <ul class="warn-list">
+            <li>Xoay, đẩy, dịch chuyển thân máy hoặc giá treo; với tay lau ống kính.</li>
+            <li>Lưu các thay đổi sâu trong Menu (Reset, Advanced…) nếu không rõ.</li>
+          </ul>
 
-    <!-- 5 -->
-    <article class="acc" id="laptop-khong-nhan">
-      <h2 class="acc__heading">
-        <button class="acc__btn" type="button" id="laptop-khong-nhan-btn" aria-expanded="true" aria-controls="laptop-khong-nhan-panel">
-          <span class="acc__icon" aria-hidden="true">💻</span>
-          <span class="acc__title">5. Laptop không nhận màn hình thứ 2</span>
-          <span class="acc__chev" aria-hidden="true"></span>
-        </button>
-      </h2>
-      <div class="acc__panel" id="laptop-khong-nhan-panel" role="region" aria-labelledby="laptop-khong-nhan-btn">
-        <h3 class="lbl lbl--sign">Dấu hiệu nhận biết</h3>
-        <ul>
-          <li>Đã cắm HDMI nhưng laptop "không biết" có máy chiếu: <kbd>Win</kbd> + <kbd>P</kbd> không tác dụng, Display settings chỉ thấy 1 màn hình.</li>
-          <li>Máy chiếu vẫn báo <em>No Signal</em> dù đã chọn đúng HDMI.</li>
-        </ul>
+          <h4 class="lbl lbl--stop">🛑 Dừng lại và gọi IT khi</h4>
+          <ul class="stop-list">
+            <li>Hình lệch hẳn khỏi màn chiếu (máy hoặc giá treo bị xô lệch) – không tự chỉnh được.</li>
+            <li>Đã đổi độ phân giải mà toàn bộ hình vẫn mờ, hoặc mờ một góc cố định (cần chỉnh Focus / lau ống kính trên máy).</li>
+            <li>Có đốm, vệt cố định trên hình dù đổi laptop (bụi bẩn bên trong máy).</li>
+          </ul>
+          <p class="acc__foot"><a href="#danh-sach">↑ Về danh sách sự cố</a> · <a href="lien-he.html">📞 Liên hệ IT</a></p>
+        </div>
+      </article>
 
-        <h3 class="lbl lbl--steps">Các bước thử (từ dễ → khó)</h3>
-        <p><strong>Windows 10 / 11</strong></p>
-        <ol class="steps">
-          <li>Nhấn <kbd>Win</kbd> + <kbd>P</kbd> → chọn <strong>Duplicate</strong>. Đợi 5–10 giây.</li>
-          <li>Mở <strong>Settings</strong> (<kbd>Win</kbd> + <kbd>I</kbd>) → <strong>System</strong> → <strong>Display</strong> → kéo xuống <strong>Multiple displays</strong> → nhấn <strong>Detect</strong> (Phát hiện).</li>
-          <li>Nhấn <kbd>Win</kbd> + <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>B</kbd> để khởi động lại card đồ họa (màn hình chớp 1 giây, có tiếng bíp – bình thường).</li>
-          <li>Rút cáp HDMI, đợi 5 giây, cắm lại. Thử cổng HDMI khác hoặc adapter khác.</li>
-          <li>Một số laptop cần phím <kbd>Fn</kbd> + phím có hình 2 màn hình (F4/F5/F7/F8 tùy máy).</li>
-          <li><strong>Khởi động lại laptop</strong> với cáp HDMI đang cắm và máy chiếu đã ở nguồn HDMI.</li>
-        </ol>
-        <p><strong>macOS (MacBook)</strong></p>
-        <ol class="steps">
-          <li>Cắm chắc adapter USB-C → HDMI. Adapter/hub rẻ tiền thường chập chờn → thử adapter khác nếu có.</li>
-          <li>Mở <strong>System Settings</strong> → <strong>Displays</strong>. Nếu chưa thấy máy chiếu: giữ phím <kbd>Option</kbd> để hiện nút <strong>Detect Displays</strong>, nhấn vào.</li>
-          <li>Chọn <strong>Mirror</strong> (Use as: <em>Mirror for Built-in Display</em>) để hình giống màn laptop.</li>
-          <li>Rút cắm lại adapter, thử cổng USB-C khác; cuối cùng khởi động lại máy.</li>
-        </ol>
-        <p>Chi tiết hơn: <a href="ket-noi-laptop.html">trang Kết nối laptop với máy chiếu</a>.</p>
+      <!-- 5 -->
+      <article class="acc" id="sai-mau">
+        <h3 class="acc__heading">
+          <button class="acc__btn" type="button" id="sai-mau-btn" aria-expanded="true" aria-controls="sai-mau-panel">
+            <span class="acc__icon" aria-hidden="true">🎨</span>
+            <span class="acc__text">
+              <span class="acc__title">5. Hình sai màu, nhiễu sọc, chớp giật</span>
+              <span class="acc__sub">Ám xanh/vàng/hồng, sọc ngang dọc – thường do cáp lỏng</span>
+            </span>
+            <span class="acc__chev" aria-hidden="true"></span>
+          </button>
+        </h3>
+        <div class="acc__panel" id="sai-mau-panel" role="region" aria-labelledby="sai-mau-btn">
+          <h4 class="lbl lbl--sign">Dấu hiệu nhận biết</h4>
+          <ul>
+            <li>Toàn bộ hình ám xanh lá, hồng, tím hoặc vàng; màu trắng không còn trắng.</li>
+            <li>Sọc ngang/dọc, lấm tấm nhiễu, hình chớp giật hoặc mất hình từng lúc.</li>
+          </ul>
 
-        <h3 class="lbl lbl--warn">⚠️ KHÔNG NÊN làm</h3>
-        <ul class="warn-list">
-          <li>Không tải và cài driver/phần mềm lạ từ internet ngay tại lớp.</li>
-          <li>Không đặt độ phân giải quá cao (4K) cho máy chiếu – dễ mất hình.</li>
-        </ul>
+          <h4 class="lbl lbl--steps">Các bước thử (từ dễ → khó)</h4>
+          <ol class="steps">
+            <li><strong>Cắm lại chặt đầu HDMI ở laptop</strong> (và ở ổ trên tường/bàn nếu là đầu cắm rời). Cáp lỏng là nguyên nhân số 1 gây ám màu và sọc.</li>
+            <li><strong>Lay nhẹ đầu cáp ở laptop:</strong> màu thay đổi theo → cáp hoặc cổng bị lỏng/hỏng → đổi cáp HDMI hoặc adapter khác (nếu có).</li>
+            <li><strong>Kiểm tra chế độ hình ảnh trên máy chiếu:</strong> <strong>Infoto</strong> nhấn nút <strong>IMAGE</strong> trên remote; <strong>Hitachi</strong> / <strong>Sony</strong> vào <strong>MENU</strong> → <em>Picture</em> → <em>Picture Mode</em> → chọn <strong>Standard</strong>, <strong>Normal</strong> hoặc <strong>Presentation</strong>. Nếu ai đó đã chọn <em>Blackboard</em>, <em>Whiteboard</em>, <em>Cinema</em>… hình sẽ có màu lạ.</li>
+            <li><strong>Kiểm tra laptop:</strong> màn laptop cũng ám vàng → tắt <em>Night light</em> (Windows) / <em>Night Shift</em> (macOS).</li>
+            <li><strong>Nhiễu sọc kèm rung hình:</strong> tách cáp HDMI ra xa dây điện và củ sạc; thử rút sạc laptop (hoặc cắm sạc nếu đang chạy pin).</li>
+          </ol>
 
-        <h3 class="lbl lbl--stop">🛑 Dừng lại và gọi IT khi</h3>
-        <ul class="stop-list">
-          <li>Laptop khác cắm vào vẫn lên hình → lỗi ở laptop của bạn: dùng tạm máy khác, IT hỗ trợ sau.</li>
-          <li>Không laptop nào lên hình → lỗi cáp/máy chiếu → gọi IT.</li>
-        </ul>
-        <p class="acc__foot"><a href="#danh-sach">↑ Về danh sách sự cố</a> · <a href="lien-he.html">📞 Liên hệ IT</a></p>
-      </div>
-    </article>
+          <h4 class="lbl lbl--warn">⚠️ KHÔNG NÊN làm</h4>
+          <ul class="warn-list">
+            <li>Chỉnh sâu RGB / Gain / Offset / Color Temperature trong Menu rồi lưu lại – ảnh hưởng người dạy sau.</li>
+            <li>Uốn cong, kẹp cáp HDMI dưới chân bàn để "ép" cho tiếp xúc.</li>
+          </ul>
 
-    <h2 class="stage" id="gd-hinh-sai"><span class="stage__icon" aria-hidden="true">🖼️</span>Hình đã lên nhưng chưa đúng</h2>
+          <h4 class="lbl lbl--stop">🛑 Dừng lại và gọi IT khi</h4>
+          <ul class="stop-list">
+            <li>Đã đổi cáp và laptop khác mà vẫn ám màu (bộ phận tạo màu / bóng đèn của máy có vấn đề).</li>
+            <li>Có vệt màu, đốm sáng hoặc đốm đen cố định ở cùng vị trí dù đổi nguồn.</li>
+          </ul>
+          <p class="acc__foot"><a href="#danh-sach">↑ Về danh sách sự cố</a> · <a href="lien-he.html">📞 Liên hệ IT</a></p>
+        </div>
+      </article>
 
-    <!-- 6 -->
-    <article class="acc" id="hinh-mo-lech">
-      <h2 class="acc__heading">
-        <button class="acc__btn" type="button" id="hinh-mo-lech-btn" aria-expanded="true" aria-controls="hinh-mo-lech-panel">
-          <span class="acc__icon" aria-hidden="true">🔍</span>
-          <span class="acc__title">6. Hình mờ, lệch, méo hình thang, tràn khung</span>
-          <span class="acc__chev" aria-hidden="true"></span>
-        </button>
-      </h2>
-      <div class="acc__panel" id="hinh-mo-lech-panel" role="region" aria-labelledby="hinh-mo-lech-btn">
-        <h3 class="lbl lbl--sign">Dấu hiệu nhận biết</h3>
-        <ul>
-          <li>Chữ nhòe, khó đọc dù trên laptop rõ nét.</li>
-          <li>Hình bị méo dạng hình thang (trên to dưới nhỏ hoặc ngược lại).</li>
-          <li>Hình lệch khỏi màn chiếu, bị cắt mất mép, hoặc có viền đen hai bên.</li>
-        </ul>
+      <!-- 6 -->
+      <article class="acc" id="hinh-lat-nguoc">
+        <h3 class="acc__heading">
+          <button class="acc__btn" type="button" id="hinh-lat-nguoc-btn" aria-expanded="true" aria-controls="hinh-lat-nguoc-panel">
+            <span class="acc__icon" aria-hidden="true">🔃</span>
+            <span class="acc__text">
+              <span class="acc__title">6. Hình bị lật ngược / soi gương</span>
+              <span class="acc__sub">Chữ ngược trái-phải hoặc lộn đầu – do đổi nhầm kiểu lắp trong Menu</span>
+            </span>
+            <span class="acc__chev" aria-hidden="true"></span>
+          </button>
+        </h3>
+        <div class="acc__panel" id="hinh-lat-nguoc-panel" role="region" aria-labelledby="hinh-lat-nguoc-btn">
+          <h4 class="lbl lbl--sign">Dấu hiệu nhận biết</h4>
+          <ul>
+            <li>Chữ bị ngược trái-phải (như soi gương) hoặc lộn đầu xuống dưới. Thường do ai đó đổi nhầm kiểu lắp đặt trong Menu.</li>
+          </ul>
 
-        <h3 class="lbl lbl--steps">Các bước thử (từ dễ → khó)</h3>
-        <ol class="steps">
-          <li><strong>Hình mờ → kiểm tra độ phân giải laptop trước.</strong> Chữ nhòe đều toàn màn thường do laptop xuất độ phân giải không khớp. Windows: chuột phải màn hình nền → <em>Display settings</em> → <em>Display resolution</em> → chọn mục có chữ <strong>(Recommended)</strong>; nếu vẫn xấu, thử <strong>1920 × 1080</strong> hoặc <strong>1280 × 800</strong>. macOS: System Settings → Displays → <em>Default for display</em>.</li>
-          <li><strong>Lấy nét (Focus) – chỉ khi remote có nút Focus +/−</strong> (một số model). Nhấn từng nấc đến khi chữ ở giữa màn rõ nhất. Remote không có nút Focus → vòng lấy nét nằm trên ống kính ở trên cao, chỉ IT chỉnh được.</li>
-          <li><strong>Méo hình thang → Keystone.</strong> Nhấn nút <strong>Keystone</strong> (biểu tượng hình thang) trên remote, chỉnh <strong>+</strong> / <strong>−</strong> đến khi hình vuông vắn. Một số máy có <em>Auto Keystone</em> trong Menu → Setup.</li>
-          <li><strong>Tràn/thiếu hình, viền đen → tỉ lệ khung hình.</strong> Nhấn nút <strong>Aspect</strong> chọn <strong>Auto</strong> / <strong>Normal</strong>; nếu vẫn sai thử 16:9 hoặc 4:3 cho khớp màn chiếu. Nhấn <strong>Auto</strong> / <strong>Auto Adjust</strong> (nếu có) để máy tự căn.</li>
-          <li><strong>Lỡ bấm phóng to một vùng</strong> (<strong>Magnify</strong> / <strong>D Zoom</strong> trên remote): nhấn lại nút đó (hoặc <strong>OFF</strong> / <strong>−</strong>) để về bình thường. Hình quá to/nhỏ hoặc lệch khỏi màn do vị trí lắp máy → không tự chỉnh được, báo IT.</li>
-          <li><strong>Chữ quá nhỏ:</strong> dùng <kbd>Win</kbd> + <kbd>P</kbd> → Duplicate (thay vì Extend); phóng to nội dung bằng <kbd>Ctrl</kbd> + lăn chuột (Word, PowerPoint) hoặc <kbd>Ctrl</kbd> + <kbd>+</kbd> (trình duyệt).</li>
-        </ol>
+          <h4 class="lbl lbl--steps">Các bước thử (từ dễ → khó)</h4>
+          <ol class="steps">
+            <li>Nhấn <strong>Menu</strong> trên remote → tìm mục <strong>Setup</strong> / <strong>Installation</strong> / <strong>Projection</strong> / <strong>Image Flip</strong> / <strong>Ceiling</strong> / <strong>Mirror</strong> (tên tùy hãng).</li>
+            <li><strong>Chọn đúng kiểu lắp:</strong> máy chiếu của trường đều <strong>treo trần</strong> (Infoto: treo trên bảng), chiếu từ phía trước → chọn <strong>Front / Ceiling</strong> (Trần – trước). Chỉ chọn <strong>Rear</strong> khi chiếu từ sau màn (hiếm gặp).</li>
+            <li>Thoát Menu. Vẫn sai → thử lần lượt 4 tổ hợp Front/Rear × Desktop/Ceiling đến khi chữ đọc đúng chiều.</li>
+          </ol>
 
-        <h3 class="lbl lbl--warn">⚠️ KHÔNG NÊN làm</h3>
-        <ul class="warn-list">
-          <li>Không đứng lên ghế/bàn để với, xoay ống kính hay lau máy treo trần.</li>
-          <li>Không xoay, đẩy, dịch chuyển thân máy hoặc giá treo.</li>
-        </ul>
+          <h4 class="lbl lbl--warn">⚠️ KHÔNG NÊN làm</h4>
+          <ul class="warn-list">
+            <li>Chọn <em>Reset All</em> / <em>Factory Reset</em>.</li>
+            <li>Đổi ngôn ngữ Menu. Nếu lỡ đổi: tìm mục có biểu tượng 🌐 hoặc chữ <em>Language</em> để chọn lại.</li>
+          </ul>
 
-        <h3 class="lbl lbl--stop">🛑 Dừng lại và gọi IT khi</h3>
-        <ul class="stop-list">
-          <li>Hình lệch hẳn khỏi màn chiếu (máy hoặc giá treo bị xô lệch).</li>
-          <li>Đã đổi độ phân giải mà toàn bộ hình vẫn mờ (cần chỉnh Focus hoặc lau ống kính trên máy), hoặc mờ một góc cố định.</li>
-          <li>Có đốm, vệt cố định trên hình dù đổi laptop (bụi/bẩn bên trong máy).</li>
-        </ul>
-        <p class="acc__foot"><a href="#danh-sach">↑ Về danh sách sự cố</a> · <a href="lien-he.html">📞 Liên hệ IT</a></p>
-      </div>
-    </article>
+          <h4 class="lbl lbl--stop">🛑 Dừng lại và gọi IT khi</h4>
+          <ul class="stop-list">
+            <li>Menu bị khóa (Key lock) hoặc không tìm thấy mục cài đặt.</li>
+            <li>Tình trạng lặp lại mỗi lần bật máy.</li>
+          </ul>
+          <p class="acc__foot"><a href="#danh-sach">↑ Về danh sách sự cố</a> · <a href="lien-he.html">📞 Liên hệ IT</a></p>
+        </div>
+      </article>
+    </section>
 
-    <!-- 7 -->
-    <article class="acc" id="sai-mau">
-      <h2 class="acc__heading">
-        <button class="acc__btn" type="button" id="sai-mau-btn" aria-expanded="true" aria-controls="sai-mau-panel">
-          <span class="acc__icon" aria-hidden="true">🎨</span>
-          <span class="acc__title">7. Hình sai màu (ám xanh/vàng/hồng), nhiễu sọc</span>
-          <span class="acc__chev" aria-hidden="true"></span>
-        </button>
-      </h2>
-      <div class="acc__panel" id="sai-mau-panel" role="region" aria-labelledby="sai-mau-btn">
-        <h3 class="lbl lbl--sign">Dấu hiệu nhận biết</h3>
-        <ul>
-          <li>Toàn bộ hình ám xanh lá, hồng, tím hoặc vàng; màu trắng không còn trắng.</li>
-          <li>Có sọc ngang/dọc, lấm tấm nhiễu, hình chớp giật hoặc mất hình từng lúc.</li>
-        </ul>
+    <!-- ===== Thời điểm 4: đang dạy ===== -->
+    <section class="stage-block" id="gd-dang-day" aria-labelledby="gd-dang-day-title">
+      <h2 class="stage-block__head" id="gd-dang-day-title"><span class="stage-block__icon" aria-hidden="true">⏸️</span>Đang dạy bỗng mất hình hoặc máy tắt</h2>
 
-        <h3 class="lbl lbl--steps">Các bước thử (từ dễ → khó)</h3>
-        <ol class="steps">
-          <li><strong>Cắm lại chặt đầu HDMI ở laptop</strong> (và ở ổ trên tường/bàn nếu là đầu cắm rời). Cáp lỏng là nguyên nhân số 1 gây ám màu và sọc. Ấn thẳng đầu cáp vào cổng.</li>
-          <li><strong>Lay nhẹ đầu cáp ở laptop:</strong> nếu màu thay đổi theo → cáp hoặc cổng bị lỏng/hỏng.</li>
-          <li><strong>Đổi cáp HDMI hoặc adapter khác</strong> (nếu có sẵn).</li>
-          <li><strong>Kiểm tra chế độ hình ảnh trên máy chiếu:</strong> nút <strong>Picture Mode</strong> / <strong>Image Mode</strong> / <strong>Color Mode</strong> → chọn <strong>Standard</strong>, <strong>Normal</strong> hoặc <strong>Presentation</strong>. Nếu ai đó đã chọn <em>Blackboard</em>, <em>Whiteboard</em>, <em>Cinema</em>… hình sẽ có màu lạ.</li>
-          <li><strong>Kiểm tra laptop:</strong> màn hình laptop có bình thường không? Nếu cũng ám vàng → tắt <em>Night light</em> (Windows) / <em>Night Shift</em> (macOS).</li>
-          <li><strong>Nhiễu sọc kèm rung hình:</strong> tách cáp HDMI ra xa dây điện và củ sạc; thử rút sạc laptop (hoặc cắm sạc nếu đang chạy pin).</li>
-        </ol>
+      <!-- 7 -->
+      <article class="acc" id="dong-bang-man-den">
+        <h3 class="acc__heading">
+          <button class="acc__btn" type="button" id="dong-bang-man-den-btn" aria-expanded="true" aria-controls="dong-bang-man-den-panel">
+            <span class="acc__icon" aria-hidden="true">⬛</span>
+            <span class="acc__text">
+              <span class="acc__title">7. Màn đen hoặc hình đứng yên dù đèn báo xanh</span>
+              <span class="acc__sub">Lỡ bấm BLANK / NO SHOW / FREEZE trên remote, hoặc laptop ngủ</span>
+            </span>
+            <span class="acc__chev" aria-hidden="true"></span>
+          </button>
+        </h3>
+        <div class="acc__panel" id="dong-bang-man-den-panel" role="region" aria-labelledby="dong-bang-man-den-btn">
+          <h4 class="lbl lbl--sign">Dấu hiệu nhận biết</h4>
+          <ul>
+            <li>Đèn báo xanh, quạt chạy, nhưng màn chiếu đen hoàn toàn (không có cả chữ No Signal).</li>
+            <li>Hình đứng yên không đổi dù trên laptop đã chuyển slide.</li>
+            <li>Nguyên nhân hay gặp nhất: lỡ nhấn nút <strong>BLANK</strong> (Hitachi, Sony) / <strong>NO SHOW</strong> (Infoto) / <strong>AV MUTE</strong> (hãng khác) làm màn đen, hoặc <strong>FREEZE</strong> làm đứng hình. Các nút này nằm ở nửa dưới remote, gần nhau.</li>
+          </ul>
 
-        <h3 class="lbl lbl--warn">⚠️ KHÔNG NÊN làm</h3>
-        <ul class="warn-list">
-          <li>Không chỉnh sâu các mục RGB / Gain / Offset / Color Temperature trong Menu rồi lưu lại – ảnh hưởng đến người dạy sau.</li>
-          <li>Không uốn cong, kẹp cáp HDMI dưới chân bàn để "ép" cho tiếp xúc.</li>
-        </ul>
+          <h4 class="lbl lbl--steps">Các bước thử (từ dễ → khó)</h4>
+          <ol class="steps">
+            <li><strong>Nhấn lại nút BLANK / NO SHOW / AV MUTE</strong> (màn đen) hoặc <strong>FREEZE</strong> (đứng hình) trên remote <strong>một lần</strong> để tắt chế độ đó. Nhấn từng nút, đợi 2 giây.</li>
+            <li>Nhấn <strong>MENU</strong> để "đánh thức" máy khỏi chế độ tiết kiệm điện, rồi nhấn MENU lần nữa để thoát.</li>
+            <li><strong>Đánh thức laptop:</strong> di chuột / nhấn phím bất kỳ. Trước giờ dạy nên tăng thời gian tắt màn hình: Windows → Settings → System → Power → <em>Screen timeout</em>.</li>
+            <li>Nhấn <kbd>Win</kbd> + <kbd>P</kbd> → chọn lại <strong>Duplicate</strong>. Hình vẫn đứng yên → <strong>rút cáp HDMI, đợi 5 giây, cắm lại</strong>.</li>
+            <li>Vẫn đen → chọn lại đúng cổng HDMI (Hitachi: <strong>VIDEO</strong>/<strong>SEARCH</strong> · Sony: <strong>INPUT</strong> · Infoto: <strong>HDMI</strong>); nếu lúc này hiện <em>No Signal</em> → làm theo <a href="#no-signal">mục 3</a>.</li>
+          </ol>
 
-        <h3 class="lbl lbl--stop">🛑 Dừng lại và gọi IT khi</h3>
-        <ul class="stop-list">
-          <li>Đã đổi cáp và laptop khác mà vẫn ám màu (bộ phận tạo màu / bóng đèn của máy có vấn đề).</li>
-          <li>Có vệt màu, đốm sáng hoặc đốm đen cố định ở cùng vị trí dù đổi nguồn.</li>
-        </ul>
-        <p class="acc__foot"><a href="#danh-sach">↑ Về danh sách sự cố</a> · <a href="lien-he.html">📞 Liên hệ IT</a></p>
-      </div>
-    </article>
+          <h4 class="lbl lbl--warn">⚠️ KHÔNG NÊN làm</h4>
+          <ul class="warn-list">
+            <li>Tắt cầu dao / công tắc điện phòng vì tưởng máy hỏng.</li>
+            <li>Nhấn dồn dập nhiều nút trên remote – dễ bật thêm chế độ khác.</li>
+          </ul>
 
-    <!-- 8 -->
-    <article class="acc" id="hinh-lat-nguoc">
-      <h2 class="acc__heading">
-        <button class="acc__btn" type="button" id="hinh-lat-nguoc-btn" aria-expanded="true" aria-controls="hinh-lat-nguoc-panel">
-          <span class="acc__icon" aria-hidden="true">🔃</span>
-          <span class="acc__title">8. Hình bị lật ngược / soi gương</span>
-          <span class="acc__chev" aria-hidden="true"></span>
-        </button>
-      </h2>
-      <div class="acc__panel" id="hinh-lat-nguoc-panel" role="region" aria-labelledby="hinh-lat-nguoc-btn">
-        <h3 class="lbl lbl--sign">Dấu hiệu nhận biết</h3>
-        <ul>
-          <li>Chữ bị ngược trái-phải (như soi gương) hoặc lộn đầu xuống dưới.</li>
-          <li>Thường do ai đó đổi nhầm kiểu lắp đặt trong Menu.</li>
-        </ul>
+          <h4 class="lbl lbl--stop">🛑 Dừng lại và gọi IT khi</h4>
+          <ul class="stop-list">
+            <li>Đã bỏ BLANK/NO SHOW/FREEZE, chọn lại HDMI, cắm lại cáp mà vẫn đen.</li>
+            <li>Đèn báo chuyển sang đỏ hoặc nhấp nháy đỏ-cam → xem <a href="#tu-tat">mục 8</a>.</li>
+          </ul>
+          <p class="acc__foot"><a href="#danh-sach">↑ Về danh sách sự cố</a> · <a href="lien-he.html">📞 Liên hệ IT</a></p>
+        </div>
+      </article>
 
-        <h3 class="lbl lbl--steps">Các bước thử (từ dễ → khó)</h3>
-        <ol class="steps">
-          <li>Nhấn <strong>Menu</strong> trên remote → tìm mục <strong>Setup</strong> / <strong>Installation</strong> / <strong>Projection</strong> / <strong>Image Flip</strong> / <strong>Ceiling</strong> / <strong>Mirror</strong> (tên tùy hãng).</li>
-          <li>Chọn đúng kiểu lắp:
-            <ul>
-              <li>Máy chiếu của trường đều <strong>treo trần</strong> (Infoto: treo trên bảng), chiếu từ phía trước → chọn <strong>Front / Ceiling</strong> (Trần – trước).</li>
-              <li>Chỉ chọn <strong>Rear</strong> khi chiếu từ sau màn (hiếm gặp).</li>
-            </ul>
-          </li>
-          <li>Thoát Menu. Nếu vẫn sai, thử lần lượt 4 tổ hợp Front/Rear × Desktop/Ceiling đến khi chữ đọc đúng chiều.</li>
-        </ol>
+      <!-- 8 -->
+      <article class="acc" id="tu-tat">
+        <h3 class="acc__heading">
+          <button class="acc__btn" type="button" id="tu-tat-btn" aria-expanded="true" aria-controls="tu-tat-panel">
+            <span class="acc__icon" aria-hidden="true">🌡️</span>
+            <span class="acc__text">
+              <span class="acc__title">8. Máy tự tắt, đèn báo đỏ hoặc nhấp nháy đỏ-cam</span>
+              <span class="acc__sub">Quá nhiệt, lọc bụi bẩn, bóng đèn sắp hỏng – để máy nguội và báo IT</span>
+            </span>
+            <span class="acc__chev" aria-hidden="true"></span>
+          </button>
+        </h3>
+        <div class="acc__panel" id="tu-tat-panel" role="region" aria-labelledby="tu-tat-btn">
+          <h4 class="lbl lbl--sign">Dấu hiệu nhận biết</h4>
+          <ul>
+            <li>Máy đang chạy bỗng tắt; quạt kêu to bất thường; hình tối dần.</li>
+            <li>Đèn <strong>TEMP</strong> / <strong>LAMP</strong> / <strong>STATUS</strong> sáng đỏ hoặc nhấp nháy đỏ-cam.</li>
+            <li>Màn hình hiện cảnh báo như <em>High temperature</em>, <em>Check the air flow</em>, <em>Replace lamp</em>, <em>Clean filter</em>.</li>
+          </ul>
 
-        <h3 class="lbl lbl--warn">⚠️ KHÔNG NÊN làm</h3>
-        <ul class="warn-list">
-          <li>Không chọn <em>Reset All</em> / <em>Factory Reset</em>.</li>
-          <li>Không đổi ngôn ngữ Menu. Nếu lỡ đổi: tìm mục có biểu tượng 🌐 hoặc chữ <em>Language</em> để chọn lại.</li>
-        </ul>
+          <h4 class="lbl lbl--steps">Các bước thử (từ dễ → khó)</h4>
+          <ol class="steps">
+            <li><strong>Dừng sử dụng, tắt máy đúng cách:</strong> nhấn Power trên remote (xác nhận nếu máy hỏi), để quạt làm mát chạy đến khi tự ngừng (1–3 phút). <strong>Không tắt cầu dao / công tắc điện ngay.</strong></li>
+            <li><strong>Để máy nguội 10 phút.</strong> Phòng quá nóng → bật điều hòa / quạt.</li>
+            <li><strong>Đối chiếu đèn báo</strong> theo hãng: <a href="hitachi.html#den-bao">Hitachi</a> · <a href="sony.html#den-bao">Sony</a> · <a href="infoto.html#den-bao">Infoto</a>. Đèn đỏ nhấp nháy thường là lỗi nhiệt độ hoặc bóng đèn → cần IT.</li>
+            <li><strong>Chỉ khi</strong> phòng đã mát và đèn báo trở lại bình thường (cam/đỏ sáng ổn định – đang chờ): bật lại <strong>một lần</strong> để dạy tạm. Máy tắt lần nữa → dừng hẳn.</li>
+            <li><strong>Chuyển phương án dự phòng</strong> (bảng, TV, phòng khác, gửi tài liệu cho lớp) và báo IT.</li>
+          </ol>
 
-        <h3 class="lbl lbl--stop">🛑 Dừng lại và gọi IT khi</h3>
-        <ul class="stop-list">
-          <li>Menu bị khóa (Key lock) hoặc không tìm thấy mục cài đặt.</li>
-          <li>Tình trạng lặp lại mỗi lần bật máy.</li>
-        </ul>
-        <p class="acc__foot"><a href="#danh-sach">↑ Về danh sách sự cố</a> · <a href="lien-he.html">📞 Liên hệ IT</a></p>
-      </div>
-    </article>
+          <h4 class="lbl lbl--warn">⚠️ KHÔNG NÊN làm</h4>
+          <ul class="warn-list">
+            <li>Bật lại nhiều lần khi máy vừa tự tắt.</li>
+            <li>Tự vệ sinh lọc bụi hay kiểm tra bóng đèn – bóng đèn rất nóng, áp suất cao, có thể nổ; việc này do IT làm.</li>
+          </ul>
 
-    <!-- 9 -->
-    <article class="acc" id="dong-bang-man-den">
-      <h2 class="acc__heading">
-        <button class="acc__btn" type="button" id="dong-bang-man-den-btn" aria-expanded="true" aria-controls="dong-bang-man-den-panel">
-          <span class="acc__icon" aria-hidden="true">⏸️</span>
-          <span class="acc__title">9. Hình đứng yên / màn đen dù máy đang chạy</span>
-          <span class="acc__chev" aria-hidden="true"></span>
-        </button>
-      </h2>
-      <div class="acc__panel" id="dong-bang-man-den-panel" role="region" aria-labelledby="dong-bang-man-den-btn">
-        <h3 class="lbl lbl--sign">Dấu hiệu nhận biết</h3>
-        <ul>
-          <li>Đèn báo xanh, quạt chạy, nhưng màn chiếu đen hoàn toàn (không có cả chữ No Signal).</li>
-          <li>Hình đứng yên không đổi dù trên laptop đã chuyển slide.</li>
-          <li>Nguyên nhân hay gặp nhất: lỡ nhấn nút <strong>Blank</strong> / <strong>AV Mute</strong> / <strong>Pic Mute</strong> (màn đen) hoặc <strong>Freeze</strong> (đóng băng) trên remote.</li>
-        </ul>
-
-        <h3 class="lbl lbl--steps">Các bước thử (từ dễ → khó)</h3>
-        <ol class="steps">
-          <li><strong>Nhấn lại nút Blank / AV Mute / Pic Mute</strong> (màn đen) hoặc <strong>Freeze</strong> (đứng hình) trên remote <strong>một lần</strong> để tắt chế độ đó. Nhấn từng nút, đợi 2 giây.</li>
-          <li>Nhấn một nút bất kỳ như <strong>Menu</strong> hoặc <strong>Input</strong> để "đánh thức" máy khỏi chế độ tiết kiệm điện; sau đó thoát Menu.</li>
-          <li><strong>Laptop có đang ngủ không?</strong> Di chuột / nhấn phím bất kỳ. Trước giờ dạy nên tắt tự tắt màn hình: Windows → Settings → System → Power → Screen timeout → chọn thời gian dài hơn.</li>
-          <li>Nhấn <kbd>Win</kbd> + <kbd>P</kbd> → chọn lại <strong>Duplicate</strong>.</li>
-          <li>Hình đứng yên nhưng laptop vẫn chạy: <strong>rút cáp HDMI, đợi 5 giây, cắm lại</strong>.</li>
-          <li>Vẫn đen: nhấn <strong>Input</strong> chọn lại HDMI đúng cổng; nếu hiện <em>No Signal</em> → xem <a href="#no-signal">mục 4</a>.</li>
-        </ol>
-
-        <h3 class="lbl lbl--warn">⚠️ KHÔNG NÊN làm</h3>
-        <ul class="warn-list">
-          <li>Không tắt cầu dao / công tắc điện phòng vì tưởng máy hỏng.</li>
-          <li>Không nhấn dồn dập nhiều nút trên remote – dễ bật thêm chế độ khác.</li>
-        </ul>
-
-        <h3 class="lbl lbl--stop">🛑 Dừng lại và gọi IT khi</h3>
-        <ul class="stop-list">
-          <li>Đã bỏ Blank/Freeze, đổi Input, cắm lại cáp mà vẫn đen.</li>
-          <li>Đèn báo chuyển sang đỏ hoặc cam nhấp nháy (xem <a href="#tu-tat">mục 3</a>).</li>
-        </ul>
-        <p class="acc__foot"><a href="#danh-sach">↑ Về danh sách sự cố</a> · <a href="lien-he.html">📞 Liên hệ IT</a></p>
-      </div>
-    </article>
+          <h4 class="lbl lbl--stop">🛑 Dừng lại và gọi IT khi</h4>
+          <ul class="stop-list">
+            <li><strong>Ngay lập tức</strong> nếu có mùi khét, khói, tiếng nổ nhỏ.</li>
+            <li>Máy tự tắt lần thứ 2, hoặc đèn đỏ vẫn sáng / nhấp nháy sau khi để nguội.</li>
+            <li>Có thông báo về bóng đèn (<em>Lamp</em>) hoặc lọc bụi (<em>Filter</em>) – cần bảo trì định kỳ.</li>
+          </ul>
+          <p class="acc__foot"><a href="#danh-sach">↑ Về danh sách sự cố</a> · <a href="lien-he.html">📞 Liên hệ IT</a></p>
+        </div>
+      </article>
+    </section>
 
     <section class="section note note--stop" aria-labelledby="khan-title">
       <strong class="note__title" id="khan-title">🛑 Gọi IT ngay, không tự xử lý, khi:</strong>
-      <ul style="margin:0">
-        <li>Có mùi khét, khói, tia lửa hoặc tiếng nổ nhỏ từ máy chiếu.</li>
-        <li>Máy chiếu bị rơi, va đập, giá treo lung lay, dây điện hở.</li>
-        <li>Đèn báo đỏ sáng liên tục hoặc nhấp nháy mà máy không lên hình.</li>
-        <li>Đã thử theo hướng dẫn 3–5 phút mà không được.</li>
-      </ul>
+      <p style="margin:0">mùi khét, khói, tia lửa; máy chiếu bị rơi, va đập, giá treo lung lay, dây điện hở; đèn báo đỏ sáng liên tục hoặc nhấp nháy mà không lên hình; hoặc đã thử theo hướng dẫn 3–5 phút mà không được.</p>
       <p style="margin:12px 0 0"><a class="btn btn--call" href="lien-he.html" data-config-tel="sdt_it">📞 Gọi IT: <span data-config="sdt_it">[SỐ ĐIỆN THOẠI IT]</span></a></p>
     </section>
   </main>
