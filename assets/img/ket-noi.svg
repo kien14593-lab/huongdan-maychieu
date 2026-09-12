@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 210" width="640" height="210" role="img" aria-labelledby="title desc">
   <title id="title">Các đầu cắm thường gặp: HDMI, USB-C, USB-A (minh họa)</title>
-  <desc id="desc">HDMI dùng cho hình; USB-C trên MacBook cần adapter ra HDMI; USB-A dùng cho cáp tương tác của máy chiếu Infoto.</desc>
+  <desc id="desc">HDMI dùng cho hình; USB-C trên MacBook cần adapter ra HDMI; USB-A dùng cho USB chứa bài giảng hoặc chuột trình chiếu.</desc>
 <path d="M40 70 h150 v40 l-18 22 h-114 l-18 -22 z" fill="#2f3237" stroke="#15171a" stroke-width="3"/>
 <rect x="60" y="86" width="110" height="10" rx="2" fill="#9aa3ad"/>
 <text x="115.0" y="155.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="18" font-weight="700" fill="#0b3d91" text-anchor="middle">HDMI</text>
@@ -14,7 +14,7 @@
 <rect x="465" y="76" width="130" height="42" rx="4" fill="#2f3237" stroke="#15171a" stroke-width="3"/>
 <rect x="480" y="86" width="100" height="22" rx="2" fill="#f5f5f5" stroke="#9aa3ad" stroke-width="2"/>
 <text x="530.0" y="155.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="18" font-weight="700" fill="#0b3d91" text-anchor="middle">USB-A</text>
-<text x="530.0" y="178.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="11" font-weight="400" fill="#1b1f24" text-anchor="middle">Cáp TƯƠNG TÁC (bút/chạm)</text>
-<text x="530.0" y="194.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="11" font-weight="400" fill="#1b1f24" text-anchor="middle">của máy chiếu Infoto</text>
+<text x="530.0" y="178.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="11" font-weight="400" fill="#1b1f24" text-anchor="middle">USB chứa bài giảng dự phòng,</text>
+<text x="530.0" y="194.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="11" font-weight="400" fill="#1b1f24" text-anchor="middle">chuột trình chiếu (presenter)</text>
 <text x="320.0" y="30.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="14" font-weight="700" fill="#1b1f24" text-anchor="middle">Các đầu cắm thường gặp (minh họa)</text>
 </svg>

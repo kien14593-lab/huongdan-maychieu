@@ -4,7 +4,8 @@ Website **tĩnh** (HTML/CSS/JS thuần, không cần build, không dùng CDN –
 tự khắc phục **tạm thời** các sự cố máy chiếu thường gặp ngay tại lớp bằng điện thoại, và biết khi nào
 cần dừng lại để gọi IT.
 
-Máy chiếu được đề cập: **Hitachi** (Maxell), **Sony**, **Infoto** (máy chiếu tương tác). Tất cả phòng dùng cáp **HDMI**.
+Máy chiếu được đề cập: **Hitachi** (Maxell), **Sony**, **Infoto** (máy chiếu tương tác – tài liệu chỉ hướng dẫn dùng
+để trình chiếu, không đề cập chức năng viết/chạm). Tất cả phòng dùng cáp **HDMI**.
 Máy chiếu đều **treo trên cao** nên hướng dẫn chỉ gồm các thao tác giảng viên làm được từ dưới: remote, đầu cáp
 ở bàn giảng viên / ổ trên tường, công tắc điện của phòng và laptop. Việc trên thân máy (nút bấm, dây nguồn, ống kính,
 khe gió, lọc bụi) được ghi rõ là do IT thực hiện. Remote hết pin: giảng viên tự lấy pin dự phòng ở **phòng nước
@@ -14,10 +15,10 @@ giảng viên** (vị trí cụ thể sửa bằng khóa `noi_lay_pin` trong `co
 
 ```
 index.html            Trang chủ: Gọi IT, tìm nhanh triệu chứng, lưới thẻ, link hãng, checklist 60 giây
-su-co.html            10 sự cố theo triệu chứng (accordion): dấu hiệu → các bước → KHÔNG NÊN → khi nào gọi IT
+su-co.html            9 sự cố theo triệu chứng (accordion): dấu hiệu → các bước → KHÔNG NÊN → khi nào gọi IT
 hitachi.html          Hướng dẫn theo hãng: nút remote, chọn HDMI, đèn báo, tắt máy đúng cách
 sony.html
-infoto.html           + phần riêng về chức năng tương tác (USB, hiệu chỉnh, bút, phần mềm bảng trắng)
+infoto.html
 ket-noi-laptop.html   Windows 10/11 (Win + P, Presenter View), macOS (adapter, Mirror), sai tỉ lệ hình
 lien-he.html          Khi nào gọi IT ngay, thông tin liên hệ, mẫu báo sự cố có nút "Sao chép mẫu"
 assets/css/style.css  Toàn bộ giao diện (mobile-first, chữ to, nút ≥ 48px, có CSS in ấn)
@@ -41,7 +42,6 @@ Mở `assets/js/config.js`, sửa giá trị bên phải dấu `:` rồi lưu. K
 | `model_hitachi`         | `[MODEL]`              | `"CP-EX303"`                               | Trang chủ, trang Hitachi                           |
 | `model_sony`            | `[MODEL]`              | `"VPL-EX575"`                              | Trang chủ, trang Sony                              |
 | `model_infoto`          | `[MODEL]`              | `"IF-…"`                                   | Trang chủ, trang Infoto                            |
-| `phan_mem_tuong_tac`    | `[PHẦN MỀM TƯƠNG TÁC]` | `"Infoto Board"`                           | Trang Infoto, mục 10 trang Sự cố                   |
 | `noi_lay_pin`           | `"phòng nước giảng viên"` (đã điền) | `"phòng nước giảng viên (tầng 2 nhà A1)"` | Mục 1 & 6 trang Sự cố, 3 trang hãng, trang Liên hệ |
 | `ten_truong`, `ten_truong_ngan` | (đã điền)      | –                                          | Đầu trang, chân trang                              |
 | `cap_nhat`              | `"09/2026"`            | `"01/2027"`                                | Chân trang                                         |
@@ -52,12 +52,12 @@ Giá trị còn dạng `[...]` được tô vàng nhẹ để dễ nhận ra ch�
 
 ### Thay ảnh minh họa bằng ảnh thật
 
-Chụp ảnh remote, ổ cắm HDMI/USB trên bàn giảng viên hoặc tường của từng phòng rồi lưu vào `assets/img/` và sửa thuộc tính `src`
+Chụp ảnh remote, ổ cắm HDMI trên bàn giảng viên hoặc tường của từng phòng rồi lưu vào `assets/img/` và sửa thuộc tính `src`
 của thẻ `<img>` tương ứng trong trang hãng (`hitachi.html`, `sony.html`, `infoto.html`). Các file hiện có:
 
 - `remote-hitachi.svg`, `remote-sony.svg`, `remote-infoto.svg` – sơ đồ remote
 - `placeholder-photo.svg` – khung "chỗ chèn ảnh thật"
-- `so-do-infoto.svg`, `ket-noi.svg`, `win-p.svg`, `logo.svg` – sơ đồ minh họa khác
+- `ket-noi.svg`, `win-p.svg`, `logo.svg` – sơ đồ minh họa khác
 
 Nên dùng ảnh JPG/PNG đã nén (≤ 300 KB) để tải nhanh trên điện thoại. Nhớ cập nhật `alt` mô tả ảnh.
 
