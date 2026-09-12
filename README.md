@@ -5,13 +5,16 @@ tự khắc phục **tạm thời** các sự cố máy chiếu thường gặp 
 cần dừng lại để gọi IT.
 
 Máy chiếu được đề cập: **Hitachi** (Maxell), **Sony**, **Infoto** (máy chiếu tương tác). Tất cả phòng dùng cáp **HDMI**.
+Máy chiếu đều **treo trên cao** nên hướng dẫn chỉ gồm các thao tác giảng viên làm được từ dưới: remote, đầu cáp
+ở bàn giảng viên / ổ trên tường, công tắc điện của phòng và laptop. Việc trên thân máy (nút bấm, dây nguồn, ống kính,
+khe gió, lọc bụi) được ghi rõ là do IT thực hiện.
 
 ## Cấu trúc thư mục
 
 ```
 index.html            Trang chủ: Gọi IT, tìm nhanh triệu chứng, lưới thẻ, link hãng, checklist 60 giây
 su-co.html            10 sự cố theo triệu chứng (accordion): dấu hiệu → các bước → KHÔNG NÊN → khi nào gọi IT
-hitachi.html          Hướng dẫn theo hãng: nút bấm, chọn HDMI, đèn báo, tắt máy đúng cách
+hitachi.html          Hướng dẫn theo hãng: nút remote, chọn HDMI, đèn báo, tắt máy đúng cách
 sony.html
 infoto.html           + phần riêng về chức năng tương tác (USB, hiệu chỉnh, bút, phần mềm bảng trắng)
 ket-noi-laptop.html   Windows 10/11 (Win + P, Presenter View), macOS (adapter, Mirror), sai tỉ lệ hình
@@ -19,7 +22,7 @@ lien-he.html          Khi nào gọi IT ngay, thông tin liên hệ, mẫu báo 
 assets/css/style.css  Toàn bộ giao diện (mobile-first, chữ to, nút ≥ 48px, có CSS in ấn)
 assets/js/config.js   ★ NƠI DUY NHẤT CẦN SỬA khi có thông tin thật (số IT, model máy…)
 assets/js/main.js     Chèn cấu hình, accordion, tìm nhanh, sao chép mẫu, nút in
-assets/img/*.svg      Ảnh minh họa tự vẽ (remote, bảng điều khiển, sơ đồ) – thay bằng ảnh thật khi có
+assets/img/*.svg      Ảnh minh họa tự vẽ (remote, sơ đồ) – thay bằng ảnh thật khi có
 .nojekyll             Để GitHub Pages phục vụ file tĩnh nguyên trạng
 ```
 
@@ -47,11 +50,10 @@ Giá trị còn dạng `[...]` được tô vàng nhẹ để dễ nhận ra ch�
 
 ### Thay ảnh minh họa bằng ảnh thật
 
-Chụp ảnh remote, bảng điều khiển, cổng cắm của từng loại máy rồi lưu vào `assets/img/` và sửa thuộc tính `src`
+Chụp ảnh remote, ổ cắm HDMI/USB trên bàn giảng viên hoặc tường của từng phòng rồi lưu vào `assets/img/` và sửa thuộc tính `src`
 của thẻ `<img>` tương ứng trong trang hãng (`hitachi.html`, `sony.html`, `infoto.html`). Các file hiện có:
 
 - `remote-hitachi.svg`, `remote-sony.svg`, `remote-infoto.svg` – sơ đồ remote
-- `panel-hitachi.svg`, `panel-sony.svg`, `panel-infoto.svg` – sơ đồ bảng điều khiển trên thân máy
 - `placeholder-photo.svg` – khung "chỗ chèn ảnh thật"
 - `so-do-infoto.svg`, `ket-noi.svg`, `win-p.svg`, `logo.svg` – sơ đồ minh họa khác
 

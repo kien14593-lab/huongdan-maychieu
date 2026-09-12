@@ -1156,10 +1156,6 @@ tbody tr:nth-child(even) {
   .cards--3 {
     grid-template-columns: repeat(3, 1fr);
   }
-
-  .figure-row--3 {
-    grid-template-columns: repeat(3, 1fr);
-  }
 }
 
 /* ---------- In ấn: dán tại phòng học ---------- */

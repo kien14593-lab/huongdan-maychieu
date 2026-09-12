@@ -41,6 +41,11 @@
     <h1 class="page-title">Xử lý sự cố theo triệu chứng</h1>
     <p class="lead">Chạm vào triệu chứng để xem các bước. Làm <strong>theo thứ tự từ dễ đến khó</strong>, sau mỗi bước đợi vài giây rồi kiểm tra lại. Không được thì gọi IT: <span data-config="sdt_it">[SỐ ĐIỆN THOẠI IT]</span>.</p>
 
+    <div class="note note--warn">
+      <strong class="note__title">Máy chiếu treo trên cao</strong>
+      Thầy cô chỉ cần thao tác trên <strong>remote</strong>, <strong>đầu cáp ở bàn giảng viên / ổ trên tường</strong>, <strong>công tắc điện của phòng</strong> và <strong>laptop</strong>. Mọi việc trên thân máy (nút bấm, dây nguồn, ống kính, khe gió…) do IT thực hiện – <strong>không trèo lên bàn ghế</strong> để với máy.
+    </div>
+
     <div class="toolbar">
       <button class="btn btn--secondary btn--sm" type="button" data-action="open-all">Mở tất cả</button>
       <button class="btn btn--secondary btn--sm" type="button" data-action="close-all">Đóng tất cả</button>
@@ -75,33 +80,31 @@
       <div class="acc__panel" id="khong-bat-duoc-panel" role="region" aria-labelledby="khong-bat-duoc-btn">
         <h3 class="lbl lbl--sign">Dấu hiệu nhận biết</h3>
         <ul>
-          <li>Nhấn Power nhưng máy im lặng, không có đèn báo nào sáng trên thân máy.</li>
+          <li>Nhấn Power trên remote nhưng máy im lặng, nhìn lên không thấy đèn báo nào sáng.</li>
           <li>Hoặc: đèn báo sáng cam/đỏ (đang chờ) nhưng nhấn Power vẫn không lên hình.</li>
         </ul>
 
         <h3 class="lbl lbl--steps">Các bước thử (từ dễ → khó)</h3>
         <ol class="steps">
-          <li><strong>Kiểm tra điện của phòng.</strong> Bật công tắc / cầu dao (aptomat) của phòng. Nếu máy chiếu có ổ cắm hoặc công tắc riêng trên tường, bật lên. Thử ổ cắm bằng sạc điện thoại để biết ổ có điện không.</li>
-          <li><strong>Kiểm tra dây nguồn.</strong> Phích cắm ở ổ điện và đầu cắm vào máy chiếu (thường ở mặt sau máy) có lỏng, tuột không. Cắm chặt lại.</li>
-          <li><strong>Công tắc nguồn cứng.</strong> Một số máy có công tắc gạt ở thân máy: gạt sang <strong>ON</strong> (ký hiệu <strong>I</strong>).</li>
+          <li><strong>Kiểm tra điện của phòng.</strong> Bật công tắc / cầu dao (aptomat) của phòng; nếu máy chiếu có công tắc riêng trên tường (thường cạnh bảng hoặc gần bàn giảng viên), bật lên. Đèn, quạt của phòng cũng không chạy → phòng mất điện, báo bảo vệ / giáo vụ.</li>
           <li><strong>Nhìn đèn báo rồi mới nhấn.</strong> Đèn cam/đỏ sáng ổn định = máy đang <em>chờ</em> (standby) → nhấn Power <strong>1 lần</strong>. Đèn đang nhấp nháy = máy đang khởi động hoặc làm mát → <strong>đợi 1–2 phút</strong> rồi thử lại.</li>
-          <li><strong>Dùng nút Power trên thân máy</strong> thay cho remote (để loại trừ remote hết pin). Nhấn giữ 1–2 giây, không nhấn liên tiếp nhiều lần.</li>
+          <li><strong>Loại trừ remote hết pin:</strong> đứng gần bên dưới máy, chĩa remote thẳng lên máy chiếu, nhấn giữ Power 1–2 giây (không nhấn liên tiếp nhiều lần). Vẫn không được → thử pin mới (xem <a href="#remote">mục 6</a>).</li>
           <li><strong>Nếu máy vừa được tắt:</strong> phải đợi máy làm mát xong (quạt ngừng, đèn hết nhấp nháy, thường 1–2 phút) rồi mới bật lại. Bật khi đang làm mát máy sẽ không lên.</li>
           <li><strong>Đợi 30–60 giây sau khi bật.</strong> Đèn máy chiếu cần thời gian sáng dần; chưa có hình ngay là bình thường.</li>
         </ol>
 
         <h3 class="lbl lbl--warn">⚠️ KHÔNG NÊN làm</h3>
         <ul class="warn-list">
-          <li>Không rút điện đột ngột khi máy đang chạy hoặc đang làm mát (dễ hỏng bóng đèn).</li>
+          <li>Không tắt cầu dao / công tắc điện đột ngột khi máy đang chạy hoặc đang làm mát (dễ hỏng bóng đèn).</li>
           <li>Không nhấn Power liên tục nhiều lần – máy sẽ khóa hoặc đợi lâu hơn.</li>
-          <li>Không tự tháo vỏ máy, không đụng vào bóng đèn, không trèo lên bàn ghế để với máy treo trần.</li>
+          <li>Không trèo lên bàn ghế để với máy; không tự kiểm tra dây nguồn, công tắc hay nút trên thân máy – việc này do IT làm.</li>
         </ul>
 
         <h3 class="lbl lbl--stop">🛑 Dừng lại và gọi IT khi</h3>
         <ul class="stop-list">
-          <li>Đã kiểm tra điện phòng và dây nguồn mà máy vẫn không có đèn báo nào.</li>
+          <li>Điện phòng bình thường (đèn, quạt phòng vẫn chạy) mà máy chiếu không có đèn báo nào – có thể lỏng dây nguồn trên máy, chỉ IT kiểm tra được.</li>
           <li>Đèn báo đỏ nhấp nháy liên tục hoặc sáng đỏ mà không lên hình (xem <a href="#tu-tat">mục 5</a>).</li>
-          <li>Có mùi khét, tiếng kêu lạ, hoặc phích cắm/ổ điện bị cháy đen.</li>
+          <li>Có mùi khét hoặc tiếng kêu lạ từ máy chiếu.</li>
         </ul>
         <p class="acc__foot"><a href="#danh-sach">↑ Về danh sách sự cố</a> · <a href="lien-he.html">📞 Liên hệ IT</a></p>
       </div>
@@ -125,8 +128,8 @@
 
         <h3 class="lbl lbl--steps">Các bước thử (từ dễ → khó)</h3>
         <ol class="steps">
-          <li><strong>Cắm lại cáp HDMI ở CẢ HAI đầu:</strong> đầu ở laptop và đầu ở máy chiếu (hoặc ổ HDMI trên tường / bàn giảng viên). Rút ra, cắm lại thật chặt. Dùng adapter (MacBook, laptop mỏng) thì cắm chặt cả adapter.</li>
-          <li><strong>Chọn đúng nguồn vào trên máy chiếu:</strong> nhấn nút <strong>Input</strong> / <strong>Source</strong> / <strong>HDMI</strong> trên remote hoặc thân máy. Chọn <strong>HDMI 1</strong>, đợi 3–5 giây; chưa có hình thì thử <strong>HDMI 2</strong>. Nhìn nhãn cổng đang cắm dây để chọn đúng.</li>
+          <li><strong>Cắm lại cáp HDMI ở phía bàn giảng viên:</strong> đầu ở laptop, và đầu ở ổ HDMI trên tường / hộp nối trên bàn (nếu là đầu cắm rời). Rút ra, cắm lại thật chặt. Dùng adapter (MacBook, laptop mỏng) thì cắm chặt cả adapter. Đầu cáp phía máy chiếu ở trên cao – không cần kiểm tra.</li>
+          <li><strong>Chọn đúng nguồn vào trên máy chiếu:</strong> nhấn nút <strong>Input</strong> / <strong>Source</strong> / <strong>HDMI</strong> trên remote. Chọn <strong>HDMI 1</strong>, đợi 3–5 giây; chưa có hình thì thử <strong>HDMI 2</strong>. Nếu ổ HDMI trên tường/bàn có ghi số cổng thì chọn theo đó.</li>
           <li><strong>Bảo laptop xuất hình ra ngoài:</strong> Windows nhấn <kbd>Win</kbd> + <kbd>P</kbd> → chọn <strong>Duplicate</strong> (Nhân đôi). macOS: mở System Settings → Displays (xem <a href="ket-noi-laptop.html">trang kết nối laptop</a>).</li>
           <li><strong>Đợi 5–10 giây</strong> sau mỗi thao tác. Laptop và máy chiếu cần thời gian "bắt tay" (nhận ra nhau).</li>
           <li><strong>Rút cáp HDMI khỏi laptop, đợi 5 giây, cắm lại.</strong> Nhiều laptop không nhận cáp nếu cắm lúc máy đang khởi động.</li>
@@ -176,26 +179,24 @@
 
         <h3 class="lbl lbl--steps">Các bước thử (từ dễ → khó)</h3>
         <ol class="steps">
-          <li><strong>Hình mờ → chỉnh lấy nét (Focus).</strong> Xoay từ từ vòng <strong>Focus</strong> trên ống kính (một số máy có nút Focus +/− trên remote) đến khi chữ ở giữa màn rõ nhất. Máy treo trần quá cao thì <strong>không trèo</strong> – gọi IT.</li>
-          <li><strong>Ống kính bám bụi:</strong> lau <strong>nhẹ</strong> bằng khăn mềm khô (khăn lau kính mắt). Không dùng giấy, không xịt nước/cồn trực tiếp.</li>
-          <li><strong>Méo hình thang → Keystone.</strong> Nhấn nút <strong>Keystone</strong> (biểu tượng hình thang) trên remote/thân máy, chỉnh <strong>+</strong> / <strong>−</strong> đến khi hình vuông vắn. Một số máy có <em>Auto Keystone</em> trong Menu → Setup.</li>
+          <li><strong>Hình mờ → kiểm tra độ phân giải laptop trước.</strong> Chữ nhòe đều toàn màn thường do laptop xuất độ phân giải không khớp. Windows: chuột phải màn hình nền → <em>Display settings</em> → <em>Display resolution</em> → chọn mục có chữ <strong>(Recommended)</strong>; nếu vẫn xấu, thử <strong>1920 × 1080</strong> hoặc <strong>1280 × 800</strong>. macOS: System Settings → Displays → <em>Default for display</em>.</li>
+          <li><strong>Lấy nét (Focus) – chỉ khi remote có nút Focus +/−</strong> (một số model). Nhấn từng nấc đến khi chữ ở giữa màn rõ nhất. Remote không có nút Focus → vòng lấy nét nằm trên ống kính ở trên cao, chỉ IT chỉnh được.</li>
+          <li><strong>Méo hình thang → Keystone.</strong> Nhấn nút <strong>Keystone</strong> (biểu tượng hình thang) trên remote, chỉnh <strong>+</strong> / <strong>−</strong> đến khi hình vuông vắn. Một số máy có <em>Auto Keystone</em> trong Menu → Setup.</li>
           <li><strong>Tràn/thiếu hình, viền đen → tỉ lệ khung hình.</strong> Nhấn nút <strong>Aspect</strong> chọn <strong>Auto</strong> / <strong>Normal</strong>; nếu vẫn sai thử 16:9 hoặc 4:3 cho khớp màn chiếu. Nhấn <strong>Auto</strong> / <strong>Auto Adjust</strong> (nếu có) để máy tự căn.</li>
-          <li><strong>Hình quá to/nhỏ → Zoom.</strong> Xoay vòng <strong>Zoom</strong> trên ống kính (nếu có) hoặc nút Zoom trên remote.</li>
-          <li><strong>Đặt độ phân giải laptop phù hợp.</strong> Windows: chuột phải màn hình nền → <em>Display settings</em> → <em>Display resolution</em> → chọn mục có chữ <strong>(Recommended)</strong>; nếu vẫn xấu, thử <strong>1920 × 1080</strong> hoặc <strong>1280 × 800</strong>. macOS: System Settings → Displays → <em>Default for display</em>.</li>
+          <li><strong>Lỡ bấm phóng to một vùng</strong> (<strong>Magnify</strong> / <strong>D Zoom</strong> trên remote): nhấn lại nút đó (hoặc <strong>OFF</strong> / <strong>−</strong>) để về bình thường. Hình quá to/nhỏ hoặc lệch khỏi màn do vị trí lắp máy → không tự chỉnh được, báo IT.</li>
           <li><strong>Chữ quá nhỏ:</strong> dùng <kbd>Win</kbd> + <kbd>P</kbd> → Duplicate (thay vì Extend); phóng to nội dung bằng <kbd>Ctrl</kbd> + lăn chuột (Word, PowerPoint) hoặc <kbd>Ctrl</kbd> + <kbd>+</kbd> (trình duyệt).</li>
         </ol>
 
         <h3 class="lbl lbl--warn">⚠️ KHÔNG NÊN làm</h3>
         <ul class="warn-list">
-          <li>Không đứng lên ghế/bàn để xoay ống kính máy treo trần.</li>
-          <li>Không xoay, đẩy, dịch chuyển thân máy hoặc giá treo; không tháo nắp máy.</li>
-          <li>Không dùng khăn ướt, cồn, nước xịt kính lên ống kính.</li>
+          <li>Không đứng lên ghế/bàn để với, xoay ống kính hay lau máy treo trần.</li>
+          <li>Không xoay, đẩy, dịch chuyển thân máy hoặc giá treo.</li>
         </ul>
 
         <h3 class="lbl lbl--stop">🛑 Dừng lại và gọi IT khi</h3>
         <ul class="stop-list">
           <li>Hình lệch hẳn khỏi màn chiếu (máy hoặc giá treo bị xô lệch).</li>
-          <li>Đã lấy nét mà toàn bộ hình vẫn mờ, hoặc mờ một góc cố định.</li>
+          <li>Đã đổi độ phân giải mà toàn bộ hình vẫn mờ (cần chỉnh Focus hoặc lau ống kính trên máy), hoặc mờ một góc cố định.</li>
           <li>Có đốm, vệt cố định trên hình dù đổi laptop (bụi/bẩn bên trong máy).</li>
         </ul>
         <p class="acc__foot"><a href="#danh-sach">↑ Về danh sách sự cố</a> · <a href="lien-he.html">📞 Liên hệ IT</a></p>
@@ -220,7 +221,7 @@
 
         <h3 class="lbl lbl--steps">Các bước thử (từ dễ → khó)</h3>
         <ol class="steps">
-          <li><strong>Cắm lại chặt cả hai đầu HDMI.</strong> Cáp lỏng là nguyên nhân số 1 gây ám màu và sọc. Ấn thẳng đầu cáp vào cổng.</li>
+          <li><strong>Cắm lại chặt đầu HDMI ở laptop</strong> (và ở ổ trên tường/bàn nếu là đầu cắm rời). Cáp lỏng là nguyên nhân số 1 gây ám màu và sọc. Ấn thẳng đầu cáp vào cổng.</li>
           <li><strong>Lay nhẹ đầu cáp ở laptop:</strong> nếu màu thay đổi theo → cáp hoặc cổng bị lỏng/hỏng.</li>
           <li><strong>Đổi cáp HDMI hoặc adapter khác</strong> (nếu có sẵn).</li>
           <li><strong>Kiểm tra chế độ hình ảnh trên máy chiếu:</strong> nút <strong>Picture Mode</strong> / <strong>Image Mode</strong> / <strong>Color Mode</strong> → chọn <strong>Standard</strong>, <strong>Normal</strong> hoặc <strong>Presentation</strong>. Nếu ai đó đã chọn <em>Blackboard</em>, <em>Whiteboard</em>, <em>Cinema</em>… hình sẽ có màu lạ.</li>
@@ -262,18 +263,17 @@
 
         <h3 class="lbl lbl--steps">Các bước thử (từ dễ → khó)</h3>
         <ol class="steps">
-          <li><strong>Dừng sử dụng và tắt máy đúng cách:</strong> nhấn Power (xác nhận nếu máy hỏi), để quạt làm mát chạy đến khi tự ngừng (1–3 phút). <strong>Không rút điện ngay.</strong></li>
-          <li><strong>Để máy nguội 10 phút.</strong> Kiểm tra xung quanh: khe gió có bị che (giấy, túi, rèm, trần quá sát)? Phòng quá nóng → bật điều hòa/quạt.</li>
+          <li><strong>Dừng sử dụng và tắt máy đúng cách:</strong> nhấn Power trên remote (xác nhận nếu máy hỏi), để quạt làm mát chạy đến khi tự ngừng (1–3 phút). <strong>Không tắt cầu dao / công tắc điện ngay.</strong></li>
+          <li><strong>Để máy nguội 10 phút.</strong> Phòng quá nóng → bật điều hòa/quạt. Khe gió, lọc bụi nằm trên máy – không tự kiểm tra, để IT làm.</li>
           <li><strong>Đối chiếu đèn báo</strong> theo hãng: <a href="hitachi.html#den-bao">Hitachi</a> · <a href="sony.html#den-bao">Sony</a> · <a href="infoto.html#den-bao">Infoto</a>. Đèn đỏ nhấp nháy thường là lỗi nhiệt độ hoặc bóng đèn → cần IT.</li>
-          <li><strong>Chỉ khi</strong> nguyên nhân rõ ràng là phòng nóng / khe gió bị che và đèn báo đã trở lại bình thường: bật lại <strong>một lần</strong> để dạy tạm. Nếu máy tắt lần nữa → dừng hẳn.</li>
+          <li><strong>Chỉ khi</strong> phòng đã mát và đèn báo đã trở lại bình thường (cam/đỏ sáng ổn định – đang chờ): bật lại <strong>một lần</strong> để dạy tạm. Nếu máy tắt lần nữa → dừng hẳn.</li>
           <li><strong>Chuyển phương án dự phòng</strong> (bảng, TV, phòng khác, gửi tài liệu cho lớp) và báo IT.</li>
         </ol>
 
         <h3 class="lbl lbl--warn">⚠️ KHÔNG NÊN làm</h3>
         <ul class="warn-list">
-          <li><strong>KHÔNG tự mở nắp máy</strong>, không tự vệ sinh lọc bụi hay thay bóng đèn – bóng đèn rất nóng, áp suất cao, có thể nổ.</li>
+          <li><strong>KHÔNG</strong> trèo lên với máy để kiểm tra, không tự vệ sinh lọc bụi hay thay bóng đèn – bóng đèn rất nóng, áp suất cao, có thể nổ.</li>
           <li>Không bật lại nhiều lần khi máy vừa tự tắt.</li>
-          <li>Không xịt nước, xịt khí nén vào máy khi đang nóng.</li>
         </ul>
 
         <h3 class="lbl lbl--stop">🛑 Dừng lại và gọi IT khi</h3>
@@ -303,12 +303,12 @@
 
         <h3 class="lbl lbl--steps">Các bước thử (từ dễ → khó)</h3>
         <ol class="steps">
-          <li><strong>Hướng đúng chỗ:</strong> chĩa remote thẳng vào <strong>mắt nhận tín hiệu</strong> của máy chiếu (mặt trước, gần ống kính; một số máy có thêm ở mặt sau) hoặc chĩa vào <strong>màn chiếu</strong> để tín hiệu dội lại. Nhấn dứt khoát 1 lần, đợi 1 giây.</li>
+          <li><strong>Hướng đúng chỗ:</strong> đứng gần bên dưới máy, giơ remote chĩa thẳng lên <strong>máy chiếu</strong> (mắt nhận tín hiệu thường ở mặt trước, gần ống kính) hoặc chĩa vào <strong>màn chiếu</strong> để tín hiệu dội lại. Nhấn dứt khoát 1 lần, đợi 1 giây.</li>
           <li><strong>Gỡ vật cản</strong> (người đứng chắn, rèm, laptop mở nắp che). Đứng cách máy dưới 5–7 m.</li>
           <li><strong>Kiểm tra pin:</strong> mở nắp, lắp lại pin đúng cực (+/−), thay pin mới (thường AAA hoặc AA). <em>Mẹo:</em> soi đầu remote bằng camera điện thoại khi nhấn nút – thấy đèn nhấp nháy tím/trắng là remote còn phát tín hiệu.</li>
           <li><strong>Ánh sáng gây nhiễu:</strong> đèn huỳnh quang hoặc nắng chiếu thẳng vào mắt nhận → kéo rèm, tắt đèn gần máy.</li>
           <li><strong>Remote bị khóa (ít gặp):</strong> một số remote Sony/Hitachi có nút <em>ID</em> hoặc <em>Key Lock</em> – kiểm tra Menu → Security / Key lock (chỉ khi biết rõ).</li>
-          <li><strong>Dùng nút trên thân máy thay thế:</strong> Power, Input/Source, Menu, mũi tên, Enter – đủ để bật máy và chọn HDMI. Xem sơ đồ nút theo hãng: <a href="hitachi.html">Hitachi</a> · <a href="sony.html">Sony</a> · <a href="infoto.html">Infoto</a>.</li>
+          <li><strong>Không có cách thay thế remote</strong> vì nút bấm nằm trên thân máy ở trên cao. Máy <strong>đã bật và đúng nguồn HDMI</strong> → cứ dạy tiếp, điều khiển slide bằng laptop. Máy <strong>chưa bật</strong> hoặc sai nguồn → gọi IT (IT có remote dự phòng).</li>
         </ol>
 
         <h3 class="lbl lbl--warn">⚠️ KHÔNG NÊN làm</h3>
@@ -320,7 +320,7 @@
         <h3 class="lbl lbl--stop">🛑 Dừng lại và gọi IT khi</h3>
         <ul class="stop-list">
           <li>Đã thay pin mà remote vẫn không hoạt động, hoặc remote bị mất/hỏng.</li>
-          <li>Máy treo trần quá cao, không dùng được nút trên thân máy.</li>
+          <li>Máy chưa bật hoặc chưa đúng nguồn HDMI mà không điều khiển được bằng remote.</li>
         </ul>
         <p class="acc__foot"><a href="#danh-sach">↑ Về danh sách sự cố</a> · <a href="lien-he.html">📞 Liên hệ IT</a></p>
       </div>
@@ -347,8 +347,7 @@
           <li>Nhấn <strong>Menu</strong> trên remote → tìm mục <strong>Setup</strong> / <strong>Installation</strong> / <strong>Projection</strong> / <strong>Image Flip</strong> / <strong>Ceiling</strong> / <strong>Mirror</strong> (tên tùy hãng).</li>
           <li>Chọn đúng kiểu lắp:
             <ul>
-              <li>Máy <strong>treo trần</strong>, chiếu từ phía trước → <strong>Front / Ceiling</strong> (Trần – trước).</li>
-              <li>Máy <strong>đặt bàn</strong> → <strong>Front / Desktop</strong> hoặc <strong>Normal</strong>.</li>
+              <li>Máy chiếu của trường đều <strong>treo trần</strong> (Infoto: treo trên bảng), chiếu từ phía trước → chọn <strong>Front / Ceiling</strong> (Trần – trước).</li>
               <li>Chỉ chọn <strong>Rear</strong> khi chiếu từ sau màn (hiếm gặp).</li>
             </ul>
           </li>
@@ -391,7 +390,6 @@
         <ol class="steps">
           <li><strong>Nhấn lại nút Blank / AV Mute / Pic Mute</strong> (màn đen) hoặc <strong>Freeze</strong> (đứng hình) trên remote <strong>một lần</strong> để tắt chế độ đó. Nhấn từng nút, đợi 2 giây.</li>
           <li>Nhấn một nút bất kỳ như <strong>Menu</strong> hoặc <strong>Input</strong> để "đánh thức" máy khỏi chế độ tiết kiệm điện; sau đó thoát Menu.</li>
-          <li><strong>Kiểm tra nắp ống kính</strong> (một số máy có nắp trượt/nắp đậy) – mở nắp.</li>
           <li><strong>Laptop có đang ngủ không?</strong> Di chuột / nhấn phím bất kỳ. Trước giờ dạy nên tắt tự tắt màn hình: Windows → Settings → System → Power → Screen timeout → chọn thời gian dài hơn.</li>
           <li>Nhấn <kbd>Win</kbd> + <kbd>P</kbd> → chọn lại <strong>Duplicate</strong>.</li>
           <li>Hình đứng yên nhưng laptop vẫn chạy: <strong>rút cáp HDMI, đợi 5 giây, cắm lại</strong>.</li>
@@ -400,7 +398,7 @@
 
         <h3 class="lbl lbl--warn">⚠️ KHÔNG NÊN làm</h3>
         <ul class="warn-list">
-          <li>Không rút điện máy chiếu đột ngột vì tưởng máy hỏng.</li>
+          <li>Không tắt cầu dao / công tắc điện phòng vì tưởng máy hỏng.</li>
           <li>Không nhấn dồn dập nhiều nút trên remote – dễ bật thêm chế độ khác.</li>
         </ul>
 
@@ -481,12 +479,12 @@
 
         <h3 class="lbl lbl--steps">Các bước thử (từ dễ → khó)</h3>
         <ol class="steps">
-          <li><strong>Kiểm tra dây USB tương tác.</strong> Ngoài HDMI, máy chiếu tương tác cần thêm <strong>một dây USB</strong> (nhãn <em>Touch</em> / <em>Interactive</em> / <em>USB-B</em>) nối từ máy chiếu (hoặc hộp trên bàn) vào laptop. Cắm chặt, cắm <strong>trực tiếp</strong> vào laptop, không qua hub.</li>
+          <li><strong>Kiểm tra dây USB tương tác.</strong> Ngoài HDMI, máy chiếu tương tác cần thêm <strong>một dây USB</strong> (nhãn <em>Touch</em> / <em>Interactive</em> / <em>USB-B</em>); đầu dây thường được kéo sẵn xuống bàn giảng viên hoặc hộp nối trên tường. Cắm chặt, cắm <strong>trực tiếp</strong> vào laptop, không qua hub.</li>
           <li><strong>Đợi 10–30 giây</strong> để laptop nhận thiết bị (Windows có thể hiện thông báo <em>Setting up a device</em>).</li>
           <li><strong>Bút tương tác:</strong> bật công tắc bút (nếu có), thay pin (thường AAA) hoặc sạc bút; kiểm tra đầu bút không kẹt, không mòn. Cầm bút <strong>vuông góc</strong> với bảng, không che đầu bút bằng ngón tay.</li>
           <li><strong>Bật chế độ tương tác trên máy chiếu:</strong> Menu → <strong>Interactive</strong> / <strong>Touch</strong> → <strong>On</strong>; chọn đúng kiểu <em>Pen</em> / <em>Touch</em> / <em>Pen + Touch</em>.</li>
           <li><strong>Ánh sáng gây nhiễu:</strong> nắng hoặc đèn chiếu thẳng vào bảng / thanh cảm biến (phía trên bảng) làm cảm biến hồng ngoại bị nhiễu → kéo rèm, tắt đèn gần bảng.</li>
-          <li><strong>Vật cản và bụi:</strong> không để vật (nam châm, khăn, giấy dán) chạm mép bảng hoặc che thanh cảm biến; lau nhẹ cửa sổ cảm biến bằng khăn mềm khô.</li>
+          <li><strong>Vật cản:</strong> không để vật (nam châm, khăn, giấy dán) chạm mép bảng hoặc che thanh cảm biến phía trên bảng. Cảm biến bám bụi → báo IT lau, không tự với lên.</li>
           <li><strong>Chạm lệch → hiệu chỉnh lại (Calibration):</strong> nhấn nút <strong>Calib</strong> trên remote, hoặc Menu → <em>Calibration</em> / <em>Auto Calibration</em>, hoặc mở phần mềm tương tác trên laptop → <em>Calibrate</em>. Chạm chính xác vào tâm từng điểm theo thứ tự; không đứng che bảng khi máy tự hiệu chỉnh.</li>
           <li><strong>Laptop cá nhân dùng lần đầu:</strong> có thể cần phần mềm <span data-config="phan_mem_tuong_tac">[PHẦN MỀM TƯƠNG TÁC]</span> để dùng đủ tính năng. Tạm thời: Windows vẫn nhận chạm như chuột thường → dùng được để bấm chuyển slide; bật bút vẽ trong PowerPoint bằng <kbd>Ctrl</kbd> + <kbd>P</kbd> khi đang trình chiếu.</li>
           <li><strong>Phương án tạm:</strong> điều khiển bằng chuột/bàn phím laptop, hoặc dùng bảng trắng của phòng. Xem thêm <a href="infoto.html#tuong-tac">trang Infoto – phần tương tác</a>.</li>
