@@ -7,7 +7,8 @@ cần dừng lại để gọi IT.
 Máy chiếu được đề cập: **Hitachi** (Maxell), **Sony**, **Infoto** (máy chiếu tương tác). Tất cả phòng dùng cáp **HDMI**.
 Máy chiếu đều **treo trên cao** nên hướng dẫn chỉ gồm các thao tác giảng viên làm được từ dưới: remote, đầu cáp
 ở bàn giảng viên / ổ trên tường, công tắc điện của phòng và laptop. Việc trên thân máy (nút bấm, dây nguồn, ống kính,
-khe gió, lọc bụi) được ghi rõ là do IT thực hiện.
+khe gió, lọc bụi) được ghi rõ là do IT thực hiện. Remote hết pin: giảng viên tự lấy pin dự phòng ở **phòng nước
+giảng viên** (vị trí cụ thể sửa bằng khóa `noi_lay_pin` trong `config.js`).
 
 ## Cấu trúc thư mục
 
@@ -41,6 +42,7 @@ Mở `assets/js/config.js`, sửa giá trị bên phải dấu `:` rồi lưu. K
 | `model_sony`            | `[MODEL]`              | `"VPL-EX575"`                              | Trang chủ, trang Sony                              |
 | `model_infoto`          | `[MODEL]`              | `"IF-…"`                                   | Trang chủ, trang Infoto                            |
 | `phan_mem_tuong_tac`    | `[PHẦN MỀM TƯƠNG TÁC]` | `"Infoto Board"`                           | Trang Infoto, mục 10 trang Sự cố                   |
+| `noi_lay_pin`           | `"phòng nước giảng viên"` (đã điền) | `"phòng nước giảng viên (tầng 2 nhà A1)"` | Mục 1 & 6 trang Sự cố, 3 trang hãng, trang Liên hệ |
 | `ten_truong`, `ten_truong_ngan` | (đã điền)      | –                                          | Đầu trang, chân trang                              |
 | `cap_nhat`              | `"09/2026"`            | `"01/2027"`                                | Chân trang                                         |
 

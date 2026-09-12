@@ -37,6 +37,10 @@ window.CONFIG = {
      Ví dụ: "Infoto Board" hoặc "IQBoard". */
   phan_mem_tuong_tac: "[PHẦN MỀM TƯƠNG TÁC]",
 
+  /* Nơi để pin dự phòng cho remote – thầy cô tự đến lấy, không cần gọi IT.
+     Có thể ghi thêm vị trí cụ thể. Ví dụ: "phòng nước giảng viên (tầng 2 nhà A1)". */
+  noi_lay_pin: "phòng nước giảng viên",
+
   /* Thời điểm cập nhật nội dung (hiển thị ở chân trang) */
   cap_nhat: "09/2026"
 };
