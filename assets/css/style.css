@@ -257,7 +257,7 @@ hr {
   background: var(--c-primary-dark);
 }
 
-.site-nav ul {
+.site-nav > ul {
   list-style: none;
   margin: 0 auto;
   padding: 6px 16px;
@@ -270,12 +270,12 @@ hr {
   scrollbar-width: thin;
 }
 
-.site-nav li {
+.site-nav > ul > li {
   margin: 0;
   flex: 0 0 auto;
 }
 
-.site-nav a {
+.site-nav > ul > li > a {
   display: inline-flex;
   align-items: center;
   min-height: 44px;
@@ -289,19 +289,167 @@ hr {
   border: 2px solid transparent;
 }
 
-.site-nav a:hover {
+.site-nav > ul > li > a:hover {
   background: rgba(255, 255, 255, 0.12);
   color: #fff;
 }
 
-.site-nav a[aria-current="page"] {
+.site-nav > ul > li > a[aria-current="page"] {
   background: #fff;
   color: var(--c-primary-dark);
 }
 
-.site-nav a:focus-visible {
+.site-nav > ul > li > a:focus-visible {
   border-color: var(--c-focus);
   outline-offset: -2px;
+}
+
+/* Menu thả xuống "Loại máy chiếu" (details/summary – không cần JS vẫn mở/đóng được).
+   Bảng menu định vị theo .site-nav (không phải theo <ul> đang cuộn ngang) nên không bị cắt. */
+.site-nav {
+  position: relative;
+}
+
+.nav-dd summary {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 44px;
+  padding: 8px 12px 8px 14px;
+  border-radius: 999px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.95rem;
+  white-space: nowrap;
+  border: 2px solid transparent;
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+}
+
+.nav-dd summary::-webkit-details-marker {
+  display: none;
+}
+
+.nav-dd summary:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.nav-dd summary:focus-visible {
+  outline: 3px solid var(--c-focus);
+  outline-offset: -2px;
+}
+
+.nav-dd__caret {
+  font-size: 0.8em;
+  transition: transform 0.15s;
+}
+
+.nav-dd[open] .nav-dd__caret {
+  transform: rotate(180deg);
+}
+
+.nav-dd[open] summary,
+.nav-dd summary.is-current {
+  background: #fff;
+  color: var(--c-primary-dark);
+}
+
+.nav-dd__menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 60;
+  margin: 0;
+  padding: 6px;
+  list-style: none;
+  background: #fff;
+  border: 1px solid var(--c-border);
+  border-top: 0;
+  border-radius: 0 0 var(--radius) var(--radius);
+  box-shadow: 0 10px 24px rgba(16, 24, 40, 0.22);
+}
+
+.nav-dd__menu li {
+  margin: 0;
+}
+
+.nav-dd__menu a {
+  display: grid;
+  grid-template-columns: 44px 1fr;
+  align-items: center;
+  column-gap: 8px;
+  min-height: 52px;
+  padding: 8px 12px;
+  border-radius: 10px;
+  color: var(--c-text);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.02rem;
+  white-space: normal;
+  border: 2px solid transparent;
+}
+
+.nav-dd__menu a:hover {
+  background: var(--c-primary-light);
+  color: var(--c-primary-dark);
+}
+
+.nav-dd__menu a:focus-visible {
+  border-color: var(--c-focus);
+  outline: none;
+}
+
+.nav-dd__menu a[aria-current="page"] {
+  background: var(--c-primary-light);
+  color: var(--c-primary-dark);
+  box-shadow: inset 4px 0 0 var(--c-primary);
+}
+
+.nav-dd__menu .swatch {
+  justify-self: center;
+  margin: 0;
+}
+
+.nav-dd__sub {
+  display: block;
+  font-weight: 400;
+  font-size: 0.86rem;
+  color: var(--c-muted);
+}
+
+.nav-dd__menu a[aria-current="page"] .nav-dd__sub {
+  color: var(--c-primary-dark);
+}
+
+.swatch--khac {
+  font-size: 0.8rem;
+  font-weight: 800;
+  line-height: 10px;
+  text-align: center;
+  color: #3b4249;
+  border-style: dashed;
+}
+
+@media (min-width: 900px) {
+  /* Đủ chỗ cho mọi mục nên không cần cuộn ngang → bảng menu bám ngay dưới nút */
+  .site-nav > ul {
+    overflow: visible;
+  }
+
+  .nav-dd {
+    position: relative;
+  }
+
+  .nav-dd__menu {
+    left: 0;
+    right: auto;
+    width: 320px;
+    border-top: 1px solid var(--c-border);
+    border-radius: var(--radius);
+    margin-top: 6px;
+  }
 }
 
 /* ---------- Nội dung chính ---------- */

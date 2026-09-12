@@ -27,14 +27,20 @@ su-co.html            8 sự cố (accordion) xếp thành 1 danh sách duy nh�
 hitachi.html          Hướng dẫn theo hãng: ảnh remote thật + sơ đồ nút tô màu, chọn HDMI, đèn báo, tắt máy đúng cách,
 sony.html             danh sách phòng dùng hãng đó (Hitachi R017H · Sony RM-PJ8 · Infoto – remote bố cục Sanyo MXBT)
 infoto.html
+khac.html             Nhóm "Hãng khác" (NEC, Epson, ViewSonic, Eiki): bảng đối chiếu tên nút theo hãng, chọn HDMI, đèn báo,
+                      tắt máy, danh sách phòng theo từng hãng lẻ
 ket-noi-laptop.html   Windows 10/11 (Win + P, Presenter View), macOS (adapter, Mirror), sai tỉ lệ hình
 lien-he.html          Khi nào gọi IT ngay, thông tin liên hệ, mẫu báo sự cố có nút "Sao chép mẫu" (gõ phòng → tự chọn hãng)
 assets/css/style.css  Toàn bộ giao diện (mobile-first, chữ to, nút ≥ 48px, có CSS in ấn)
 assets/js/config.js   ★ NƠI DUY NHẤT CẦN SỬA khi có thông tin thật (số IT, danh sách phòng → hãng máy…)
-assets/js/main.js     Chèn cấu hình, danh sách phòng, accordion, chọn hãng (?may=), sao chép mẫu, nút in
+assets/js/main.js     Chèn cấu hình, danh sách phòng, accordion, chọn hãng (?may=), sao chép mẫu, nút in, menu thả xuống
 assets/img/           Ảnh remote thật (remote-*.jpg), sơ đồ remote vẽ theo bố cục thật (remote-*.svg), sơ đồ minh họa khác
 .nojekyll             Để GitHub Pages phục vụ file tĩnh nguyên trạng
 ```
+
+Thanh điều hướng dùng chung có menu thả xuống **📽️ Loại máy chiếu** (Hitachi · Sony · Infoto · Hãng khác) làm bằng
+`<details>/<summary>` nên không có JavaScript vẫn mở/đóng được; JS chỉ thêm việc bấm ra ngoài hoặc nhấn Esc thì đóng.
+Menu này được chép giống nhau trong 8 file HTML – khi thêm/bớt hãng cần sửa cả 8 file (tìm `nav-dd__menu`).
 
 ## Điền thông tin thật (placeholder)
 
@@ -64,8 +70,9 @@ Mỗi dòng có dạng `"SỐ PHÒNG": "hãng"` với hãng là `hitachi`, `sony
 (chữ thường). Hãng ngoài ba hãng chính được gom vào nhóm **"khác"** trên web. Khi đổi máy chỉ cần sửa hãng của phòng đó;
 thêm phòng mới thì thêm một dòng. JS tự cập nhật: ô gõ số phòng (chấp nhận gõ thường, có khoảng trắng, `dn` thay `ĐN`),
 số phòng và danh sách phòng trên thẻ hãng, banner ở trang Sự cố, và tự chọn hãng trong mẫu báo sự cố.
+`data-phong-list="nec"` (hoặc `epson`, `viewsonic`, `eiki`) liệt kê phòng của riêng một hãng lẻ – dùng trong `khac.html`.
 Danh sách phòng ghi sẵn trong HTML (chữ dự phòng khi không có JS) nên sau khi sửa `config.js` nhiều, nên cập nhật lại
-các đoạn `data-phong-list` trong `index.html`, `su-co.html` và 3 trang hãng cho khớp (không bắt buộc).
+các đoạn `data-phong-list` trong `index.html`, `su-co.html` và 4 trang hãng cho khớp (không bắt buộc).
 
 ### Ảnh remote và sơ đồ nút
 

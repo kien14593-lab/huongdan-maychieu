@@ -200,19 +200,29 @@
     return kq;
   }
 
-  /* Điền danh sách / số phòng vào các vị trí data-phong-list / data-phong-count="nhóm" */
+  /* Điền danh sách / số phòng vào các vị trí data-phong-list / data-phong-count="nhóm hoặc hãng"
+     (nhóm: hitachi | sony | infoto | khac; hãng lẻ trong nhóm khác: nec, epson, viewsonic, eiki…) */
   function dienDanhSachPhong() {
     var nhom = phongTheoNhom();
+    var ds = danhSachPhong();
+    function phongCua(khoa) {
+      if (nhom[khoa]) {
+        return nhom[khoa];
+      }
+      return Object.keys(ds).filter(function (ma) {
+        return ds[ma] === khoa;
+      });
+    }
     $all("[data-phong-list]").forEach(function (el) {
-      var ds = nhom[el.getAttribute("data-phong-list")] || [];
-      if (ds.length) {
-        el.textContent = ds.join(", ");
+      var list = phongCua(el.getAttribute("data-phong-list"));
+      if (list.length) {
+        el.textContent = list.join(", ");
       }
     });
     $all("[data-phong-count]").forEach(function (el) {
-      var ds = nhom[el.getAttribute("data-phong-count")] || [];
-      if (ds.length) {
-        el.textContent = String(ds.length);
+      var list = phongCua(el.getAttribute("data-phong-count"));
+      if (list.length) {
+        el.textContent = String(list.length);
       }
     });
   }
@@ -502,6 +512,70 @@
   }
 
   /* ---------------------------------------------------------------
+     7. Menu thả xuống "Loại máy chiếu" trên thanh điều hướng
+     (details/summary tự mở/đóng; JS chỉ thêm: bấm ra ngoài hoặc Esc thì đóng)
+     --------------------------------------------------------------- */
+  function khoiTaoMenuHang() {
+    var menus = $all("details.nav-dd");
+    if (!menus.length) {
+      return;
+    }
+    function dongTatCa(tru) {
+      menus.forEach(function (m) {
+        if (m !== tru) {
+          m.removeAttribute("open");
+        }
+      });
+    }
+    doc.addEventListener("click", function (e) {
+      var trong = menus.some(function (m) {
+        return m.contains(e.target);
+      });
+      if (!trong) {
+        dongTatCa(null);
+      }
+    });
+    doc.addEventListener("keydown", function (e) {
+      if (e.key !== "Escape" && e.key !== "Esc") {
+        return;
+      }
+      menus.forEach(function (m) {
+        if (m.hasAttribute("open")) {
+          m.removeAttribute("open");
+          var s = m.querySelector("summary");
+          if (s) {
+            s.focus();
+          }
+        }
+      });
+    });
+    menus.forEach(function (m) {
+      m.addEventListener("toggle", function () {
+        if (m.hasAttribute("open")) {
+          dongTatCa(m);
+          /* nút đang bị cuộn khuất một phần (điện thoại) → cuộn cho thấy trọn */
+          var s = m.querySelector("summary");
+          if (s && s.scrollIntoView) {
+            s.scrollIntoView({ block: "nearest", inline: "nearest" });
+          }
+        }
+      });
+    });
+  }
+
+  /* Thanh điều hướng cuộn ngang trên điện thoại: cuộn sẵn để mục của trang hiện tại lọt vào tầm nhìn */
+  function cuonNavDenMucHienTai() {
+    var ul = doc.querySelector(".site-nav > ul");
+    var cur = ul && ul.querySelector("a[aria-current='page'], summary.is-current");
+    if (!ul || !cur || ul.scrollWidth <= ul.clientWidth + 1) {
+      return;
+    }
+    var u = ul.getBoundingClientRect();
+    var c = cur.getBoundingClientRect();
+    ul.scrollLeft += (c.left + c.width / 2) - (u.left + u.width / 2);
+  }
+
+  /* ---------------------------------------------------------------
      Khởi động
      --------------------------------------------------------------- */
   function khoiDong() {
@@ -512,6 +586,8 @@
     khoiTaoChonHang();
     khoiTaoMauBaoCao();
     khoiTaoNutIn();
+    khoiTaoMenuHang();
+    cuonNavDenMucHienTai();
   }
 
   if (doc.readyState === "loading") {
