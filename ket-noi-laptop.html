@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kết nối laptop với máy chiếu – Windows 10/11 và macOS</title>
+  <meta name="description" content="Hướng dẫn kết nối laptop Windows 10/11 và MacBook với máy chiếu qua HDMI: Win + P (Duplicate, Extend), Presenter View PowerPoint, Mirror Displays, chọn âm thanh HDMI, sửa sai tỉ lệ hình.">
+  <meta name="theme-color" content="#0b3d91">
+  <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Bỏ qua điều hướng</a>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="index.html">
+        <img class="brand__logo" src="assets/img/logo.svg" alt="" width="44" height="44">
+        <span class="brand__text">
+          <span class="brand__school" data-config="ten_truong_ngan">Phân hiệu Trường ĐH GTVT tại TP. Hồ Chí Minh</span>
+          <span class="brand__title">Hướng dẫn xử lý sự cố máy chiếu</span>
+        </span>
+      </a>
+      <a class="btn btn--call btn--header" href="lien-he.html" data-config-tel="sdt_it">📞 Gọi IT</a>
+    </div>
+    <nav class="site-nav" aria-label="Điều hướng chính">
+      <ul class="container">
+        <li><a href="index.html">🏠 Trang chủ</a></li>
+        <li><a href="su-co.html">🛠️ Xử lý sự cố</a></li>
+        <li><a href="ket-noi-laptop.html" aria-current="page">💻 Kết nối laptop</a></li>
+        <li><a href="hitachi.html">Hitachi</a></li>
+        <li><a href="sony.html">Sony</a></li>
+        <li><a href="infoto.html">Infoto</a></li>
+        <li><a href="lien-he.html">📞 Liên hệ IT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" class="container">
+    <h1 class="page-title">Kết nối laptop với máy chiếu</h1>
+    <p class="lead">Tất cả phòng học dùng <strong>cáp HDMI</strong>. Laptop Windows thường có sẵn cổng HDMI; MacBook và laptop mỏng cần <strong>adapter USB-C → HDMI</strong> (nên mang theo adapter riêng).</p>
+
+    <nav class="box" aria-labelledby="muc-luc-title">
+      <h2 id="muc-luc-title" style="margin-top:0">Trong trang này</h2>
+      <ol class="toc">
+        <li><a href="#chuan-bi">Chuẩn bị và thứ tự cắm</a></li>
+        <li><a href="#windows">Windows 10 / 11: Win + P</a></li>
+        <li><a href="#presenter">Extend và Presenter View (PowerPoint)</a></li>
+        <li><a href="#macos">macOS (MacBook)</a></li>
+        <li><a href="#am-thanh">Chọn âm thanh ra HDMI / loa phòng</a></li>
+        <li><a href="#ti-le">Hình sai tỉ lệ (dẹt, kéo dãn, viền đen)</a></li>
+        <li><a href="#phim-tat">Phím tắt hữu ích</a></li>
+      </ol>
+    </nav>
+
+    <section class="section" aria-labelledby="chuan-bi-title" id="chuan-bi">
+      <h2 id="chuan-bi-title">1. Chuẩn bị và thứ tự cắm</h2>
+      <figure class="figure">
+        <img src="assets/img/ket-noi.svg" alt="Ba đầu cắm thường gặp: HDMI (cáp hình và tiếng của phòng), USB-C (MacBook và laptop mỏng cần adapter ra HDMI), USB-A (cáp tương tác của máy chiếu Infoto)" width="640" height="210">
+        <figcaption>Nhận diện đầu cắm. Đầu HDMI chỉ vào được theo <strong>một chiều</strong> – cắm nhẹ, không ép.</figcaption>
+      </figure>
+      <ol class="steps">
+        <li><strong>Bật máy chiếu trước</strong>, đợi đèn báo xanh ổn định (30–60 giây).</li>
+        <li><strong>Chọn nguồn HDMI</strong> trên máy chiếu đúng cổng đang cắm dây (nút Input / Source trên remote).</li>
+        <li><strong>Cắm cáp HDMI vào laptop</strong> (MacBook: cắm adapter vào laptop trước, rồi cắm HDMI vào adapter). Cắm chặt cả hai đầu.</li>
+        <li><strong>Đợi 5–10 giây.</strong> Thường màn hình laptop chớp một cái và hình xuất hiện trên máy chiếu.</li>
+        <li>Chưa có hình → Windows nhấn <kbd>Win</kbd> + <kbd>P</kbd> chọn <strong>Duplicate</strong>; macOS bật <strong>Mirror</strong> (xem bên dưới).</li>
+        <li>Máy chiếu tương tác Infoto: cắm thêm <strong>dây USB tương tác</strong> vào laptop (<a href="infoto.html#tuong-tac">hướng dẫn</a>).</li>
+      </ol>
+      <div class="note">
+        <strong class="note__title">Nên mang theo</strong>
+        Adapter riêng (USB-C → HDMI cho MacBook / laptop mỏng), sạc laptop, và USB chứa bài giảng dự phòng để dùng máy tính của phòng hoặc laptop mượn.
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="windows-title" id="windows">
+      <h2 id="windows-title">2. Windows 10 / 11: phím Win + P</h2>
+      <div class="figure-row">
+        <figure class="figure">
+          <img src="assets/img/win-p.svg" alt="Bảng chọn chế độ trình chiếu khi nhấn Windows + P với bốn lựa chọn: PC screen only, Duplicate (được chọn), Extend, Second screen only" width="380" height="460">
+          <figcaption>Nhấn giữ phím <kbd>Win</kbd> (phím có logo Windows) rồi nhấn <kbd>P</kbd>. Bảng hiện ở cạnh phải màn hình. Nhấn <kbd>P</kbd> thêm lần nữa để chuyển lựa chọn, <kbd>Enter</kbd> để chọn.</figcaption>
+        </figure>
+        <div>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Chế độ</th><th>Máy chiếu hiện gì</th><th>Khi nào dùng</th></tr></thead>
+              <tbody>
+                <tr><td><strong>PC screen only</strong><br><small>Chỉ màn hình PC</small></td><td>Không có hình</td><td>Không dùng khi dạy</td></tr>
+                <tr><td><strong>Duplicate</strong><br><small>Nhân đôi</small></td><td>Giống hệt màn laptop</td><td><strong>Khuyên dùng.</strong> Đơn giản, thấy gì chiếu nấy; bắt buộc với máy chiếu tương tác</td></tr>
+                <tr><td><strong>Extend</strong><br><small>Mở rộng</small></td><td>Là màn hình thứ hai, nội dung khác màn laptop</td><td>Muốn xem ghi chú (Presenter View) trong PowerPoint mà lớp không thấy</td></tr>
+                <tr><td><strong>Second screen only</strong><br><small>Chỉ màn hình thứ hai</small></td><td>Có hình, màn laptop tắt</td><td>Ít dùng; dễ "mất" cửa sổ</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="note note--ok">
+            <strong class="note__title">Không chắc? Chọn Duplicate.</strong>
+            Đây là chế độ an toàn nhất: laptop và máy chiếu luôn giống nhau.
+          </div>
+        </div>
+      </div>
+      <h3>Nếu Win + P không có tác dụng</h3>
+      <ol class="steps">
+        <li>Mở <strong>Settings</strong> (<kbd>Win</kbd> + <kbd>I</kbd>) → <strong>System</strong> → <strong>Display</strong> → mục <strong>Multiple displays</strong> → nhấn <strong>Detect</strong>.</li>
+        <li>Nhấn <kbd>Win</kbd> + <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>B</kbd> (khởi động lại card đồ họa, màn hình chớp và kêu bíp – bình thường).</li>
+        <li>Rút cáp HDMI, đợi 5 giây, cắm lại. Thử cổng / adapter khác. Cuối cùng khởi động lại laptop.</li>
+        <li>Chi tiết: <a href="su-co.html#laptop-khong-nhan">mục 10 – Laptop không nhận màn hình thứ 2</a>.</li>
+      </ol>
+    </section>
+
+    <section class="section box" aria-labelledby="presenter-title" id="presenter">
+      <h2 id="presenter-title" style="margin-top:0">3. Dùng Extend để xem ghi chú (Presenter View) trong PowerPoint</h2>
+      <p>Với <strong>Extend</strong>, máy chiếu là màn hình thứ hai: lớp thấy slide, còn bạn thấy ghi chú, đồng hồ và slide kế tiếp trên laptop.</p>
+      <ol class="steps">
+        <li>Nhấn <kbd>Win</kbd> + <kbd>P</kbd> → chọn <strong>Extend</strong>. Đợi 5 giây.</li>
+        <li>Mở PowerPoint → thẻ <strong>Slide Show</strong> → tích <strong>Use Presenter View</strong>. Ở ô <strong>Monitor</strong>, chọn màn hình máy chiếu (thường là <em>Monitor 2</em> hoặc <em>Automatic</em>).</li>
+        <li>Nhấn <kbd>F5</kbd> để trình chiếu từ đầu (<kbd>Shift</kbd> + <kbd>F5</kbd> từ slide hiện tại).</li>
+        <li>Nếu ghi chú lại hiện trên máy chiếu còn slide trên laptop: trong Presenter View nhấn <strong>Display Settings</strong> → <strong>Swap Presenter View and Slide Show</strong>.</li>
+        <li>Muốn kéo một cửa sổ (video, trình duyệt) sang máy chiếu: nhấn <kbd>Win</kbd> + <kbd>Shift</kbd> + <kbd>→</kbd> (hoặc <kbd>←</kbd>).</li>
+      </ol>
+      <div class="note note--warn" style="margin-bottom:0">
+        <strong>Lưu ý:</strong> Ở chế độ Extend, thứ gì mở trên laptop lớp <strong>không</strong> thấy cho đến khi bạn kéo sang. Không quen thì nên dùng Duplicate và nhấn <kbd>Alt</kbd> + <kbd>F5</kbd> để xem thử Presenter View trước buổi dạy. Máy chiếu <strong>tương tác</strong> (Infoto) nên dùng Duplicate để chạm đúng vị trí.
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="macos-title" id="macos">
+      <h2 id="macos-title">4. macOS (MacBook)</h2>
+      <ol class="steps">
+        <li><strong>Adapter:</strong> MacBook chỉ có cổng USB-C (Thunderbolt) → cần adapter/hub <strong>USB-C → HDMI</strong>. Cắm adapter vào MacBook trước, rồi cắm cáp HDMI của phòng vào adapter. Một số MacBook Pro đời mới có sẵn cổng HDMI.</li>
+        <li>Thường hình tự xuất hiện. Nếu không: mở <strong>System Settings</strong> (biểu tượng ⚙️ hoặc menu ) → <strong>Displays</strong>.</li>
+        <li>Chưa thấy máy chiếu trong danh sách: giữ phím <kbd>Option</kbd> (⌥) để hiện nút <strong>Detect Displays</strong> → nhấn.</li>
+        <li><strong>Để hình giống màn laptop (Mirror):</strong> chọn màn hình máy chiếu → ô <strong>Use as</strong> → <strong>Mirror for Built-in Display</strong>. (macOS cũ: Displays → thẻ Arrangement → tích <strong>Mirror Displays</strong>.)</li>
+        <li>Không Mirror = chế độ mở rộng (giống Extend): PowerPoint for Mac và Keynote tự bật Presenter View khi trình chiếu.</li>
+        <li>Hình xấu/sai tỉ lệ: Displays → chọn máy chiếu → <strong>Resolution: Default for display</strong>, hoặc <em>Scaled</em> → chọn <strong>1920 × 1080</strong> / <strong>1280 × 800</strong>.</li>
+      </ol>
+      <div class="note note--warn">
+        Adapter/hub rẻ tiền hay chập chờn (mất hình, nhấp nháy). Nếu có thể, dùng adapter đã thử ổn định hoặc mượn adapter của phòng.
+      </div>
+    </section>
+
+    <section class="section box" aria-labelledby="am-thanh-title" id="am-thanh">
+      <h2 id="am-thanh-title" style="margin-top:0">5. Chọn âm thanh ra HDMI / loa phòng</h2>
+      <p>Cáp HDMI truyền <strong>cả hình và tiếng</strong>. Khi cắm HDMI, laptop có thể vẫn phát tiếng ra loa nhỏ của nó – bạn cần chọn lại thiết bị phát.</p>
+      <h3>Windows 10 / 11</h3>
+      <ol class="steps">
+        <li>Nhấn vào biểu tượng <strong>loa 🔊</strong> ở góc phải thanh Taskbar.</li>
+        <li>Win 11: nhấn mũi tên <strong>›</strong> cạnh thanh âm lượng. Win 10: nhấn tên thiết bị phía trên thanh âm lượng.</li>
+        <li>Chọn thiết bị có chữ <strong>HDMI</strong>, <strong>Digital Output</strong> hoặc tên máy chiếu (Hitachi / Sony / Infoto).</li>
+        <li>Nếu loa phòng cắm dây tròn 3,5 mm vào laptop → chọn <strong>Speakers</strong> / <strong>Headphones</strong> thay vì HDMI.</li>
+        <li>Kéo âm lượng laptop lên 70–100%, rồi tăng âm lượng máy chiếu / amply từ từ.</li>
+        <li>Cách khác: chuột phải biểu tượng loa → <strong>Sound settings</strong> → <strong>Output</strong> → chọn thiết bị.</li>
+      </ol>
+      <h3>macOS</h3>
+      <ol class="steps">
+        <li><strong>System Settings</strong> → <strong>Sound</strong> → thẻ <strong>Output</strong>.</li>
+        <li>Chọn dòng có chữ <strong>HDMI</strong> / tên máy chiếu / tên adapter; hoặc <strong>External Headphones</strong> nếu loa phòng cắm dây 3,5 mm.</li>
+        <li>Mẹo: giữ <kbd>Option</kbd> và nhấn biểu tượng loa trên thanh menu để đổi nhanh thiết bị.</li>
+      </ol>
+      <p>Vẫn không có tiếng? Xem <a href="su-co.html#khong-co-tieng">mục 5 – Không có tiếng</a>.</p>
+    </section>
+
+    <section class="section" aria-labelledby="ti-le-title" id="ti-le">
+      <h2 id="ti-le-title">6. Laptop xuất hình nhưng sai tỉ lệ (dẹt, kéo dãn, viền đen, bị cắt)</h2>
+      <p>Nguyên nhân: độ phân giải laptop không khớp với máy chiếu, hoặc máy chiếu đang ép tỉ lệ khung hình.</p>
+      <ol class="steps">
+        <li><strong>Trên máy chiếu:</strong> nhấn nút <strong>Aspect</strong> → chọn <strong>Auto</strong> / <strong>Normal</strong> (Sony: <em>Normal</em> hoặc <em>Full</em>). Thử lần lượt các lựa chọn nếu chưa đúng.</li>
+        <li><strong>Windows – đặt độ phân giải khuyên dùng:</strong> chuột phải màn hình nền → <strong>Display settings</strong> → chọn màn hình số 2 (máy chiếu) nếu đang Extend → <strong>Display resolution</strong> → chọn mục có chữ <strong>(Recommended)</strong>.</li>
+        <li>Đang <strong>Duplicate</strong> thì hai màn dùng chung một độ phân giải: nếu hình xấu, chọn <strong>1920 × 1080</strong>; máy chiếu cũ có thể cần <strong>1280 × 800</strong> hoặc <strong>1024 × 768</strong>.</li>
+        <li><strong>Chữ quá nhỏ hoặc quá to:</strong> vẫn trong Display settings → <strong>Scale</strong> → 100% hoặc 125%.</li>
+        <li><strong>macOS:</strong> System Settings → Displays → chọn máy chiếu → <strong>Default for display</strong>; hoặc <em>Scaled</em> → chọn độ phân giải 16:9 (1920 × 1080) hay 16:10 (1280 × 800) tùy màn chiếu.</li>
+        <li><strong>PowerPoint có viền đen hai bên</strong> trên màn chiếu vuông (4:3): Design → <strong>Slide Size</strong> → <strong>Standard (4:3)</strong>. Không bắt buộc – viền đen không ảnh hưởng nội dung.</li>
+        <li>Khi Windows hỏi <em>Keep these display settings?</em> → nhấn <strong>Keep changes</strong> trong 15 giây, nếu không máy tự quay về cài đặt cũ.</li>
+      </ol>
+      <div class="note note--warn">
+        Máy chiếu báo <em>Sync is out of range</em> / <em>Not applicable</em> / <em>Frequency out of range</em> = độ phân giải quá cao. Tạm thời nhấn <kbd>Win</kbd> + <kbd>P</kbd> → Duplicate, rồi hạ độ phân giải như bước 3.
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="phim-tat-title" id="phim-tat">
+      <h2 id="phim-tat-title">7. Phím tắt hữu ích khi dạy</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Phím</th><th>Tác dụng</th></tr></thead>
+          <tbody>
+            <tr><td><kbd>Win</kbd> + <kbd>P</kbd></td><td>Chọn chế độ trình chiếu (Duplicate / Extend)</td></tr>
+            <tr><td><kbd>Win</kbd> + <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>B</kbd></td><td>Khởi động lại card đồ họa khi màn đen / không nhận máy chiếu</td></tr>
+            <tr><td><kbd>Win</kbd> + <kbd>Shift</kbd> + <kbd>→</kbd> / <kbd>←</kbd></td><td>Chuyển cửa sổ sang màn hình kia (chế độ Extend)</td></tr>
+            <tr><td><kbd>Win</kbd> + <kbd>I</kbd></td><td>Mở Settings (vào System → Display / Sound)</td></tr>
+            <tr><td><kbd>F5</kbd> / <kbd>Shift</kbd> + <kbd>F5</kbd></td><td>PowerPoint: trình chiếu từ đầu / từ slide hiện tại</td></tr>
+            <tr><td><kbd>Alt</kbd> + <kbd>F5</kbd></td><td>PowerPoint: xem thử Presenter View trên 1 màn hình</td></tr>
+            <tr><td><kbd>B</kbd> / <kbd>W</kbd></td><td>PowerPoint đang chiếu: màn đen / màn trắng tạm thời (nhấn lại để về)</td></tr>
+            <tr><td><kbd>Ctrl</kbd> + <kbd>P</kbd> · <kbd>Ctrl</kbd> + <kbd>A</kbd> · <kbd>E</kbd></td><td>PowerPoint đang chiếu: bút vẽ · con trỏ · xóa nét vẽ</td></tr>
+            <tr><td><kbd>Ctrl</kbd> + lăn chuột / <kbd>Ctrl</kbd> + <kbd>+</kbd></td><td>Phóng to nội dung trong Word, PDF, trình duyệt</td></tr>
+            <tr><td><kbd>Esc</kbd></td><td>Thoát trình chiếu / đóng menu</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="btn-row">
+        <a class="btn btn--primary" href="su-co.html">🛠️ Xử lý sự cố theo triệu chứng</a>
+        <a class="btn btn--secondary" href="index.html#checklist-title">✅ Checklist 60 giây</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p><strong data-config="ten_truong">Phân hiệu Trường Đại học Giao thông Vận tải tại TP. Hồ Chí Minh</strong></p>
+      <p>Tài liệu hướng dẫn xử lý <em>tạm thời</em> dành cho giảng viên. Khi không chắc chắn, hãy dừng lại và gọi IT: <span data-config="sdt_it">[SỐ ĐIỆN THOẠI IT]</span>.</p>
+      <p>Cập nhật: <span data-config="cap_nhat">09/2026</span> · <a href="lien-he.html">Góp ý nội dung cho bộ phận IT</a></p>
+    </div>
+  </footer>
+
+  <div class="call-bar" role="complementary" aria-label="Liên hệ nhanh">
+    <a class="btn btn--call" href="lien-he.html" data-config-tel="sdt_it">📞 Gọi IT</a>
+    <a class="btn btn--secondary" href="su-co.html">🛠️ Xử lý sự cố</a>
+  </div>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

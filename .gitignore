@@ -1,0 +1,20 @@
+# Hệ điều hành
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Trình soạn thảo
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Tệp tạm / log
+*.log
+*.tmp
+*.bak
+__pycache__/
+
+# Node (nếu sau này dùng công cụ kiểm tra)
+node_modules/
