@@ -62,7 +62,7 @@
 
       <form class="search" role="search" action="#" autocomplete="off">
         <label class="search__label" for="tim">Tìm nhanh (gõ không dấu cũng được)</label>
-        <input class="search__input" id="tim" type="search" placeholder="Ví dụ: no signal, mờ, không có tiếng, remote…">
+        <input class="search__input" id="tim" type="search" placeholder="Ví dụ: no signal, mờ, sai màu, remote…">
         <p class="search__status" id="tim-status" aria-live="polite"></p>
         <div class="note note--warn search__empty" id="tim-khong-thay" hidden>
           <strong>Không tìm thấy mục phù hợp.</strong> Hãy xem toàn bộ danh sách bên dưới hoặc <a href="lien-he.html">gọi IT</a>.
@@ -96,13 +96,6 @@
             <span class="card__icon" aria-hidden="true">🎨</span>
             <span class="card__title">Hình sai màu, nhiễu sọc</span>
             <span class="card__desc">Ám xanh/vàng/hồng, sọc ngang dọc, chớp giật</span>
-          </a>
-        </li>
-        <li data-keywords="không có tiếng, mất tiếng, âm thanh, loa, volume, mute, hdmi audio, âm lượng, video không có tiếng">
-          <a class="card__link" href="su-co.html#khong-co-tieng">
-            <span class="card__icon" aria-hidden="true">🔇</span>
-            <span class="card__title">Không có tiếng</span>
-            <span class="card__desc">Có hình nhưng loa phòng / máy chiếu im lặng</span>
           </a>
         </li>
         <li data-keywords="tự tắt, đèn đỏ, nhấp nháy, đỏ cam, quá nhiệt, nóng, quạt kêu, lọc bụi, bóng đèn, lamp, temp">
@@ -182,7 +175,7 @@
           <a class="card__link" href="ket-noi-laptop.html">
             <span class="card__icon" aria-hidden="true">💻</span>
             <span class="card__title">Kết nối laptop với máy chiếu</span>
-            <span class="card__desc">Windows 10/11 (Win + P), macOS (adapter, Mirror), âm thanh HDMI, sai tỉ lệ</span>
+            <span class="card__desc">Windows 10/11 (Win + P), macOS (adapter, Mirror), sai tỉ lệ hình</span>
           </a>
         </li>
         <li>
@@ -203,7 +196,7 @@
         <li><label><input type="checkbox"> <span><strong>Chọn nguồn HDMI</strong> đúng cổng đang cắm dây (nút Input / Source trên remote).</span></label></li>
         <li><label><input type="checkbox"> <span><strong>Cắm cáp HDMI vào laptop</strong>, cắm chặt cả hai đầu (MacBook/laptop mỏng: cắm chặt cả adapter). Đợi 5–10 giây.</span></label></li>
         <li><label><input type="checkbox"> <span><strong>Windows:</strong> nhấn <kbd>Win</kbd> + <kbd>P</kbd> → chọn <strong>Duplicate</strong> (Nhân đôi). <strong>macOS:</strong> bật Mirror Displays.</span></label></li>
-        <li><label><input type="checkbox"> <span><strong>Mở bài giảng</strong>, thử 1 slide có video/âm thanh nếu buổi học cần tiếng.</span></label></li>
+        <li><label><input type="checkbox"> <span><strong>Mở bài giảng</strong>, thử chuyển 1–2 slide (và mở thử video nếu có) để chắc hình lên đúng.</span></label></li>
         <li><label><input type="checkbox"> <span><strong>Cắm sạc laptop</strong>, tắt thông báo (Focus assist / Do Not Disturb), tắt chế độ tự tắt màn hình.</span></label></li>
         <li><label><input type="checkbox"> <span><strong>Để remote đúng chỗ</strong> và lưu số IT: <span data-config="sdt_it">[SỐ ĐIỆN THOẠI IT]</span>.</span></label></li>
       </ul>

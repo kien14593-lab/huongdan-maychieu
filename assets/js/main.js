@@ -11,7 +11,7 @@
     return Array.prototype.slice.call((root || doc).querySelectorAll(selector));
   }
 
-  /* Bỏ dấu tiếng Việt để tìm kiếm không phân biệt dấu: "khong tieng" ~ "không tiếng" */
+  /* Bỏ dấu tiếng Việt để tìm kiếm không phân biệt dấu: "hinh mo" ~ "hình mờ" */
   function boDau(str) {
     return String(str || "")
       .toLowerCase()

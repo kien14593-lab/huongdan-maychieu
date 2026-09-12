@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 610" width="240" height="610" role="img" aria-labelledby="title desc">
   <title id="title">Sơ đồ remote máy chiếu HITACHI / MAXELL (minh họa)</title>
-  <desc id="desc">Remote Hitachi thường có các nút STANDBY/ON, INPUT, SEARCH, COMPUTER, VIDEO, ASPECT, AUTO, KEYSTONE, MENU, ENTER, ESC, BLANK, FREEZE, MAGNIFY, VOLUME, MUTE, MY BUTTON, RESET, PAGE.</desc>
+  <desc id="desc">Remote Hitachi thường có các nút STANDBY/ON, INPUT, SEARCH, COMPUTER, VIDEO, ASPECT, AUTO, KEYSTONE, MENU, ENTER, ESC, BLANK, FREEZE, MAGNIFY, MY BUTTON, RESET, PAGE.</desc>
 <rect x="30" y="28" width="180" height="530" rx="26" fill="#2f3237" stroke="#15171a" stroke-width="3"/>
 <rect x="70" y="18" width="100" height="16" rx="5" fill="#15171a"/>
 <circle cx="120" cy="26" r="4" fill="#7e57c2"/>
@@ -43,23 +43,17 @@
 <rect x="150.7" y="276.0" width="45.3" height="30" rx="8" fill="#4a4f57" stroke="#15171a" stroke-width="1.5"/>
 <text x="173.3" y="294.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="7.5" font-weight="700" fill="#ffffff" text-anchor="middle">MAGNIFY</text>
 <rect x="44.0" y="316.0" width="45.3" height="30" rx="8" fill="#4a4f57" stroke="#15171a" stroke-width="1.5"/>
-<text x="66.7" y="334.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="7.5" font-weight="700" fill="#ffffff" text-anchor="middle">VOL −</text>
+<text x="66.7" y="329.7" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="7.5" font-weight="700" fill="#ffffff" text-anchor="middle">MY</text>
+<text x="66.7" y="338.3" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="7.5" font-weight="700" fill="#ffffff" text-anchor="middle">BUTTON 1</text>
 <rect x="97.3" y="316.0" width="45.3" height="30" rx="8" fill="#4a4f57" stroke="#15171a" stroke-width="1.5"/>
-<text x="120.0" y="334.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="7.5" font-weight="700" fill="#ffffff" text-anchor="middle">MUTE</text>
+<text x="120.0" y="329.7" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="7.5" font-weight="700" fill="#ffffff" text-anchor="middle">MY</text>
+<text x="120.0" y="338.3" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="7.5" font-weight="700" fill="#ffffff" text-anchor="middle">BUTTON 2</text>
 <rect x="150.7" y="316.0" width="45.3" height="30" rx="8" fill="#4a4f57" stroke="#15171a" stroke-width="1.5"/>
-<text x="173.3" y="334.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="7.5" font-weight="700" fill="#ffffff" text-anchor="middle">VOL +</text>
-<rect x="44.0" y="356.0" width="45.3" height="30" rx="8" fill="#4a4f57" stroke="#15171a" stroke-width="1.5"/>
-<text x="66.7" y="369.7" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="7.5" font-weight="700" fill="#ffffff" text-anchor="middle">MY</text>
-<text x="66.7" y="378.3" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="7.5" font-weight="700" fill="#ffffff" text-anchor="middle">BUTTON 1</text>
-<rect x="97.3" y="356.0" width="45.3" height="30" rx="8" fill="#4a4f57" stroke="#15171a" stroke-width="1.5"/>
-<text x="120.0" y="369.7" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="7.5" font-weight="700" fill="#ffffff" text-anchor="middle">MY</text>
-<text x="120.0" y="378.3" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="7.5" font-weight="700" fill="#ffffff" text-anchor="middle">BUTTON 2</text>
-<rect x="150.7" y="356.0" width="45.3" height="30" rx="8" fill="#4a4f57" stroke="#15171a" stroke-width="1.5"/>
-<text x="173.3" y="374.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="7.5" font-weight="700" fill="#ffffff" text-anchor="middle">RESET</text>
-<rect x="44.0" y="396.0" width="72.0" height="30" rx="8" fill="#4a4f57" stroke="#15171a" stroke-width="1.5"/>
-<text x="80.0" y="414.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="8.5" font-weight="700" fill="#ffffff" text-anchor="middle">PAGE ▲</text>
-<rect x="124.0" y="396.0" width="72.0" height="30" rx="8" fill="#4a4f57" stroke="#15171a" stroke-width="1.5"/>
-<text x="160.0" y="414.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="8.5" font-weight="700" fill="#ffffff" text-anchor="middle">PAGE ▼</text>
+<text x="173.3" y="334.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="7.5" font-weight="700" fill="#ffffff" text-anchor="middle">RESET</text>
+<rect x="44.0" y="356.0" width="72.0" height="30" rx="8" fill="#4a4f57" stroke="#15171a" stroke-width="1.5"/>
+<text x="80.0" y="374.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="8.5" font-weight="700" fill="#ffffff" text-anchor="middle">PAGE ▲</text>
+<rect x="124.0" y="356.0" width="72.0" height="30" rx="8" fill="#4a4f57" stroke="#15171a" stroke-width="1.5"/>
+<text x="160.0" y="374.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="8.5" font-weight="700" fill="#ffffff" text-anchor="middle">PAGE ▼</text>
 <text x="120.0" y="545.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="11" font-weight="700" fill="#9aa3ad" text-anchor="middle">HITACHI / MAXELL</text>
 <text x="120.0" y="578.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="8.5" font-weight="400" fill="#333" text-anchor="middle">Hình minh họa – bố cục nút có thể khác model thật.</text>
 <text x="120.0" y="592.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="8.5" font-weight="400" fill="#333" text-anchor="middle">Nút màu vàng: dễ bấm nhầm (làm màn đen / đứng hình).</text>

@@ -10,11 +10,11 @@ Máy chiếu được đề cập: **Hitachi** (Maxell), **Sony**, **Infoto** (m
 
 ```
 index.html            Trang chủ: Gọi IT, tìm nhanh triệu chứng, lưới thẻ, link hãng, checklist 60 giây
-su-co.html            11 sự cố theo triệu chứng (accordion): dấu hiệu → các bước → KHÔNG NÊN → khi nào gọi IT
+su-co.html            10 sự cố theo triệu chứng (accordion): dấu hiệu → các bước → KHÔNG NÊN → khi nào gọi IT
 hitachi.html          Hướng dẫn theo hãng: nút bấm, chọn HDMI, đèn báo, tắt máy đúng cách
 sony.html
 infoto.html           + phần riêng về chức năng tương tác (USB, hiệu chỉnh, bút, phần mềm bảng trắng)
-ket-noi-laptop.html   Windows 10/11 (Win + P, Presenter View), macOS (adapter, Mirror), âm thanh HDMI, sai tỉ lệ
+ket-noi-laptop.html   Windows 10/11 (Win + P, Presenter View), macOS (adapter, Mirror), sai tỉ lệ hình
 lien-he.html          Khi nào gọi IT ngay, thông tin liên hệ, mẫu báo sự cố có nút "Sao chép mẫu"
 assets/css/style.css  Toàn bộ giao diện (mobile-first, chữ to, nút ≥ 48px, có CSS in ấn)
 assets/js/config.js   ★ NƠI DUY NHẤT CẦN SỬA khi có thông tin thật (số IT, model máy…)
@@ -37,7 +37,7 @@ Mở `assets/js/config.js`, sửa giá trị bên phải dấu `:` rồi lưu. K
 | `model_hitachi`         | `[MODEL]`              | `"CP-EX303"`                               | Trang chủ, trang Hitachi                           |
 | `model_sony`            | `[MODEL]`              | `"VPL-EX575"`                              | Trang chủ, trang Sony                              |
 | `model_infoto`          | `[MODEL]`              | `"IF-…"`                                   | Trang chủ, trang Infoto                            |
-| `phan_mem_tuong_tac`    | `[PHẦN MỀM TƯƠNG TÁC]` | `"Infoto Board"`                           | Trang Infoto, mục 11 trang Sự cố                   |
+| `phan_mem_tuong_tac`    | `[PHẦN MỀM TƯƠNG TÁC]` | `"Infoto Board"`                           | Trang Infoto, mục 10 trang Sự cố                   |
 | `ten_truong`, `ten_truong_ngan` | (đã điền)      | –                                          | Đầu trang, chân trang                              |
 | `cap_nhat`              | `"09/2026"`            | `"01/2027"`                                | Chân trang                                         |
 
