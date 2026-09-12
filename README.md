@@ -5,7 +5,10 @@ tự khắc phục **tạm thời** các sự cố máy chiếu thường gặp 
 cần dừng lại để gọi IT.
 
 Máy chiếu được đề cập: **Hitachi** (Maxell), **Sony**, **Infoto** (máy chiếu tương tác – tài liệu chỉ hướng dẫn dùng
-để trình chiếu, không đề cập chức năng viết/chạm). Tất cả phòng dùng cáp **HDMI**.
+để trình chiếu, không đề cập chức năng viết/chạm) và nhóm **hãng khác** (NEC, Epson, ViewSonic, Eiki – vài phòng, dùng
+chung hướng dẫn). Các model cùng hãng vận hành giống nhau nên hướng dẫn **không tách theo model**; danh sách
+**phòng → hãng máy** lấy từ biên bản kiểm tra máy chiếu ngày 11/07 (58 phòng) và nằm trong `config.js`.
+Tất cả phòng dùng cáp **HDMI**.
 Máy chiếu đều **treo trên cao** nên hướng dẫn chỉ gồm các thao tác giảng viên làm được từ dưới: remote, đầu cáp
 ở bàn giảng viên / ổ trên tường, công tắc điện của phòng và laptop. Việc trên thân máy (nút bấm, dây nguồn, ống kính,
 khe gió, lọc bụi) được ghi rõ là do IT thực hiện. Remote hết pin: giảng viên tự lấy pin dự phòng ở **phòng nước
@@ -14,16 +17,20 @@ giảng viên** (vị trí cụ thể sửa bằng khóa `noi_lay_pin` trong `co
 ## Cấu trúc thư mục
 
 ```
-index.html            Trang chủ: tìm nhanh triệu chứng, lưới thẻ, link hãng, checklist 60 giây, khi nào gọi IT, hộp liên hệ IT (cuối trang)
-su-co.html            9 sự cố theo triệu chứng (accordion): dấu hiệu → các bước → KHÔNG NÊN → khi nào gọi IT
-hitachi.html          Hướng dẫn theo hãng: nút remote, chọn HDMI, đèn báo, tắt máy đúng cách
+index.html            Trang chủ: quy trình 4 bước (đến phòng → bật máy → cắm HDMI → gặp sự cố), ô gõ số phòng → biết hãng máy,
+                      thẻ chọn hãng theo remote (đen = Hitachi, trắng mỏng dẹp = Sony, trắng dày = Infoto, + hãng khác)
+                      → chuyển sang trang sự cố; hộp liên hệ IT (cuối trang)
+su-co.html            9 sự cố (accordion) gom theo 3 giai đoạn: bật máy → cắm HDMI → hình chiếu sai. Mỗi sự cố: dấu hiệu → các bước
+                      → KHÔNG NÊN → khi nào gọi IT. Nhận tham số `?may=hitachi|sony|infoto|khac` và/hoặc `?phong=203E7`
+                      để hiện banner hãng đã chọn
+hitachi.html          Hướng dẫn theo hãng: nút remote, chọn HDMI, đèn báo, tắt máy đúng cách, danh sách phòng dùng hãng đó
 sony.html
 infoto.html
 ket-noi-laptop.html   Windows 10/11 (Win + P, Presenter View), macOS (adapter, Mirror), sai tỉ lệ hình
-lien-he.html          Khi nào gọi IT ngay, thông tin liên hệ, mẫu báo sự cố có nút "Sao chép mẫu"
+lien-he.html          Khi nào gọi IT ngay, thông tin liên hệ, mẫu báo sự cố có nút "Sao chép mẫu" (gõ phòng → tự chọn hãng)
 assets/css/style.css  Toàn bộ giao diện (mobile-first, chữ to, nút ≥ 48px, có CSS in ấn)
-assets/js/config.js   ★ NƠI DUY NHẤT CẦN SỬA khi có thông tin thật (số IT, model máy…)
-assets/js/main.js     Chèn cấu hình, accordion, tìm nhanh, sao chép mẫu, nút in
+assets/js/config.js   ★ NƠI DUY NHẤT CẦN SỬA khi có thông tin thật (số IT, danh sách phòng → hãng máy…)
+assets/js/main.js     Chèn cấu hình, danh sách phòng, accordion, chọn hãng (?may=), sao chép mẫu, nút in
 assets/img/*.svg      Ảnh minh họa tự vẽ (remote, sơ đồ) – thay bằng ảnh thật khi có
 .nojekyll             Để GitHub Pages phục vụ file tĩnh nguyên trạng
 ```
@@ -32,17 +39,17 @@ assets/img/*.svg      Ảnh minh họa tự vẽ (remote, sơ đồ) – thay b�
 
 Mở `assets/js/config.js`, sửa giá trị bên phải dấu `:` rồi lưu. Không cần sửa file HTML.
 
-| Khóa trong `config.js`  | Placeholder hiện tại   | Ví dụ giá trị thật                         | Xuất hiện ở đâu                                    |
+| Khóa trong `config.js`  | Giá trị hiện tại       | Ví dụ giá trị thật                         | Xuất hiện ở đâu                                    |
 |-------------------------|------------------------|--------------------------------------------|----------------------------------------------------|
-| `sdt_it`                | `[SỐ ĐIỆN THOẠI IT]`   | `"028 3899 1234"`                          | Nút Gọi IT (tự tạo link `tel:`), chân trang, checklist |
+| `sdt_it`                | `[SỐ ĐIỆN THOẠI IT]`   | `"028 3899 1234"`                          | Nút Gọi IT (tự tạo link `tel:`), chân trang        |
 | `zalo_it`               | `[ZALO IT]`            | `"0901 234 567 (Zalo Phòng IT)"`           | Hộp liên hệ trang chủ và trang Liên hệ             |
 | `zalo_url`              | `""` (trống)           | `"https://zalo.me/0901234567"`             | Liên kết "(mở Zalo)" – chỉ hiện khi có URL         |
 | `phong_it`              | `[PHÒNG IT]`           | `"Phòng A1.05, tầng 1 nhà A1"`             | Hộp liên hệ                                        |
 | `gio_ho_tro`            | `[GIỜ HỖ TRỢ]`         | `"7:00–17:00, Thứ 2 – Thứ 7"`              | Hộp liên hệ                                        |
-| `model_hitachi`         | `[MODEL]`              | `"CP-EX303"`                               | Trang chủ, trang Hitachi                           |
-| `model_sony`            | `[MODEL]`              | `"VPL-EX575"`                              | Trang chủ, trang Sony                              |
-| `model_infoto`          | `[MODEL]`              | `"IF-…"`                                   | Trang chủ, trang Infoto                            |
-| `noi_lay_pin`           | `"phòng nước giảng viên"` (đã điền) | `"phòng nước giảng viên (tầng 2 nhà A1)"` | Mục 1 & 6 trang Sự cố, 3 trang hãng, trang Liên hệ |
+| `model_hitachi`, `model_sony`, `model_infoto`, `model_khac` | (đã điền theo biên bản 11/07) | `"EX250, RX250, …"` | Một dòng nhỏ "IT tham khảo" trên trang hãng |
+| `nguon_phong`           | `"biên bản kiểm tra máy chiếu ngày 11/07"` | `"biên bản kiểm tra 01/2027"` | Kèm danh sách phòng (trang chủ, trang hãng) |
+| `phong`                 | 58 phòng (đã điền)     | `"203E7": "hitachi"`                       | Ô gõ số phòng (trang chủ), số/danh sách phòng trên thẻ hãng, banner trang Sự cố, mẫu báo sự cố |
+| `noi_lay_pin`           | `"phòng nước giảng viên"` (đã điền) | `"phòng nước giảng viên (tầng 2 nhà A1)"` | Mục 1 & 2 trang Sự cố, 3 trang hãng, trang Liên hệ |
 | `ten_truong`, `ten_truong_ngan` | (đã điền)      | –                                          | Đầu trang, chân trang                              |
 | `cap_nhat`              | `"09/2026"`            | `"01/2027"`                                | Chân trang                                         |
 
@@ -50,12 +57,24 @@ Cách hoạt động: các phần tử HTML có thuộc tính `data-config="tên
 trong `CONFIG`. Trong HTML vẫn có sẵn chữ dự phòng (chính là placeholder) nên nếu JS không chạy trang vẫn đọc được.
 Giá trị còn dạng `[...]` được tô vàng nhẹ để dễ nhận ra chỗ chưa điền.
 
+### Danh sách phòng → hãng máy chiếu (`CONFIG.phong`)
+
+Mỗi dòng có dạng `"SỐ PHÒNG": "hãng"` với hãng là `hitachi`, `sony`, `infoto`, `nec`, `epson`, `viewsonic` hoặc `eiki`
+(chữ thường). Hãng ngoài ba hãng chính được gom vào nhóm **"khác"** trên web. Khi đổi máy chỉ cần sửa hãng của phòng đó;
+thêm phòng mới thì thêm một dòng. JS tự cập nhật: ô gõ số phòng (chấp nhận gõ thường, có khoảng trắng, `dn` thay `ĐN`),
+số phòng và danh sách phòng trên thẻ hãng, banner ở trang Sự cố, và tự chọn hãng trong mẫu báo sự cố.
+Danh sách phòng ghi sẵn trong HTML (chữ dự phòng khi không có JS) nên sau khi sửa `config.js` nhiều, nên cập nhật lại
+các đoạn `data-phong-list` trong `index.html`, `su-co.html` và 3 trang hãng cho khớp (không bắt buộc).
+
 ### Thay ảnh minh họa bằng ảnh thật
 
 Chụp ảnh remote, ổ cắm HDMI trên bàn giảng viên hoặc tường của từng phòng rồi lưu vào `assets/img/` và sửa thuộc tính `src`
 của thẻ `<img>` tương ứng trong trang hãng (`hitachi.html`, `sony.html`, `infoto.html`). Các file hiện có:
 
-- `remote-hitachi.svg`, `remote-sony.svg`, `remote-infoto.svg` – sơ đồ remote
+- `remote-hitachi.svg`, `remote-sony.svg`, `remote-infoto.svg` – sơ đồ remote (kèm hình nhìn nghiêng để thấy độ dày)
+- `remote-mini-hitachi.svg`, `remote-mini-sony.svg`, `remote-mini-infoto.svg`, `remote-mini-khac.svg` – biểu tượng remote nhỏ
+  trên thẻ chọn hãng (trang chủ, banner trang Sự cố). Cách nhận biết hãng theo remote (đen / trắng mỏng / trắng dày)
+  ghi trong `index.html` và `su-co.html` – sửa lại nếu trường đổi remote.
 - `placeholder-photo.svg` – khung "chỗ chèn ảnh thật"
 - `ket-noi.svg`, `win-p.svg`, `logo.svg` – sơ đồ minh họa khác
 
@@ -66,9 +85,9 @@ Nên dùng ảnh JPG/PNG đã nén (≤ 300 KB) để tải nhanh trên điện 
 Nội dung nằm trực tiếp trong các file `.html`. Mỗi sự cố trong `su-co.html` là một khối `<article class="acc" id="...">`
 với 4 phần cố định. Khi thêm sự cố mới:
 
-1. Sao chép một khối `<article class="acc">`, đổi `id` (dùng chữ không dấu, nối bằng `-`) và các `id` con (`-btn`, `-panel`).
-2. Thêm dòng vào danh sách "Danh sách sự cố" đầu trang `su-co.html`.
-3. Thêm thẻ vào lưới triệu chứng trong `index.html` (điền `data-keywords` để tìm nhanh) và tùy chọn vào danh sách
+1. Sao chép một khối `<article class="acc">`, đổi `id` (dùng chữ không dấu, nối bằng `-`) và các `id` con (`-btn`, `-panel`),
+   đặt vào đúng giai đoạn (dưới tiêu đề `<h2 class="stage">` tương ứng) và đánh lại số thứ tự trong tiêu đề nếu cần.
+2. Thêm thẻ vào "Danh sách sự cố" đầu trang `su-co.html` (đúng nhóm giai đoạn) và tùy chọn vào danh sách
    "Triệu chứng" trong `lien-he.html`.
 
 ## Chạy thử trên máy
@@ -96,7 +115,8 @@ cũng chạy được khi đặt trong thư mục con hoặc trên máy chủ n�
 
 ## Gợi ý mã QR dán tại phòng học
 
-- Tạo QR từ đường dẫn trang chủ (hoặc thẳng đến một sự cố, ví dụ `.../su-co.html#no-signal`) bằng công cụ tạo QR
+- Tạo QR từ đường dẫn trang chủ (hoặc thẳng đến trang sự cố của hãng máy trong phòng, ví dụ
+  `.../su-co.html?may=hitachi`, hoặc một sự cố cụ thể `.../su-co.html#no-signal`) bằng công cụ tạo QR
   bất kỳ; in cỡ tối thiểu 5 × 5 cm kèm dòng chữ *"Máy chiếu gặp sự cố? Quét mã để xem hướng dẫn – IT: [số]"*.
 - Dán gần bàn giảng viên / cạnh ổ cắm HDMI, ép plastic để bền.
 - Có thể in luôn trang `su-co.html` (nút **In trang này**, hoặc Ctrl + P): CSS in ấn đã ẩn điều hướng và mở toàn bộ
@@ -105,6 +125,6 @@ cũng chạy được khi đặt trong thư mục con hoặc trên máy chủ n�
 ## Kỹ thuật
 
 - HTML5 ngữ nghĩa, accordion có `aria-expanded` / `aria-controls`, focus nhìn thấy rõ, vùng chạm ≥ 44 px.
-- Không JavaScript vẫn đọc được toàn bộ nội dung (accordion mở sẵn, ô tìm nhanh ẩn).
+- Không JavaScript vẫn đọc được toàn bộ nội dung (accordion mở sẵn, các chip chọn hãng ẩn).
 - Font hệ thống, không tải tài nguyên ngoài, tổng dung lượng nhỏ – phù hợp mạng 4G yếu.
 - CSS `@media print` cho bản in dán phòng.

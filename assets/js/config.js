@@ -27,11 +27,92 @@ window.CONFIG = {
   phong_it: "[PHÒNG IT]",
   gio_ho_tro: "[GIỜ HỖ TRỢ]",
 
-  /* Model máy chiếu đang dùng (có thể ghi nhiều model, cách nhau bằng dấu phẩy).
-     Ví dụ: "CP-EX303, CP-X4042WN". */
-  model_hitachi: "[MODEL]",
-  model_sony: "[MODEL]",
-  model_infoto: "[MODEL]",
+  /* Model máy chiếu theo hãng – CHỈ ĐỂ IT THAM KHẢO (hiển thị một dòng nhỏ trên trang hãng).
+     Các model cùng hãng vận hành giống nhau nên hướng dẫn không tách theo model.
+     Theo biên bản kiểm tra máy chiếu ngày 11/07. */
+  model_hitachi: "EX250, RX250, EX252, 3051WN",
+  model_sony: "VPL-EX570 (đa số), VPL-CH370",
+  model_infoto: "Infoto 112",
+  model_khac: "NEC ME403UG, Epson X51, ViewSonic (chiếu gần), Eiki",
+
+  /* Nguồn của danh sách phòng bên dưới (hiển thị kèm danh sách) */
+  nguon_phong: "biên bản kiểm tra máy chiếu ngày 11/07",
+
+  /* DANH SÁCH PHÒNG → HÃNG MÁY CHIẾU
+     Thầy cô gõ số phòng ở trang chủ để biết ngay loại máy chiếu trong phòng.
+     - Mỗi dòng: "SỐ PHÒNG": "hãng"  (hãng viết chữ thường, không dấu:
+       hitachi | sony | infoto | nec | epson | viewsonic | eiki).
+     - Hãng ngoài hitachi / sony / infoto được gom vào nhóm "khác" trên web.
+     - Khi đổi máy: sửa hãng của phòng đó; thêm phòng mới thì thêm một dòng
+       (nhớ dấu phẩy cuối dòng). Số phòng ghi liền, chữ in, ví dụ "203E7", "301ĐN". */
+  phong: {
+    /* Nhà C2 */
+    "101C2": "nec",
+    "103C2": "sony",
+    "104C2": "viewsonic",
+    "201C2": "infoto",
+    "202C2": "sony",
+    "203C2": "infoto",
+    "301C2": "infoto",
+    "302C2": "infoto",
+    "303C2": "infoto",
+    "304C2": "sony",
+    "401C2": "infoto",
+    "402C2": "infoto",
+    "403C2": "infoto",
+    "404C2": "hitachi",
+    "501C2": "sony",
+    "502C2": "sony",
+    "503C2": "epson",
+    "504C2": "sony",
+    /* Nhà E3 */
+    "P1E3": "hitachi",
+    "P2E3": "nec",
+    "P3E3": "infoto",
+    "P4E3": "infoto",
+    /* Nhà E4 */
+    "P1E4": "nec",
+    "P2E4": "sony",
+    "P3E4": "sony",
+    /* Nhà E5 */
+    "P1E5": "sony",
+    "P2E5": "sony",
+    "P3E5": "nec",
+    "P4E5": "sony",
+    /* Nhà ĐN */
+    "201ĐN": "infoto",
+    "202ĐN": "infoto",
+    "203ĐN": "infoto",
+    "204ĐN": "infoto",
+    "301ĐN": "infoto",
+    "302ĐN": "infoto",
+    "303ĐN": "nec",
+    "304ĐN": "infoto",
+    "401ĐN": "infoto",
+    "402ĐN": "infoto",
+    "403ĐN": "infoto",
+    "404ĐN": "infoto",
+    "501ĐN": "infoto",
+    "502ĐN": "infoto",
+    "503ĐN": "nec",
+    "504ĐN": "infoto",
+    /* Nhà E6 */
+    "P1E6": "sony",
+    "P2E6": "hitachi",
+    "P3E6": "sony",
+    "P4E6": "sony",
+    /* Nhà E7 */
+    "106E7": "hitachi",
+    "202E7": "sony",
+    "203E7": "hitachi",
+    "204E7": "hitachi",
+    "205E7": "hitachi",
+    "206E7": "hitachi",
+    /* Nhà E9 */
+    "P1E9": "hitachi",
+    "P3E9": "eiki",
+    "P4E9": "sony"
+  },
 
   /* Nơi để pin dự phòng cho remote – thầy cô tự đến lấy, không cần gọi IT.
      Có thể ghi thêm vị trí cụ thể. Ví dụ: "phòng nước giảng viên (tầng 2 nhà A1)". */

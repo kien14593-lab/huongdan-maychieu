@@ -85,15 +85,17 @@
       <form id="form-bao-cao" class="form-grid" action="#mau" autocomplete="off">
         <div class="field">
           <label for="bc-phong">Phòng học</label>
-          <input type="text" id="bc-phong" name="phong" placeholder="VD: A1.203" inputmode="text">
+          <input type="text" id="bc-phong" name="phong" placeholder="VD: 203E7, 301ĐN, P1E3" inputmode="text" autocapitalize="characters">
+          <p class="field__hint" id="bc-phong-hint" hidden></p>
         </div>
         <div class="field">
           <label for="bc-hang">Hãng máy chiếu</label>
           <select id="bc-hang" name="hang">
             <option value="">-- Chọn --</option>
-            <option>Hitachi</option>
-            <option>Sony</option>
-            <option>Infoto</option>
+            <option data-hang="hitachi">Hitachi (remote đen)</option>
+            <option data-hang="sony">Sony (remote trắng, mỏng dẹp)</option>
+            <option data-hang="infoto">Infoto (remote trắng, dày)</option>
+            <option data-hang="khac">Khác (NEC, Epson, ViewSonic, Eiki)</option>
             <option>Không rõ</option>
           </select>
         </div>
@@ -102,14 +104,14 @@
           <select id="bc-trieu-chung" name="trieu-chung">
             <option value="">-- Chọn --</option>
             <option>Máy chiếu không bật được / đèn báo không sáng</option>
+            <option>Remote không hoạt động</option>
+            <option>Máy tự tắt / đèn báo nhấp nháy đỏ-cam</option>
             <option>Báo No Signal / màn xanh dù đã cắm laptop</option>
+            <option>Laptop không nhận màn hình thứ 2</option>
             <option>Hình mờ, lệch, méo hình thang, tràn khung</option>
             <option>Hình sai màu, nhiễu sọc</option>
-            <option>Máy tự tắt / đèn báo nhấp nháy đỏ-cam</option>
-            <option>Remote không hoạt động</option>
             <option>Hình bị lật ngược / soi gương</option>
             <option>Hình đứng yên / màn đen dù máy đang chạy</option>
-            <option>Laptop không nhận màn hình thứ 2</option>
             <option>Khác (ghi ở phần ghi chú)</option>
           </select>
         </div>
@@ -167,7 +169,7 @@
     <section class="section" aria-labelledby="cho-title">
       <h2 id="cho-title">Trong lúc chờ IT</h2>
       <ul>
-        <li><strong>Remote hết pin?</strong> Không cần chờ IT: pin dự phòng để sẵn ở <strong data-config="noi_lay_pin">phòng nước giảng viên</strong> – thầy cô sang lấy và tự thay (xem <a href="su-co.html#remote">mục 6</a>).</li>
+        <li><strong>Remote hết pin?</strong> Không cần chờ IT: pin dự phòng để sẵn ở <strong data-config="noi_lay_pin">phòng nước giảng viên</strong> – thầy cô sang lấy và tự thay (xem <a href="su-co.html#remote">mục 2</a>).</li>
         <li>Chuyển sang <strong>dạy bằng bảng</strong> hoặc thảo luận nhóm; gửi slide cho lớp qua nhóm Zalo/email để sinh viên xem trên điện thoại.</li>
         <li>Hỏi <strong>phòng trống bên cạnh</strong> hoặc phòng có TV (liên hệ giáo vụ / bảo vệ tòa nhà).</li>
         <li>Nếu chỉ lỗi laptop của bạn: dùng <strong>máy tính của phòng</strong> hoặc mượn laptop sinh viên, mở bài từ USB / email / Google Drive.</li>

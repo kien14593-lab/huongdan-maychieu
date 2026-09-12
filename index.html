@@ -39,144 +39,108 @@
 
   <main id="main" class="container">
     <h1 class="page-title">Máy chiếu gặp sự cố? Tự kiểm tra 3–5 phút trước khi gọi kỹ thuật.</h1>
-    <p class="lead">Trang này giúp thầy cô <strong>tự kiểm tra và khắc phục tạm thời</strong> các lỗi máy chiếu thường gặp ngay tại lớp, <strong>trước khi gọi kỹ thuật</strong>. Máy chiếu được <strong>treo trên cao</strong> nên chỉ cần thao tác trên <strong>remote</strong>, <strong>đầu cáp ở bàn giảng viên</strong> và <strong>laptop</strong>. Đã thử mà không được, hoặc thấy dấu hiệu bất thường (mùi khét, khói, đèn báo đỏ) → dừng lại và gọi IT (thông tin liên hệ ở <a href="#goi-it">cuối trang</a>).</p>
+    <p class="lead">Máy chiếu <strong>treo trên cao</strong>, thầy cô chỉ cần thao tác trên <strong>remote</strong>, <strong>đầu cáp HDMI ở bàn giảng viên</strong> và <strong>laptop</strong>. Làm theo 4 bước dưới đây.</p>
 
-    <section class="section" aria-labelledby="trieu-chung-title">
-      <h2 id="trieu-chung-title">Chọn triệu chứng đang gặp</h2>
+    <section class="section" aria-labelledby="quy-trinh-title" id="quy-trinh">
+      <h2 id="quy-trinh-title">Quy trình khi vào lớp</h2>
+      <ol class="flow">
+        <li class="flow__step">
+          <span class="flow__num" aria-hidden="true">1</span>
+          <div class="flow__body">
+            <span class="flow__icon" aria-hidden="true">🚪</span>
+            <strong class="flow__title">Đến phòng</strong>
+            <span class="flow__desc">Lấy remote trên bàn giảng viên. Nhìn xem đầu cáp HDMI trên bàn còn nguyên, không gãy lỏng.</span>
+          </div>
+        </li>
+        <li class="flow__step">
+          <span class="flow__num" aria-hidden="true">2</span>
+          <div class="flow__body">
+            <span class="flow__icon" aria-hidden="true">🔴</span>
+            <strong class="flow__title">Bật máy chiếu</strong>
+            <span class="flow__desc">Chĩa remote lên máy chiếu, nhấn <strong>Power</strong> 1 lần. Đợi 30–60 giây cho đèn báo chuyển xanh.</span>
+          </div>
+        </li>
+        <li class="flow__step">
+          <span class="flow__num" aria-hidden="true">3</span>
+          <div class="flow__body">
+            <span class="flow__icon" aria-hidden="true">🔌</span>
+            <strong class="flow__title">Cắm HDMI vào laptop</strong>
+            <span class="flow__desc">Trên remote nhấn <strong>Input / Source → HDMI</strong>. Windows: <kbd>Win</kbd> + <kbd>P</kbd> → Duplicate. macOS: Mirror. <a href="ket-noi-laptop.html">Chi tiết →</a></span>
+          </div>
+        </li>
+        <li class="flow__step flow__step--alert">
+          <span class="flow__num" aria-hidden="true">4</span>
+          <div class="flow__body">
+            <span class="flow__icon" aria-hidden="true">⚠️</span>
+            <strong class="flow__title">Gặp sự cố?</strong>
+            <span class="flow__desc">Gõ số phòng hoặc chọn loại máy chiếu bên dưới để xem danh sách sự cố và tự kiểm tra trước khi gọi IT.</span>
+          </div>
+        </li>
+      </ol>
+    </section>
 
-      <form class="search" role="search" action="#" autocomplete="off">
-        <label class="search__label" for="tim">Tìm nhanh (gõ không dấu cũng được)</label>
-        <input class="search__input" id="tim" type="search" placeholder="Ví dụ: no signal, mờ, sai màu, remote…">
-        <p class="search__status" id="tim-status" aria-live="polite"></p>
-        <div class="note note--warn search__empty" id="tim-khong-thay" hidden>
-          <strong>Không tìm thấy mục phù hợp.</strong> Hãy xem toàn bộ danh sách bên dưới hoặc <a href="lien-he.html">gọi IT</a>.
-        </div>
+    <section class="section phong" aria-labelledby="tra-phong-title" id="tra-phong">
+      <h2 id="tra-phong-title">Gõ số phòng để biết máy chiếu trong phòng</h2>
+      <form class="phong__form" id="form-phong" action="su-co.html" method="get">
+        <label class="visually-hidden" for="phong-input">Số phòng</label>
+        <input class="phong__input" id="phong-input" name="phong" list="ds-phong" placeholder="VD: 203E7, 301ĐN, P1E3" autocomplete="off" autocapitalize="characters" spellcheck="false" inputmode="text">
+        <datalist id="ds-phong"></datalist>
+        <button class="btn btn--primary" type="submit">Xem</button>
       </form>
-
-      <ul class="cards" id="ds-trieu-chung">
-        <li data-keywords="không bật được, không lên nguồn, đèn báo không sáng, power, không khởi động, mất điện, công tắc phòng">
-          <a class="card__link" href="su-co.html#khong-bat-duoc">
-            <span class="card__icon" aria-hidden="true">🔌</span>
-            <span class="card__title">Máy chiếu không bật được</span>
-            <span class="card__desc">Đèn báo không sáng, nhấn Power không phản ứng</span>
-          </a>
-        </li>
-        <li data-keywords="no signal, no input, không có tín hiệu, màn xanh, màn hình xanh, searching, không lên hình, hdmi, input, source">
-          <a class="card__link" href="su-co.html#no-signal">
-            <span class="card__icon" aria-hidden="true">📺</span>
-            <span class="card__title">Báo "No Signal" / màn xanh</span>
-            <span class="card__desc">Máy chiếu sáng nhưng không có hình từ laptop</span>
-          </a>
-        </li>
-        <li data-keywords="mờ, nhòe, lệch, méo, hình thang, tràn khung, thiếu hình, focus, keystone, zoom, độ phân giải, viền đen">
-          <a class="card__link" href="su-co.html#hinh-mo-lech">
-            <span class="card__icon" aria-hidden="true">🔍</span>
-            <span class="card__title">Hình mờ, lệch, méo, tràn khung</span>
-            <span class="card__desc">Chữ nhòe, hình thang, không vừa màn chiếu</span>
-          </a>
-        </li>
-        <li data-keywords="sai màu, ám xanh, ám vàng, ám hồng, tím, nhiễu, sọc, chớp, cáp lỏng, picture mode">
-          <a class="card__link" href="su-co.html#sai-mau">
-            <span class="card__icon" aria-hidden="true">🎨</span>
-            <span class="card__title">Hình sai màu, nhiễu sọc</span>
-            <span class="card__desc">Ám xanh/vàng/hồng, sọc ngang dọc, chớp giật</span>
-          </a>
-        </li>
-        <li data-keywords="tự tắt, đèn đỏ, nhấp nháy, đỏ cam, quá nhiệt, nóng, quạt kêu, lọc bụi, bóng đèn, lamp, temp">
-          <a class="card__link" href="su-co.html#tu-tat">
-            <span class="card__icon" aria-hidden="true">🌡️</span>
-            <span class="card__title">Máy tự tắt / đèn báo nhấp nháy đỏ-cam</span>
-            <span class="card__desc">Quá nhiệt, lọc bụi bẩn, bóng đèn sắp hỏng</span>
-          </a>
-        </li>
-        <li data-keywords="remote, điều khiển, bấm không ăn, pin, hết pin, pin dự phòng, phòng nước, hồng ngoại, cảm biến, không phản hồi">
-          <a class="card__link" href="su-co.html#remote">
-            <span class="card__icon" aria-hidden="true">📡</span>
-            <span class="card__title">Remote không hoạt động</span>
-            <span class="card__desc">Bấm không ăn, phải bấm nhiều lần</span>
-          </a>
-        </li>
-        <li data-keywords="lật ngược, lộn ngược, gương, mirror, ceiling, rear, chữ ngược, hình ngược">
-          <a class="card__link" href="su-co.html#hinh-lat-nguoc">
-            <span class="card__icon" aria-hidden="true">🔃</span>
-            <span class="card__title">Hình bị lật ngược / soi gương</span>
-            <span class="card__desc">Chữ ngược trái-phải hoặc lộn đầu</span>
-          </a>
-        </li>
-        <li data-keywords="đóng băng, đứng hình, freeze, blank, av mute, màn đen, màn hình đen, không đổi slide">
-          <a class="card__link" href="su-co.html#dong-bang-man-den">
-            <span class="card__icon" aria-hidden="true">⏸️</span>
-            <span class="card__title">Hình đứng yên / màn đen dù máy đang chạy</span>
-            <span class="card__desc">Lỡ bấm Freeze hoặc Blank/AV Mute trên remote</span>
-          </a>
-        </li>
-        <li data-keywords="laptop không nhận, màn hình thứ hai, second screen, detect, win p, duplicate, extend, macbook, adapter, usb-c, display">
-          <a class="card__link" href="su-co.html#laptop-khong-nhan">
-            <span class="card__icon" aria-hidden="true">💻</span>
-            <span class="card__title">Laptop không nhận màn hình thứ 2</span>
-            <span class="card__desc">Win + P không tác dụng, macOS không thấy máy chiếu</span>
-          </a>
-        </li>
-      </ul>
-      <p><a class="btn btn--secondary" href="su-co.html">Xem toàn bộ hướng dẫn xử lý sự cố →</a></p>
+      <p class="phong__kq" id="phong-kq" hidden></p>
+      <p class="hang-other">Danh sách phòng theo <span data-config="nguon_phong">biên bản kiểm tra máy chiếu ngày 11/07</span>. Thiếu hoặc sai phòng? Báo IT để cập nhật.</p>
     </section>
 
-    <section class="section" aria-labelledby="hang-title">
-      <h2 id="hang-title">Hướng dẫn theo hãng máy chiếu</h2>
-      <p>Nhìn nhãn trên remote (hoặc logo máy chiếu nhìn từ dưới) để biết hãng. Mỗi trang có sơ đồ nút remote, cách chọn HDMI, ý nghĩa đèn báo và cách tắt máy đúng.</p>
-      <ul class="cards cards--3">
+    <section class="section" aria-labelledby="chon-may-title" id="chon-may">
+      <h2 id="chon-may-title">Hoặc chọn theo loại máy chiếu</h2>
+      <p class="hang-hint">Không rõ hãng? <strong>Nhìn vào remote</strong>: màu <strong>đen</strong> là Hitachi, màu <strong>trắng mỏng dẹp</strong> là Sony, màu <strong>trắng dày</strong> là Infoto. Các model cùng hãng dùng giống nhau.</p>
+      <ul class="hang-list">
         <li>
-          <a class="card__link card--brand" href="hitachi.html">
-            <span class="card__icon" aria-hidden="true">🅷</span>
-            <span class="card__title">Hitachi</span>
-            <span class="card__desc">Model: <span data-config="model_hitachi">[MODEL]</span></span>
+          <a class="hang-card" href="su-co.html?may=hitachi">
+            <img class="hang-card__img" src="assets/img/remote-mini-hitachi.svg" alt="Remote Hitachi màu đen (minh họa)" width="120" height="200">
+            <span class="hang-card__body">
+              <span class="hang-card__name">Hitachi</span>
+              <span class="hang-card__cue"><span class="swatch swatch--black" aria-hidden="true"></span>Remote màu <strong>đen</strong></span>
+              <span class="hang-card__rooms"><span data-phong-count="hitachi">9</span> phòng: <span data-phong-list="hitachi">404C2, P1E3, P2E6, 106E7, 203E7, 204E7, 205E7, 206E7, P1E9</span></span>
+              <span class="hang-card__cta">Xem danh sách sự cố →</span>
+            </span>
           </a>
         </li>
         <li>
-          <a class="card__link card--brand" href="sony.html">
-            <span class="card__icon" aria-hidden="true">🆂</span>
-            <span class="card__title">Sony</span>
-            <span class="card__desc">Model: <span data-config="model_sony">[MODEL]</span></span>
+          <a class="hang-card" href="su-co.html?may=sony">
+            <img class="hang-card__img" src="assets/img/remote-mini-sony.svg" alt="Remote Sony màu trắng, mỏng dẹp (minh họa)" width="120" height="200">
+            <span class="hang-card__body">
+              <span class="hang-card__name">Sony</span>
+              <span class="hang-card__cue"><span class="swatch swatch--thin" aria-hidden="true"></span>Remote màu <strong>trắng, mỏng dẹp</strong></span>
+              <span class="hang-card__rooms"><span data-phong-count="sony">16</span> phòng: <span data-phong-list="sony">103C2, 202C2, 304C2, 501C2, 502C2, 504C2, P2E4, P3E4, P1E5, P2E5, P4E5, P1E6, P3E6, P4E6, 202E7, P4E9</span></span>
+              <span class="hang-card__cta">Xem danh sách sự cố →</span>
+            </span>
           </a>
         </li>
         <li>
-          <a class="card__link card--brand" href="infoto.html">
-            <span class="card__icon" aria-hidden="true">🅸</span>
-            <span class="card__title">Infoto</span>
-            <span class="card__desc">Model: <span data-config="model_infoto">[MODEL]</span></span>
+          <a class="hang-card" href="su-co.html?may=infoto">
+            <img class="hang-card__img" src="assets/img/remote-mini-infoto.svg" alt="Remote Infoto màu trắng, dày (minh họa)" width="120" height="200">
+            <span class="hang-card__body">
+              <span class="hang-card__name">Infoto</span>
+              <span class="hang-card__cue"><span class="swatch swatch--thick" aria-hidden="true"></span>Remote màu <strong>trắng, dày</strong></span>
+              <span class="hang-card__rooms"><span data-phong-count="infoto">24</span> phòng: <span data-phong-list="infoto">201C2, 203C2, 301C2, 302C2, 303C2, 401C2, 402C2, 403C2, P3E3, P4E3, 201ĐN, 202ĐN, 203ĐN, 204ĐN, 301ĐN, 302ĐN, 304ĐN, 401ĐN, 402ĐN, 403ĐN, 404ĐN, 501ĐN, 502ĐN, 504ĐN</span></span>
+              <span class="hang-card__cta">Xem danh sách sự cố →</span>
+            </span>
+          </a>
+        </li>
+        <li class="hang-list__wide">
+          <a class="hang-card hang-card--khac" href="su-co.html?may=khac">
+            <img class="hang-card__img" src="assets/img/remote-mini-khac.svg" alt="" width="120" height="200">
+            <span class="hang-card__body">
+              <span class="hang-card__name">Hãng khác</span>
+              <span class="hang-card__cue">NEC · Epson · ViewSonic · Eiki – cách dùng tương tự, nút có thể khác tên</span>
+              <span class="hang-card__rooms"><span data-phong-count="khac">9</span> phòng: <span data-phong-list="khac">101C2, 104C2, 503C2, P2E3, P1E4, P3E5, 303ĐN, 503ĐN, P3E9</span></span>
+              <span class="hang-card__cta">Xem danh sách sự cố →</span>
+            </span>
           </a>
         </li>
       </ul>
-      <ul class="cards">
-        <li>
-          <a class="card__link" href="ket-noi-laptop.html">
-            <span class="card__icon" aria-hidden="true">💻</span>
-            <span class="card__title">Kết nối laptop với máy chiếu</span>
-            <span class="card__desc">Windows 10/11 (Win + P), macOS (adapter, Mirror), sai tỉ lệ hình</span>
-          </a>
-        </li>
-        <li>
-          <a class="card__link" href="lien-he.html">
-            <span class="card__icon" aria-hidden="true">📞</span>
-            <span class="card__title">Liên hệ IT &amp; mẫu báo sự cố</span>
-            <span class="card__desc">Khi nào gọi ngay, thông tin cần cung cấp, nút sao chép mẫu</span>
-          </a>
-        </li>
-      </ul>
-    </section>
-
-    <section class="section box" aria-labelledby="checklist-title">
-      <h2 id="checklist-title">✅ Checklist 60 giây trước giờ dạy</h2>
-      <p>Làm theo thứ tự này sẽ tránh được phần lớn sự cố:</p>
-      <ul class="checklist">
-        <li><label><input type="checkbox"> <span><strong>Bật máy chiếu trước</strong> (nhấn Power 1 lần), đợi đèn báo chuyển xanh, khoảng 30–60 giây.</span></label></li>
-        <li><label><input type="checkbox"> <span><strong>Chọn nguồn HDMI</strong> đúng cổng đang cắm dây (nút Input / Source trên remote).</span></label></li>
-        <li><label><input type="checkbox"> <span><strong>Cắm cáp HDMI vào laptop</strong>, cắm chặt (MacBook/laptop mỏng: cắm chặt cả adapter). Đợi 5–10 giây.</span></label></li>
-        <li><label><input type="checkbox"> <span><strong>Windows:</strong> nhấn <kbd>Win</kbd> + <kbd>P</kbd> → chọn <strong>Duplicate</strong> (Nhân đôi). <strong>macOS:</strong> bật Mirror Displays.</span></label></li>
-        <li><label><input type="checkbox"> <span><strong>Mở bài giảng</strong>, thử chuyển 1–2 slide (và mở thử video nếu có) để chắc hình lên đúng.</span></label></li>
-        <li><label><input type="checkbox"> <span><strong>Cắm sạc laptop</strong>, tắt thông báo (Focus assist / Do Not Disturb), tắt chế độ tự tắt màn hình.</span></label></li>
-        <li><label><input type="checkbox"> <span><strong>Để remote đúng chỗ</strong> và lưu số IT: <span data-config="sdt_it">[SỐ ĐIỆN THOẠI IT]</span>.</span></label></li>
-      </ul>
+      <p class="hang-other">Vẫn không xác định được? <a href="su-co.html">Xem danh sách sự cố chung →</a><br>Sơ đồ remote và đèn báo từng hãng: <a href="hitachi.html">Hitachi</a> · <a href="sony.html">Sony</a> · <a href="infoto.html">Infoto</a></p>
     </section>
 
     <section class="section note note--stop" aria-labelledby="khan-title">
@@ -202,7 +166,7 @@
         <dt>Giờ hỗ trợ</dt>
         <dd data-config="gio_ho_tro">[GIỜ HỖ TRỢ]</dd>
       </dl>
-      <p style="margin:12px 0 0">Khi gọi, hãy nói rõ: <strong>phòng – hãng máy – triệu chứng – đã thử gì</strong>. <a href="lien-he.html#mau">Dùng mẫu báo sự cố có sẵn →</a></p>
+      <p style="margin:12px 0 0">Khi gọi, hãy nói rõ: <strong>phòng – hãng máy – sự cố – đã thử gì</strong>. <a href="lien-he.html#mau">Dùng mẫu báo sự cố có sẵn →</a></p>
     </section>
   </main>
 

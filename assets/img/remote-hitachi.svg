@@ -1,7 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 610" width="240" height="610" role="img" aria-labelledby="title desc">
-  <title id="title">Sơ đồ remote máy chiếu HITACHI / MAXELL (minh họa)</title>
-  <desc id="desc">Remote Hitachi thường có các nút STANDBY/ON, INPUT, SEARCH, COMPUTER, VIDEO, ASPECT, AUTO, KEYSTONE, MENU, ENTER, ESC, BLANK, FREEZE, MAGNIFY, MY BUTTON, RESET, PAGE.</desc>
-<rect x="30" y="28" width="180" height="530" rx="26" fill="#2f3237" stroke="#15171a" stroke-width="3"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 660" width="240" height="660" role="img" aria-labelledby="title desc">
+  <title id="title">Sơ đồ remote máy chiếu HITACHI / MAXELL (minh họa) – Remote màu ĐEN</title>
+  <desc id="desc">Remote Hitachi màu đen, thường có các nút STANDBY/ON, INPUT, SEARCH, COMPUTER, VIDEO, ASPECT, AUTO, KEYSTONE, MENU, ENTER, ESC, BLANK, FREEZE, MAGNIFY, MY BUTTON, RESET, PAGE.</desc>
+<rect x="30.0" y="28" width="180" height="530" rx="26" fill="#1c1e22" stroke="#000000" stroke-width="3"/>
 <rect x="70" y="18" width="100" height="16" rx="5" fill="#15171a"/>
 <circle cx="120" cy="26" r="4" fill="#7e57c2"/>
 <text x="120.0" y="12.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="8" font-weight="400" fill="#333" text-anchor="middle">Đầu phát tín hiệu → hướng về máy chiếu</text>
@@ -13,48 +13,51 @@
 <rect x="150.7" y="50.0" width="45.3" height="30" rx="8" fill="#0b3d91" stroke="#15171a" stroke-width="1.5"/>
 <text x="173.3" y="68.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="7.5" font-weight="700" fill="#ffffff" text-anchor="middle">SEARCH</text>
 <text x="120.0" y="92.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="6.6" font-weight="400" fill="#d0d4da" text-anchor="middle">Chọn HDMI: nhấn INPUT nhiều lần, hoặc SEARCH để máy tự dò</text>
-<rect x="44.0" y="106.0" width="45.3" height="30" rx="8" fill="#4a4f57" stroke="#15171a" stroke-width="1.5"/>
+<rect x="44.0" y="106.0" width="45.3" height="30" rx="8" fill="#3a3f47" stroke="#0e0f11" stroke-width="1.5"/>
 <text x="66.7" y="124.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="7.5" font-weight="700" fill="#ffffff" text-anchor="middle">COMPUTER</text>
-<rect x="97.3" y="106.0" width="45.3" height="30" rx="8" fill="#4a4f57" stroke="#15171a" stroke-width="1.5"/>
+<rect x="97.3" y="106.0" width="45.3" height="30" rx="8" fill="#3a3f47" stroke="#0e0f11" stroke-width="1.5"/>
 <text x="120.0" y="124.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="7.5" font-weight="700" fill="#ffffff" text-anchor="middle">VIDEO</text>
-<rect x="150.7" y="106.0" width="45.3" height="30" rx="8" fill="#4a4f57" stroke="#15171a" stroke-width="1.5"/>
+<rect x="150.7" y="106.0" width="45.3" height="30" rx="8" fill="#3a3f47" stroke="#0e0f11" stroke-width="1.5"/>
 <text x="173.3" y="124.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="7.5" font-weight="700" fill="#ffffff" text-anchor="middle">ASPECT</text>
-<rect x="44.0" y="146.0" width="45.3" height="30" rx="8" fill="#4a4f57" stroke="#15171a" stroke-width="1.5"/>
+<rect x="44.0" y="146.0" width="45.3" height="30" rx="8" fill="#3a3f47" stroke="#0e0f11" stroke-width="1.5"/>
 <text x="66.7" y="164.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="7.5" font-weight="700" fill="#ffffff" text-anchor="middle">AUTO</text>
-<rect x="97.3" y="146.0" width="45.3" height="30" rx="8" fill="#4a4f57" stroke="#15171a" stroke-width="1.5"/>
+<rect x="97.3" y="146.0" width="45.3" height="30" rx="8" fill="#3a3f47" stroke="#0e0f11" stroke-width="1.5"/>
 <text x="120.0" y="164.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="7.5" font-weight="700" fill="#ffffff" text-anchor="middle">KEYSTONE</text>
-<rect x="150.7" y="146.0" width="45.3" height="30" rx="8" fill="#4a4f57" stroke="#15171a" stroke-width="1.5"/>
+<rect x="150.7" y="146.0" width="45.3" height="30" rx="8" fill="#3a3f47" stroke="#0e0f11" stroke-width="1.5"/>
 <text x="173.3" y="164.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="7.5" font-weight="700" fill="#ffffff" text-anchor="middle">POSITION</text>
-<circle cx="120" cy="226" r="40" fill="#4a4f57" stroke="#15171a" stroke-width="2"/>
-<polygon points="120,194 114,204 126,204" fill="#fff"/>
-<polygon points="120,258 114,248 126,248" fill="#fff"/>
-<polygon points="88,226 98,220 98,232" fill="#fff"/>
-<polygon points="152,226 142,220 142,232" fill="#fff"/>
-<circle cx="120" cy="226" r="15" fill="#e6e8eb" stroke="#15171a" stroke-width="1.5"/>
+<circle cx="120" cy="226" r="40" fill="#3a3f47" stroke="#0e0f11" stroke-width="2"/>
+<polygon points="120,194 114,204 126,204" fill="#ffffff"/>
+<polygon points="120,258 114,248 126,248" fill="#ffffff"/>
+<polygon points="88,226 98,220 98,232" fill="#ffffff"/>
+<polygon points="152,226 142,220 142,232" fill="#ffffff"/>
+<circle cx="120" cy="226" r="15" fill="#e6e8eb" stroke="#0e0f11" stroke-width="1.5"/>
 <text x="120.0" y="229.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="7" font-weight="700" fill="#15171a" text-anchor="middle">ENTER</text>
-<rect x="42.0" y="211.0" width="32.0" height="30" rx="8" fill="#4a4f57" stroke="#15171a" stroke-width="1.5"/>
-<text x="58.0" y="229.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="7.5" font-weight="700" fill="#ffffff" text-anchor="middle">MENU</text>
-<rect x="166.0" y="211.0" width="32.0" height="30" rx="8" fill="#4a4f57" stroke="#15171a" stroke-width="1.5"/>
-<text x="182.0" y="229.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="7.5" font-weight="700" fill="#ffffff" text-anchor="middle">ESC</text>
+<rect x="44.0" y="211.0" width="32.0" height="30" rx="8" fill="#3a3f47" stroke="#0e0f11" stroke-width="1.5"/>
+<text x="60.0" y="229.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="7.5" font-weight="700" fill="#ffffff" text-anchor="middle">MENU</text>
+<rect x="164.0" y="211.0" width="32.0" height="30" rx="8" fill="#3a3f47" stroke="#0e0f11" stroke-width="1.5"/>
+<text x="180.0" y="229.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="7.5" font-weight="700" fill="#ffffff" text-anchor="middle">ESC</text>
 <rect x="44.0" y="276.0" width="45.3" height="30" rx="8" fill="#b7791f" stroke="#15171a" stroke-width="1.5"/>
 <text x="66.7" y="294.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="7.5" font-weight="700" fill="#ffffff" text-anchor="middle">BLANK</text>
 <rect x="97.3" y="276.0" width="45.3" height="30" rx="8" fill="#b7791f" stroke="#15171a" stroke-width="1.5"/>
 <text x="120.0" y="294.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="7.5" font-weight="700" fill="#ffffff" text-anchor="middle">FREEZE</text>
-<rect x="150.7" y="276.0" width="45.3" height="30" rx="8" fill="#4a4f57" stroke="#15171a" stroke-width="1.5"/>
+<rect x="150.7" y="276.0" width="45.3" height="30" rx="8" fill="#3a3f47" stroke="#0e0f11" stroke-width="1.5"/>
 <text x="173.3" y="294.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="7.5" font-weight="700" fill="#ffffff" text-anchor="middle">MAGNIFY</text>
-<rect x="44.0" y="316.0" width="45.3" height="30" rx="8" fill="#4a4f57" stroke="#15171a" stroke-width="1.5"/>
+<rect x="44.0" y="316.0" width="45.3" height="30" rx="8" fill="#3a3f47" stroke="#0e0f11" stroke-width="1.5"/>
 <text x="66.7" y="329.7" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="7.5" font-weight="700" fill="#ffffff" text-anchor="middle">MY</text>
 <text x="66.7" y="338.3" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="7.5" font-weight="700" fill="#ffffff" text-anchor="middle">BUTTON 1</text>
-<rect x="97.3" y="316.0" width="45.3" height="30" rx="8" fill="#4a4f57" stroke="#15171a" stroke-width="1.5"/>
+<rect x="97.3" y="316.0" width="45.3" height="30" rx="8" fill="#3a3f47" stroke="#0e0f11" stroke-width="1.5"/>
 <text x="120.0" y="329.7" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="7.5" font-weight="700" fill="#ffffff" text-anchor="middle">MY</text>
 <text x="120.0" y="338.3" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="7.5" font-weight="700" fill="#ffffff" text-anchor="middle">BUTTON 2</text>
-<rect x="150.7" y="316.0" width="45.3" height="30" rx="8" fill="#4a4f57" stroke="#15171a" stroke-width="1.5"/>
+<rect x="150.7" y="316.0" width="45.3" height="30" rx="8" fill="#3a3f47" stroke="#0e0f11" stroke-width="1.5"/>
 <text x="173.3" y="334.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="7.5" font-weight="700" fill="#ffffff" text-anchor="middle">RESET</text>
-<rect x="44.0" y="356.0" width="72.0" height="30" rx="8" fill="#4a4f57" stroke="#15171a" stroke-width="1.5"/>
+<rect x="44.0" y="356.0" width="72.0" height="30" rx="8" fill="#3a3f47" stroke="#0e0f11" stroke-width="1.5"/>
 <text x="80.0" y="374.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="8.5" font-weight="700" fill="#ffffff" text-anchor="middle">PAGE ▲</text>
-<rect x="124.0" y="356.0" width="72.0" height="30" rx="8" fill="#4a4f57" stroke="#15171a" stroke-width="1.5"/>
+<rect x="124.0" y="356.0" width="72.0" height="30" rx="8" fill="#3a3f47" stroke="#0e0f11" stroke-width="1.5"/>
 <text x="160.0" y="374.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="8.5" font-weight="700" fill="#ffffff" text-anchor="middle">PAGE ▼</text>
-<text x="120.0" y="545.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="11" font-weight="700" fill="#9aa3ad" text-anchor="middle">HITACHI / MAXELL</text>
-<text x="120.0" y="578.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="8.5" font-weight="400" fill="#333" text-anchor="middle">Hình minh họa – bố cục nút có thể khác model thật.</text>
-<text x="120.0" y="592.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="8.5" font-weight="400" fill="#333" text-anchor="middle">Nút màu vàng: dễ bấm nhầm (làm màn đen / đứng hình).</text>
+<text x="120.0" y="545.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="11" font-weight="700" fill="#c9ced6" text-anchor="middle">HITACHI / MAXELL</text>
+<text x="120.0" y="571.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#1b1f24" text-anchor="middle">Remote màu ĐEN</text>
+<rect x="30.0" y="585.0" width="180" height="16" rx="6.0" fill="#1c1e22" stroke="#000000" stroke-width="2"/>
+<text x="120.0" y="620.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="8.5" font-weight="400" fill="#4b5563" text-anchor="middle">Nhìn nghiêng: dày vừa</text>
+<text x="120.0" y="636.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="8.5" font-weight="400" fill="#333" text-anchor="middle">Hình minh họa – bố cục nút có thể khác model thật.</text>
+<text x="120.0" y="650.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="8.5" font-weight="400" fill="#333" text-anchor="middle">Nút màu vàng: dễ bấm nhầm (làm màn đen / đứng hình).</text>
 </svg>

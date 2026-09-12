@@ -1,52 +1,55 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 610" width="240" height="610" role="img" aria-labelledby="title desc">
-  <title id="title">Sơ đồ remote máy chiếu SONY (minh họa)</title>
-  <desc id="desc">Remote Sony thường có các nút POWER (I/⏻), INPUT, MENU, ENTER, RESET, APA, ASPECT, KEYSTONE, PIC MUTE, FREEZE, PATTERN, D ZOOM, ECO MODE, INFO.</desc>
-<rect x="30" y="28" width="180" height="530" rx="26" fill="#2f3237" stroke="#15171a" stroke-width="3"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 660" width="240" height="660" role="img" aria-labelledby="title desc">
+  <title id="title">Sơ đồ remote máy chiếu SONY (minh họa) – Remote màu TRẮNG, mỏng dẹp</title>
+  <desc id="desc">Remote Sony màu trắng, mỏng dẹp, thường có các nút POWER (I/⏻), INPUT, MENU, ENTER, RESET, APA, ASPECT, KEYSTONE, PIC MUTE, FREEZE, PATTERN, D ZOOM, ECO MODE, INFO.</desc>
+<rect x="45.0" y="28" width="150" height="530" rx="14" fill="#f5f6f8" stroke="#7d858f" stroke-width="3"/>
 <rect x="70" y="18" width="100" height="16" rx="5" fill="#15171a"/>
 <circle cx="120" cy="26" r="4" fill="#7e57c2"/>
 <text x="120.0" y="12.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="8" font-weight="400" fill="#333" text-anchor="middle">Đầu phát tín hiệu → hướng về máy chiếu</text>
-<rect x="44.0" y="50.0" width="72.0" height="30" rx="8" fill="#c8102e" stroke="#15171a" stroke-width="1.5"/>
-<path d="M82.5 55.7 A5 5 0 1 1 77.5 55.7" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/><line x1="80.0" y1="54.0" x2="80.0" y2="59.0" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
-<text x="80.0" y="74.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="6.5" font-weight="700" fill="#ffffff" text-anchor="middle">POWER</text>
-<rect x="124.0" y="50.0" width="72.0" height="30" rx="8" fill="#0b3d91" stroke="#15171a" stroke-width="1.5"/>
-<text x="160.0" y="68.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="8.5" font-weight="700" fill="#ffffff" text-anchor="middle">INPUT</text>
-<text x="120.0" y="92.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="6.6" font-weight="400" fill="#d0d4da" text-anchor="middle">Nhấn INPUT rồi chọn INPUT B / C (HDMI) bằng mũi tên + ENTER</text>
-<rect x="44.0" y="106.0" width="45.3" height="30" rx="8" fill="#4a4f57" stroke="#15171a" stroke-width="1.5"/>
-<text x="66.7" y="119.7" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="7.5" font-weight="700" fill="#ffffff" text-anchor="middle">APA</text>
-<text x="66.7" y="128.3" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="7.5" font-weight="700" fill="#ffffff" text-anchor="middle">(Auto)</text>
-<rect x="97.3" y="106.0" width="45.3" height="30" rx="8" fill="#4a4f57" stroke="#15171a" stroke-width="1.5"/>
-<text x="120.0" y="124.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="7.5" font-weight="700" fill="#ffffff" text-anchor="middle">ASPECT</text>
-<rect x="150.7" y="106.0" width="45.3" height="30" rx="8" fill="#4a4f57" stroke="#15171a" stroke-width="1.5"/>
-<text x="173.3" y="124.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="7.5" font-weight="700" fill="#ffffff" text-anchor="middle">KEYSTONE</text>
-<circle cx="120" cy="186" r="40" fill="#4a4f57" stroke="#15171a" stroke-width="2"/>
-<polygon points="120,154 114,164 126,164" fill="#fff"/>
-<polygon points="120,218 114,208 126,208" fill="#fff"/>
-<polygon points="88,186 98,180 98,192" fill="#fff"/>
-<polygon points="152,186 142,180 142,192" fill="#fff"/>
-<circle cx="120" cy="186" r="15" fill="#e6e8eb" stroke="#15171a" stroke-width="1.5"/>
+<rect x="59.0" y="50.0" width="57.0" height="30" rx="8" fill="#c8102e" stroke="#15171a" stroke-width="1.5"/>
+<path d="M90.0 55.7 A5 5 0 1 1 85.0 55.7" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/><line x1="87.5" y1="54.0" x2="87.5" y2="59.0" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+<text x="87.5" y="74.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="6.5" font-weight="700" fill="#ffffff" text-anchor="middle">POWER</text>
+<rect x="124.0" y="50.0" width="57.0" height="30" rx="8" fill="#0b3d91" stroke="#15171a" stroke-width="1.5"/>
+<text x="152.5" y="68.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="8.5" font-weight="700" fill="#ffffff" text-anchor="middle">INPUT</text>
+<text x="120.0" y="92.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="6" font-weight="400" fill="#4b5563" text-anchor="middle">Nhấn INPUT rồi chọn INPUT B / C (HDMI) bằng mũi tên + ENTER</text>
+<rect x="59.0" y="106.0" width="35.3" height="30" rx="8" fill="#e3e6ea" stroke="#8a919b" stroke-width="1.5"/>
+<text x="76.7" y="120.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="7" font-weight="700" fill="#15171a" text-anchor="middle">APA</text>
+<text x="76.7" y="128.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="7" font-weight="700" fill="#15171a" text-anchor="middle">(Auto)</text>
+<rect x="102.3" y="106.0" width="35.3" height="30" rx="8" fill="#e3e6ea" stroke="#8a919b" stroke-width="1.5"/>
+<text x="120.0" y="124.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="7" font-weight="700" fill="#15171a" text-anchor="middle">ASPECT</text>
+<rect x="145.7" y="106.0" width="35.3" height="30" rx="8" fill="#e3e6ea" stroke="#8a919b" stroke-width="1.5"/>
+<text x="163.3" y="124.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="7" font-weight="700" fill="#15171a" text-anchor="middle">KEYSTONE</text>
+<circle cx="120" cy="186" r="40" fill="#d7dbe0" stroke="#8a919b" stroke-width="2"/>
+<polygon points="120,154 114,164 126,164" fill="#15171a"/>
+<polygon points="120,218 114,208 126,208" fill="#15171a"/>
+<polygon points="88,186 98,180 98,192" fill="#15171a"/>
+<polygon points="152,186 142,180 142,192" fill="#15171a"/>
+<circle cx="120" cy="186" r="15" fill="#ffffff" stroke="#8a919b" stroke-width="1.5"/>
 <text x="120.0" y="189.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="7" font-weight="700" fill="#15171a" text-anchor="middle">ENTER</text>
-<rect x="42.0" y="171.0" width="32.0" height="30" rx="8" fill="#4a4f57" stroke="#15171a" stroke-width="1.5"/>
-<text x="58.0" y="189.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="7.5" font-weight="700" fill="#ffffff" text-anchor="middle">MENU</text>
-<rect x="166.0" y="171.0" width="32.0" height="30" rx="8" fill="#4a4f57" stroke="#15171a" stroke-width="1.5"/>
-<text x="182.0" y="189.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="7.5" font-weight="700" fill="#ffffff" text-anchor="middle">RESET</text>
-<rect x="44.0" y="236.0" width="45.3" height="30" rx="8" fill="#b7791f" stroke="#15171a" stroke-width="1.5"/>
-<text x="66.7" y="249.7" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="7.5" font-weight="700" fill="#ffffff" text-anchor="middle">PIC MUTE</text>
-<text x="66.7" y="258.3" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="7.5" font-weight="700" fill="#ffffff" text-anchor="middle">(Blank)</text>
-<rect x="97.3" y="236.0" width="45.3" height="30" rx="8" fill="#b7791f" stroke="#15171a" stroke-width="1.5"/>
-<text x="120.0" y="254.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="7.5" font-weight="700" fill="#ffffff" text-anchor="middle">FREEZE</text>
-<rect x="150.7" y="236.0" width="45.3" height="30" rx="8" fill="#4a4f57" stroke="#15171a" stroke-width="1.5"/>
-<text x="173.3" y="254.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="7.5" font-weight="700" fill="#ffffff" text-anchor="middle">PATTERN</text>
-<rect x="44.0" y="276.0" width="45.3" height="30" rx="8" fill="#4a4f57" stroke="#15171a" stroke-width="1.5"/>
-<text x="66.7" y="294.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="7.5" font-weight="700" fill="#ffffff" text-anchor="middle">D ZOOM −</text>
-<rect x="97.3" y="276.0" width="45.3" height="30" rx="8" fill="#4a4f57" stroke="#15171a" stroke-width="1.5"/>
-<text x="120.0" y="294.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="7.5" font-weight="700" fill="#ffffff" text-anchor="middle">ECO MODE</text>
-<rect x="150.7" y="276.0" width="45.3" height="30" rx="8" fill="#4a4f57" stroke="#15171a" stroke-width="1.5"/>
-<text x="173.3" y="294.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="7.5" font-weight="700" fill="#ffffff" text-anchor="middle">D ZOOM +</text>
-<rect x="44.0" y="316.0" width="72.0" height="30" rx="8" fill="#4a4f57" stroke="#15171a" stroke-width="1.5"/>
-<text x="80.0" y="334.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="8.5" font-weight="700" fill="#ffffff" text-anchor="middle">INFO</text>
-<rect x="124.0" y="316.0" width="72.0" height="30" rx="8" fill="#4a4f57" stroke="#15171a" stroke-width="1.5"/>
-<text x="160.0" y="334.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="8.5" font-weight="700" fill="#ffffff" text-anchor="middle">ID MODE</text>
-<text x="120.0" y="545.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="11" font-weight="700" fill="#9aa3ad" text-anchor="middle">SONY</text>
-<text x="120.0" y="578.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="8.5" font-weight="400" fill="#333" text-anchor="middle">Hình minh họa – bố cục nút có thể khác model thật.</text>
-<text x="120.0" y="592.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="8.5" font-weight="400" fill="#333" text-anchor="middle">Nút màu vàng: dễ bấm nhầm (làm màn đen / đứng hình).</text>
+<rect x="59.0" y="171.0" width="30.0" height="30" rx="8" fill="#e3e6ea" stroke="#8a919b" stroke-width="1.5"/>
+<text x="74.0" y="189.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="7.5" font-weight="700" fill="#15171a" text-anchor="middle">MENU</text>
+<rect x="151.0" y="171.0" width="30.0" height="30" rx="8" fill="#e3e6ea" stroke="#8a919b" stroke-width="1.5"/>
+<text x="166.0" y="189.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="7.5" font-weight="700" fill="#15171a" text-anchor="middle">RESET</text>
+<rect x="59.0" y="236.0" width="35.3" height="30" rx="8" fill="#b7791f" stroke="#15171a" stroke-width="1.5"/>
+<text x="76.7" y="250.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="7" font-weight="700" fill="#ffffff" text-anchor="middle">PIC MUTE</text>
+<text x="76.7" y="258.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="7" font-weight="700" fill="#ffffff" text-anchor="middle">(Blank)</text>
+<rect x="102.3" y="236.0" width="35.3" height="30" rx="8" fill="#b7791f" stroke="#15171a" stroke-width="1.5"/>
+<text x="120.0" y="254.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="7" font-weight="700" fill="#ffffff" text-anchor="middle">FREEZE</text>
+<rect x="145.7" y="236.0" width="35.3" height="30" rx="8" fill="#e3e6ea" stroke="#8a919b" stroke-width="1.5"/>
+<text x="163.3" y="254.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="7" font-weight="700" fill="#15171a" text-anchor="middle">PATTERN</text>
+<rect x="59.0" y="276.0" width="35.3" height="30" rx="8" fill="#e3e6ea" stroke="#8a919b" stroke-width="1.5"/>
+<text x="76.7" y="294.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="7" font-weight="700" fill="#15171a" text-anchor="middle">D ZOOM −</text>
+<rect x="102.3" y="276.0" width="35.3" height="30" rx="8" fill="#e3e6ea" stroke="#8a919b" stroke-width="1.5"/>
+<text x="120.0" y="294.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="7" font-weight="700" fill="#15171a" text-anchor="middle">ECO MODE</text>
+<rect x="145.7" y="276.0" width="35.3" height="30" rx="8" fill="#e3e6ea" stroke="#8a919b" stroke-width="1.5"/>
+<text x="163.3" y="294.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="7" font-weight="700" fill="#15171a" text-anchor="middle">D ZOOM +</text>
+<rect x="59.0" y="316.0" width="57.0" height="30" rx="8" fill="#e3e6ea" stroke="#8a919b" stroke-width="1.5"/>
+<text x="87.5" y="334.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="8.5" font-weight="700" fill="#15171a" text-anchor="middle">INFO</text>
+<rect x="124.0" y="316.0" width="57.0" height="30" rx="8" fill="#e3e6ea" stroke="#8a919b" stroke-width="1.5"/>
+<text x="152.5" y="334.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="8.5" font-weight="700" fill="#15171a" text-anchor="middle">ID MODE</text>
+<text x="120.0" y="545.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="11" font-weight="700" fill="#6b7280" text-anchor="middle">SONY</text>
+<text x="120.0" y="571.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#1b1f24" text-anchor="middle">Remote màu TRẮNG, mỏng dẹp</text>
+<rect x="45.0" y="589.5" width="150" height="7" rx="3.5" fill="#f5f6f8" stroke="#7d858f" stroke-width="2"/>
+<text x="120.0" y="620.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="8.5" font-weight="400" fill="#4b5563" text-anchor="middle">Nhìn nghiêng: rất mỏng</text>
+<text x="120.0" y="636.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="8.5" font-weight="400" fill="#333" text-anchor="middle">Hình minh họa – bố cục nút có thể khác model thật.</text>
+<text x="120.0" y="650.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="8.5" font-weight="400" fill="#333" text-anchor="middle">Nút màu vàng: dễ bấm nhầm (làm màn đen / đứng hình).</text>
 </svg>

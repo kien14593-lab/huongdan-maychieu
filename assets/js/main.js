@@ -11,17 +11,6 @@
     return Array.prototype.slice.call((root || doc).querySelectorAll(selector));
   }
 
-  /* Bỏ dấu tiếng Việt để tìm kiếm không phân biệt dấu: "hinh mo" ~ "hình mờ" */
-  function boDau(str) {
-    return String(str || "")
-      .toLowerCase()
-      .normalize("NFD")
-      .replace(/[\u0300-\u036f]/g, "")
-      .replace(/đ/g, "d")
-      .replace(/\s+/g, " ")
-      .trim();
-  }
-
   function laPlaceholder(v) {
     return !v || /^\s*\[.*\]\s*$/.test(String(v));
   }
@@ -158,58 +147,216 @@
   }
 
   /* ---------------------------------------------------------------
-     3. Tìm nhanh triệu chứng (trang chủ)
+     3. Danh sách phòng → hãng máy chiếu (CONFIG.phong)
+     Nhóm hiển thị trên web: hitachi | sony | infoto | khac (các hãng còn lại).
      --------------------------------------------------------------- */
-  function khoiTaoTimNhanh() {
-    var input = doc.getElementById("tim");
-    var list = doc.getElementById("ds-trieu-chung");
-    if (!input || !list) {
+  var CAC_HANG = ["hitachi", "sony", "infoto", "khac"];
+  var TEN_HANG = {
+    hitachi: "Hitachi",
+    sony: "Sony",
+    infoto: "Infoto",
+    nec: "NEC",
+    epson: "Epson",
+    viewsonic: "ViewSonic",
+    eiki: "Eiki",
+    khac: "hãng khác"
+  };
+
+  function nhomCua(hang) {
+    return CAC_HANG.indexOf(hang) !== -1 && hang !== "khac" ? hang : "khac";
+  }
+
+  function tenHang(hang) {
+    return TEN_HANG[hang] || hang;
+  }
+
+  function danhSachPhong() {
+    var p = (window.CONFIG || {}).phong;
+    return p && typeof p === "object" ? p : {};
+  }
+
+  /* "phòng 203 e7" → "203E7"; "301dn" → "301ĐN" */
+  function chuanHoaPhong(s) {
+    var ma = String(s || "").toUpperCase().replace(/[\s.\-_/]/g, "").replace(/^PH[OÒ]NG/, "");
+    var ds = danhSachPhong();
+    if (ma && !ds[ma] && /DN$/.test(ma)) {
+      ma = ma.replace(/DN$/, "ĐN");
+    }
+    return ma;
+  }
+
+  function timPhong(s) {
+    var ma = chuanHoaPhong(s);
+    var hang = danhSachPhong()[ma];
+    return hang ? { ma: ma, hang: hang, nhom: nhomCua(hang) } : null;
+  }
+
+  function phongTheoNhom() {
+    var ds = danhSachPhong();
+    var kq = { hitachi: [], sony: [], infoto: [], khac: [] };
+    Object.keys(ds).forEach(function (ma) {
+      kq[nhomCua(ds[ma])].push(ma);
+    });
+    return kq;
+  }
+
+  /* Điền danh sách / số phòng vào các vị trí data-phong-list / data-phong-count="nhóm" */
+  function dienDanhSachPhong() {
+    var nhom = phongTheoNhom();
+    $all("[data-phong-list]").forEach(function (el) {
+      var ds = nhom[el.getAttribute("data-phong-list")] || [];
+      if (ds.length) {
+        el.textContent = ds.join(", ");
+      }
+    });
+    $all("[data-phong-count]").forEach(function (el) {
+      var ds = nhom[el.getAttribute("data-phong-count")] || [];
+      if (ds.length) {
+        el.textContent = String(ds.length);
+      }
+    });
+  }
+
+  /* Ô "gõ số phòng" ở trang chủ */
+  function khoiTaoTraPhong() {
+    var form = doc.getElementById("form-phong");
+    var input = doc.getElementById("phong-input");
+    var kq = doc.getElementById("phong-kq");
+    if (!form || !input || !kq) {
       return;
     }
-    var status = doc.getElementById("tim-status");
-    var empty = doc.getElementById("tim-khong-thay");
-    var items = $all("li", list).map(function (li) {
-      return {
-        el: li,
-        text: boDau(li.textContent + " " + (li.getAttribute("data-keywords") || ""))
-      };
+    var datalist = doc.getElementById("ds-phong");
+    if (datalist) {
+      var ds = danhSachPhong();
+      datalist.innerHTML = "";
+      Object.keys(ds).forEach(function (ma) {
+        var opt = doc.createElement("option");
+        opt.value = ma;
+        opt.label = ma + " – " + tenHang(ds[ma]);
+        datalist.appendChild(opt);
+      });
+    }
+
+    function lienKet(p) {
+      return "su-co.html?may=" + p.nhom + "&phong=" + encodeURIComponent(p.ma);
+    }
+
+    function hienKetQua() {
+      var goc = input.value.trim();
+      var p = timPhong(goc);
+      kq.innerHTML = "";
+      kq.classList.remove("phong__kq--loi");
+      if (!goc) {
+        kq.hidden = true;
+        return null;
+      }
+      if (p) {
+        var a = doc.createElement("a");
+        a.className = "btn btn--primary";
+        a.href = lienKet(p);
+        a.textContent = "Xem sự cố máy " + tenHang(p.nhom === "khac" ? p.hang : p.nhom) + " →";
+        var s = doc.createElement("span");
+        s.innerHTML = "Phòng <strong>" + p.ma + "</strong>: máy chiếu <strong>" + tenHang(p.hang) + "</strong>" +
+          (p.nhom === "khac" ? " (nhóm hãng khác)" : "") + ". ";
+        kq.appendChild(s);
+        kq.appendChild(a);
+      } else if (chuanHoaPhong(goc).length >= 3) {
+        kq.textContent = "Không có phòng “" + goc + "” trong danh sách. Kiểm tra lại số phòng hoặc chọn theo loại máy chiếu bên dưới.";
+        kq.classList.add("phong__kq--loi");
+      } else {
+        kq.hidden = true;
+        return null;
+      }
+      kq.hidden = false;
+      return p;
+    }
+
+    input.addEventListener("input", hienKetQua);
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var p = hienKetQua();
+      if (p) {
+        location.href = lienKet(p);
+      } else {
+        input.focus();
+      }
     });
-    var form = input.closest("form");
-    if (form) {
-      form.addEventListener("submit", function (e) {
-        e.preventDefault();
-      });
-    }
-
-    function loc() {
-      var q = boDau(input.value);
-      var tu = q.split(" ").filter(Boolean);
-      var dem = 0;
-      items.forEach(function (it) {
-        var khop = tu.every(function (t) {
-          return it.text.indexOf(t) !== -1;
-        });
-        it.el.hidden = !khop;
-        if (khop) {
-          dem += 1;
-        }
-      });
-      if (status) {
-        status.textContent = q
-          ? "Tìm thấy " + dem + " mục phù hợp."
-          : "";
-      }
-      if (empty) {
-        empty.hidden = !(q && dem === 0);
-      }
-    }
-
-    input.addEventListener("input", loc);
-    input.addEventListener("search", loc);
   }
 
   /* ---------------------------------------------------------------
-     4. Mẫu báo sự cố: tự ghép nội dung + nút sao chép (trang liên hệ)
+     4. Chọn hãng máy chiếu (trang su-co.html, tham số ?may=… hoặc ?phong=…)
+     Hiện banner hãng tương ứng; không chọn vẫn xem được toàn bộ nội dung.
+     --------------------------------------------------------------- */
+  function khoiTaoChonHang() {
+    var banners = $all(".hang-banner[data-may]");
+    var chips = $all(".chip[data-may]");
+    if (!banners.length && !chips.length) {
+      return;
+    }
+    var trong = doc.querySelector(".hang-banner--trong");
+
+    function hien(may, phong) {
+      banners.forEach(function (b) {
+        b.hidden = b.getAttribute("data-may") !== may;
+        $all("[data-phong-info]", b).forEach(function (el) {
+          if (phong && !b.hidden) {
+            el.textContent = "Phòng " + phong.ma + ": máy chiếu " + tenHang(phong.hang) + ".";
+            el.hidden = false;
+          } else {
+            el.hidden = true;
+          }
+        });
+      });
+      chips.forEach(function (c) {
+        var active = c.getAttribute("data-may") === may;
+        c.classList.toggle("is-active", active);
+        if (active) {
+          c.setAttribute("aria-current", "true");
+        } else {
+          c.removeAttribute("aria-current");
+        }
+      });
+      if (trong) {
+        trong.hidden = !!may;
+      }
+    }
+
+    function docThamSo() {
+      var mp = /[?&]phong=([^&#]+)/.exec(location.search);
+      var phong = null;
+      if (mp) {
+        try {
+          phong = timPhong(decodeURIComponent(mp[1].replace(/\+/g, " ")));
+        } catch (err) {
+          phong = null; /* tham số mã hoá sai → bỏ qua */
+        }
+      }
+      var mm = /[?&]may=([a-z]+)/.exec(location.search);
+      var may = mm && CAC_HANG.indexOf(mm[1]) !== -1 ? mm[1] : "";
+      if (phong) {
+        may = phong.nhom;
+      }
+      return { may: may, phong: phong };
+    }
+
+    chips.forEach(function (c) {
+      c.addEventListener("click", function (e) {
+        if (!(window.history && history.replaceState)) {
+          return; /* trình duyệt cũ: đi theo liên kết bình thường */
+        }
+        e.preventDefault();
+        var may = c.getAttribute("data-may");
+        history.replaceState(null, "", location.pathname + "?may=" + may + location.hash);
+        hien(may, null);
+      });
+    });
+
+    var ts = docThamSo();
+    hien(ts.may, ts.phong);
+  }
+
+  /* ---------------------------------------------------------------
+     5. Mẫu báo sự cố: tự ghép nội dung + nút sao chép (trang liên hệ)
      --------------------------------------------------------------- */
   function khoiTaoMauBaoCao() {
     var textarea = doc.getElementById("mau-bao-cao");
@@ -219,10 +366,35 @@
     var form = doc.getElementById("form-bao-cao");
     var status = doc.getElementById("copy-status");
     var mauGoc = textarea.value;
+    var oPhong = doc.getElementById("bc-phong");
+    var oHang = doc.getElementById("bc-hang");
+    var goiYPhong = doc.getElementById("bc-phong-hint");
 
     function giaTri(id) {
       var el = doc.getElementById(id);
       return el ? String(el.value || "").trim() : "";
+    }
+
+    /* Gõ số phòng → tự chọn hãng máy theo danh sách phòng */
+    function nhanHangTheoPhong() {
+      if (!oPhong || !oHang) {
+        return;
+      }
+      var p = timPhong(oPhong.value);
+      if (goiYPhong) {
+        goiYPhong.hidden = !p;
+        goiYPhong.textContent = p ? "Phòng " + p.ma + ": máy chiếu " + tenHang(p.hang) + " (theo danh sách phòng)." : "";
+      }
+      if (!p) {
+        return;
+      }
+      $all("option", oHang).some(function (opt) {
+        if (opt.getAttribute("data-hang") === p.nhom) {
+          oHang.value = opt.value;
+          return true;
+        }
+        return false;
+      });
     }
 
     function ghepNoiDung() {
@@ -233,10 +405,15 @@
         return c.value;
       });
       var ghiChu = giaTri("bc-ghi-chu");
+      var p = timPhong(giaTri("bc-phong"));
+      var hang = giaTri("bc-hang") || "…";
+      if (p && p.nhom === "khac") {
+        hang = tenHang(p.hang) + " (theo danh sách phòng)";
+      }
       var dong = [
         "BÁO SỰ CỐ MÁY CHIẾU",
         "- Phòng: " + (giaTri("bc-phong") || "…"),
-        "- Hãng máy chiếu: " + (giaTri("bc-hang") || "…"),
+        "- Hãng máy chiếu: " + hang,
         "- Triệu chứng: " + (giaTri("bc-trieu-chung") || "…"),
         "- Đã thử: " + (daThu.length ? daThu.join("; ") : "…"),
         "- Mức độ: " + (giaTri("bc-muc-do") || "…"),
@@ -288,6 +465,9 @@
     }
 
     if (form) {
+      if (oPhong) {
+        oPhong.addEventListener("input", nhanHangTheoPhong);
+      }
       form.addEventListener("input", ghepNoiDung);
       form.addEventListener("change", ghepNoiDung);
       form.addEventListener("submit", function (e) {
@@ -298,6 +478,9 @@
       form.addEventListener("reset", function () {
         window.setTimeout(function () {
           textarea.value = mauGoc;
+          if (goiYPhong) {
+            goiYPhong.hidden = true;
+          }
         }, 0);
       });
     }
@@ -308,7 +491,7 @@
   }
 
   /* ---------------------------------------------------------------
-     5. Nút in trang
+     6. Nút in trang
      --------------------------------------------------------------- */
   function khoiTaoNutIn() {
     $all("[data-action='print']").forEach(function (btn) {
@@ -323,8 +506,10 @@
      --------------------------------------------------------------- */
   function khoiDong() {
     apDungConfig();
+    dienDanhSachPhong();
     khoiTaoAccordion();
-    khoiTaoTimNhanh();
+    khoiTaoTraPhong();
+    khoiTaoChonHang();
     khoiTaoMauBaoCao();
     khoiTaoNutIn();
   }
